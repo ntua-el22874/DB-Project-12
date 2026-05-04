@@ -30,12 +30,12 @@ SET FOREIGN_KEY_CHECKS = 1;
 
 
 CREATE TABLE Staff (
-    amka INT NOT NULL,
+    amka BIGINT NOT NULL,
     name VARCHAR(100) NOT NULL,
     surname VARCHAR(100) NOT NULL,
     age INT NOT NULL,
     email VARCHAR(255) NOT NULL UNIQUE,
-    phone INT NOT NULL UNIQUE,
+    phone BIGINT NOT NULL UNIQUE,
     hire_date DATETIME NOT NULL,
     type VARCHAR(20) NOT NULL,
 
@@ -46,7 +46,7 @@ CREATE TABLE Staff (
 );
 
 CREATE TABLE Nurse (
-    amka INT NOT NULL,
+    amka BIGINT NOT NULL,
     rank VARCHAR(30) NOT NULL,
 
     PRIMARY KEY (amka),
@@ -60,7 +60,7 @@ CREATE TABLE Nurse (
 );
 
 CREATE TABLE AdminStaff (
-    amka INT NOT NULL,
+    amka BIGINT NOT NULL,
     role VARCHAR(30) NOT NULL,
     office INT NOT NULL UNIQUE,
 
@@ -75,11 +75,11 @@ CREATE TABLE AdminStaff (
 );
 
 CREATE TABLE Doctor (
-    amka INT NOT NULL,
+    amka BIGINT NOT NULL,
     licence_number INT NOT NULL UNIQUE,
     specialty VARCHAR(60) NOT NULL,
     rank VARCHAR(30) NOT NULL,
-    supervisor_id INT,
+    supervisor_id BIGINT,
 
     PRIMARY KEY (amka),
 
@@ -122,7 +122,7 @@ CREATE TABLE Department (
     description TEXT NOT NULL,
     beds_count INT NOT NULL,
     floor INT NOT NULL,
-    director_id INT,
+    director_id BIGINT,
 
     PRIMARY KEY (dept_id),
 
@@ -135,7 +135,7 @@ CREATE TABLE Department (
 );
 
 CREATE TABLE Doctor_Department (
-    doctor_id INT NOT NULL,
+    doctor_id BIGINT NOT NULL,
     dept_id INT NOT NULL,
 
     PRIMARY KEY (doctor_id, dept_id),
@@ -169,7 +169,7 @@ CREATE TABLE Bed (
 );
 
 CREATE TABLE Patient (
-    amka INT NOT NULL,
+    amka BIGINT NOT NULL,
     name VARCHAR(100) NOT NULL,
     surname VARCHAR(100) NOT NULL,
     father_name VARCHAR(100) NOT NULL,
@@ -188,7 +188,7 @@ CREATE TABLE Patient (
 
     CHECK (age >= 0),
     CHECK (gender IN ('Male', 'Female')),
-    CHECK (insurance IN ('EFKA', 'PRIVATE', 'UNINSURED'))
+    CHECK (insurance IN ('ΕΦΚΑ', 'Ιδιωτική Ασφάλεια', 'Ανασφάλιστος'))
 );
 
 CREATE TABLE ICD10 (
@@ -214,8 +214,8 @@ CREATE TABLE Triage (
     arrival_time DATETIME NOT NULL,
     urgency_level INT NOT NULL,
     symptoms TEXT NOT NULL,
-    patient_id INT NOT NULL,
-    nurse_id INT NOT NULL,
+    patient_id BIGINT NOT NULL,
+    nurse_id BIGINT NOT NULL,
 
     PRIMARY KEY (triage_id),
 
@@ -235,7 +235,7 @@ CREATE TABLE Hospitalization (
     admission_date DATE NOT NULL,
     discharge_date DATE,
     total_cost DECIMAL(10,2),
-    patient_id INT NOT NULL,
+    patient_id BIGINT NOT NULL,
     bed_id INT NOT NULL,
     diagnosis_in VARCHAR(10) NOT NULL,
     diagnosis_out VARCHAR(10),
@@ -271,7 +271,7 @@ CREATE TABLE Examination (
     result TEXT NOT NULL,
     cost DECIMAL(10,2) NOT NULL,
     hosp_id INT NOT NULL,
-    doctor_id INT NOT NULL,
+    doctor_id BIGINT NOT NULL,
 
     PRIMARY KEY (exam_id),
 
@@ -314,8 +314,8 @@ CREATE TABLE DrugSubstance (
 );
 
 CREATE TABLE Prescription (
-    doctor_id INT NOT NULL,
-    patient_id INT NOT NULL,
+    doctor_id BIGINT NOT NULL,
+    patient_id BIGINT NOT NULL,
     drug_id INT NOT NULL,
     start_date DATE NOT NULL,
     end_date DATE,
@@ -339,7 +339,7 @@ CREATE TABLE Prescription (
 
 CREATE TABLE PatientAllergy
 (
-    patient_id   INT NOT NULL,
+    patient_id   BIGINT NOT NULL,
     substance_id INT NOT NULL,
 
     PRIMARY KEY (patient_id, substance_id),
@@ -375,7 +375,7 @@ CREATE TABLE MedicalProcedure (
 
 CREATE TABLE ProcedureParticipation (
     proc_id INT NOT NULL,
-    amka INT NOT NULL,
+    amka BIGINT NOT NULL,
     role VARCHAR(30) NOT NULL,
 
     PRIMARY KEY (proc_id, amka),
@@ -404,7 +404,7 @@ CREATE TABLE Shift (
 );
 
 CREATE TABLE ShiftAssignment (
-    amka INT NOT NULL,
+    amka BIGINT NOT NULL,
     shift_id INT NOT NULL,
     role VARCHAR(30) NOT NULL,
 
@@ -446,8 +446,8 @@ CREATE TABLE HospitalizationRating (
 );
 
 CREATE TABLE DoctorRating (
-    patient_id INT NOT NULL,
-    doctor_id INT NOT NULL,
+    patient_id BIGINT NOT NULL,
+    doctor_id BIGINT NOT NULL,
     rating INT NOT NULL,
 
     PRIMARY KEY (patient_id, doctor_id),
