@@ -234,10 +234,10 @@ CREATE TABLE Triage (
 
 CREATE TABLE Hospitalization (
     hosp_id INT NOT NULL,
+    patient_id BIGINT NOT NULL,
     admission_date DATE NOT NULL,
     discharge_date DATE,
     total_cost DECIMAL(10,2),
-    patient_id BIGINT NOT NULL,
     bed_id INT NOT NULL,
     diagnosis_in VARCHAR(10) NOT NULL,
     diagnosis_out VARCHAR(10),
@@ -430,6 +430,7 @@ CREATE TABLE ShiftAssignment (
 
 CREATE TABLE HospitalizationRating (
     hosp_id INT NOT NULL,
+    patient_id BIGINT NOT NULL,
     medical_care INT NOT NULL,
     nursing_care INT NOT NULL,
     cleanliness INT NOT NULL,
@@ -443,6 +444,11 @@ CREATE TABLE HospitalizationRating (
     CHECK (cleanliness BETWEEN 1 AND 5),
     CHECK (food BETWEEN 1 AND 5),
     CHECK (overall BETWEEN 1 AND 5),
+
+    CONSTRAINT fk_patient_rating
+        FOREIGN KEY (patient_id) REFERENCES Patient(amka)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE,
 
     CONSTRAINT fk_rating_hosp
         FOREIGN KEY (hosp_id) REFERENCES Hospitalization(hosp_id)
