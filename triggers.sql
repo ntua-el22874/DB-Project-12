@@ -122,4 +122,102 @@ BEGIN
     END IF;
 END //
 
+    CREATE TRIGGER check_room_overlap
+BEFORE INSERT ON MedicalProcedure
+FOR EACH ROW
+BEGIN
+    DECLARE overlap_count INT;
+
+    SELECT COUNT(*) INTO overlap_count
+    FROM MedicalProcedure
+    WHERE room_id = NEW.room_id
+      AND start_datetime < DATE_ADD(NEW.start_datetime, INTERVAL NEW.duration MINUTE)
+      AND DATE_ADD(start_datetime, INTERVAL duration MINUTE) > NEW.start_datetime;
+
+    IF overlap_count > 0 THEN
+        SIGNAL SQLSTATE '45000'
+        SET MESSAGE_TEXT = 'Σφάλμα: Η αίθουσα χρησιμοποιείται ήδη για άλλη επέμβαση αυτή την ώρα.';
+    END IF;
+END //
+
+CREATE TRIGGER check_doctor_surgery_overlap
+BEFORE INSERT ON ProcedureParticipation
+FOR EACH ROW
+BEGIN
+    DECLARE overlap_count INT;
+    DECLARE new_start DATETIME;
+    DECLARE new_duration INT;
+
+    SELECT start_datetime, duration INTO new_start, new_duration
+    FROM MedicalProcedure
+    WHERE proc_id = NEW.proc_id;
+
+    SELECT COUNT(*) INTO overlap_count
+    FROM ProcedureParticipation
+    JOIN MedicalProcedure ON ProcedureParticipation.proc_id = MedicalProcedure.proc_id
+    WHERE ProcedureParticipation.amka = NEW.amka
+      AND MedicalProcedure.start_datetime < DATE_ADD(new_start, INTERVAL new_duration MINUTE)
+      AND DATE_ADD(MedicalProcedure.start_datetime, INTERVAL MedicalProcedure.duration MINUTE) > new_start;
+
+    IF overlap_count > 0 THEN
+        SIGNAL SQLSTATE '45000'
+        SET MESSAGE_TEXT = 'Σφάλμα: Ο ιατρός συμμετέχει ήδη σε άλλη επέμβαση αυτή την ώρα.';
+    END IF;
+END //
+
+CREATE TRIGGER check_8_hour_rest
+BEFORE INSERT ON ShiftAssignment
+FOR EACH ROW
+BEGIN
+    DECLARE new_start DATETIME;
+    DECLARE new_end DATETIME;
+    DECLARE rest_violations INT;
+
+    SELECT start_time, end_time INTO new_start, new_end
+    FROM Shift
+    WHERE shift_id = NEW.shift_id;
+
+    SELECT COUNT(*) INTO rest_violations
+    FROM ShiftAssignment
+    JOIN Shift ON ShiftAssignment.shift_id = Shift.shift_id
+    WHERE ShiftAssignment.amka = NEW.amka
+      AND (
+          (Shift.end_time > DATE_SUB(new_start, INTERVAL 8 HOUR) AND Shift.end_time <= new_start)
+          OR
+          (Shift.start_time < DATE_ADD(new_end, INTERVAL 8 HOUR) AND Shift.start_time >= new_end)
+      );
+
+    IF rest_violations > 0 THEN
+        SIGNAL SQLSTATE '45000'
+        SET MESSAGE_TEXT = 'Σφάλμα: Πρέπει να μεσολαβούν τουλάχιστον 8 ώρες ανάπαυσης μεταξύ των βαρδιών.';
+    END IF;
+END //
+
+CREATE TRIGGER check_three_nights
+BEFORE INSERT ON ShiftAssignment
+FOR EACH ROW
+BEGIN
+    DECLARE shift_type VARCHAR(20);
+    DECLARE shift_date DATE;
+    DECLARE night_count INT;
+
+    SELECT type, date INTO shift_type, shift_date
+    FROM Shift
+    WHERE shift_id = NEW.shift_id;
+
+    IF shift_type = 'NIGHT' THEN
+        SELECT COUNT(*) INTO night_count
+        FROM ShiftAssignment
+        JOIN Shift ON ShiftAssignment.shift_id = Shift.shift_id
+        WHERE ShiftAssignment.amka = NEW.amka
+          AND Shift.type = 'NIGHT'
+          AND (Shift.date = DATE_SUB(shift_date, INTERVAL 1 DAY)
+               OR Shift.date = DATE_SUB(shift_date, INTERVAL 2 DAY));
+
+        IF night_count = 2 THEN
+            SIGNAL SQLSTATE '45000'
+            SET MESSAGE_TEXT = 'Σφάλμα: Απαγορεύεται η εργασία σε πάνω από 3 συνεχόμενες νυχτερινές βάρδιες.';
+        END IF;
+    END IF;
+END //
 DELIMITER ;

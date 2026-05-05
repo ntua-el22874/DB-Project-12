@@ -358,6 +358,7 @@ CREATE TABLE MedicalProcedure (
     name VARCHAR(100) NOT NULL,
     category VARCHAR(30) NOT NULL,
     duration INT NOT NULL,
+    start_datetime DATETIME NOT NULL,
     cost DECIMAL(10,2) NOT NULL,
     room_id VARCHAR(10) NOT NULL,
     hosp_id INT NOT NULL,
@@ -397,6 +398,8 @@ CREATE TABLE Shift (
     shift_id INT NOT NULL AUTO_INCREMENT,
     date DATE NOT NULL,
     type VARCHAR(20) NOT NULL,
+    start_time DATETIME NOT NULL,
+    end_time DATETIME NOT NULL,
 
     PRIMARY KEY (shift_id),
 
