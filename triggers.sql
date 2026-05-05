@@ -52,4 +52,74 @@ BEGIN
     END IF;
 END //
 
+CREATE TRIGGER check_doctor_supervisor_insert
+BEFORE INSERT ON Doctor
+FOR EACH ROW
+BEGIN
+    IF NEW.rank = 'RESIDENT' AND NEW.supervisor_id IS NULL THEN
+        SIGNAL SQLSTATE '45000'
+        SET MESSAGE_TEXT = 'Σφάλμα: Οι ειδικευόμενοι πρέπει υποχρεωτικά να έχουν επόπτη.';
+    END IF;
+
+    IF NEW.rank = 'DIRECTOR' AND NEW.supervisor_id IS NOT NULL THEN
+        SIGNAL SQLSTATE '45000'
+        SET MESSAGE_TEXT = 'Σφάλμα: Οι διευθυντές δεν μπορούν να έχουν επόπτη.';
+    END IF;
+END //
+
+CREATE TRIGGER check_doctor_supervisor_update
+BEFORE UPDATE ON Doctor
+FOR EACH ROW
+BEGIN
+    IF NEW.rank = 'RESIDENT' AND NEW.supervisor_id IS NULL THEN
+        SIGNAL SQLSTATE '45000'
+        SET MESSAGE_TEXT = 'Σφάλμα: Οι ειδικευόμενοι πρέπει υποχρεωτικά να έχουν επόπτη.';
+    END IF;
+
+    IF NEW.rank = 'DIRECTOR' AND NEW.supervisor_id IS NOT NULL THEN
+        SIGNAL SQLSTATE '45000'
+        SET MESSAGE_TEXT = 'Σφάλμα: Οι διευθυντές δεν μπορούν να έχουν επόπτη.';
+    END IF;
+END //
+
+CREATE TRIGGER check_monthly_shift_limits
+BEFORE INSERT ON ShiftAssignment
+FOR EACH ROW
+BEGIN
+    DECLARE shift_count INT;
+    DECLARE staff_role VARCHAR(20);
+    DECLARE shift_month INT;
+    DECLARE shift_year INT;
+
+    SELECT type INTO staff_role
+    FROM Staff
+    WHERE amka = NEW.amka;
+
+    SELECT MONTH(date), YEAR(date) INTO shift_month, shift_year
+    FROM Shift
+    WHERE shift_id = NEW.shift_id;
+
+    SELECT COUNT(*) INTO shift_count
+    FROM ShiftAssignment
+    JOIN Shift ON ShiftAssignment.shift_id = Shift.shift_id
+    WHERE ShiftAssignment.amka = NEW.amka
+      AND MONTH(Shift.date) = shift_month
+      AND YEAR(Shift.date) = shift_year;
+
+    IF staff_role = 'DOCTOR' AND shift_count >= 15 THEN
+        SIGNAL SQLSTATE '45000'
+        SET MESSAGE_TEXT = 'Σφάλμα: Το μέλος του ιατρικού προσωπικού ξεπέρασε το όριο των 15 βαρδιών.';
+    END IF;
+
+    IF staff_role = 'NURSE' AND shift_count >= 20 THEN
+        SIGNAL SQLSTATE '45000'
+        SET MESSAGE_TEXT = 'Σφάλμα: Το μέλος του νοσηλευτικού προσωπικού ξεπέρασε το όριο των 20 βαρδιών.';
+    END IF;
+
+    IF staff_role = 'ADMIN' AND shift_count >= 25 THEN
+        SIGNAL SQLSTATE '45000'
+        SET MESSAGE_TEXT = 'Σφάλμα: Το μέλος του διοικητικού προσωπικού ξεπέρασε το όριο των 25 βαρδιών.';
+    END IF;
+END //
+
 DELIMITER ;
