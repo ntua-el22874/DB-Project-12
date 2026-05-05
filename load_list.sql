@@ -22,7 +22,7 @@ INTO TABLE Department
 FIELDS TERMINATED BY ','
 LINES TERMINATED BY '\n'
 IGNORE 1 ROWS;
-
+-- DOCTORS needs to be loaded a couple of times due to self referencing
 LOAD DATA LOCAL INFILE '/home/aris/DB/DB-Project-12/ListForDB_csv/Doctor_Clean.csv'
 INTO TABLE Doctor
 FIELDS TERMINATED BY ','
@@ -40,7 +40,7 @@ INTO TABLE Patient
 FIELDS TERMINATED BY ','
 LINES TERMINATED BY '\n'
 IGNORE 1 ROWS;
-
+-- up to here everything loads correctly
 LOAD DATA LOCAL INFILE '/home/aris/DB/DB-Project-12/ListForDB_csv/Hospitalization_Ratings_Clean.csv'
 INTO TABLE HospitalizationRating
 FIELDS TERMINATED BY ','

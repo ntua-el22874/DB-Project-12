@@ -182,6 +182,8 @@ CREATE TABLE Patient (
     email VARCHAR(255) NOT NULL UNIQUE,
     job VARCHAR(100) NOT NULL,
     nationality VARCHAR(100) NOT NULL,
+    next_of_kin VARCHAR(100) NOT NULL,
+    next_of_kin_phone BIGINT NOT NULL,
     insurance VARCHAR(30) NOT NULL,
 
     PRIMARY KEY (amka),
