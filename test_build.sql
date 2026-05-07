@@ -118,7 +118,7 @@ CREATE TABLE Doctor (
 
 CREATE TABLE Department (
     dept_id INT NOT NULL AUTO_INCREMENT,
-    name VARCHAR(100) NOT NULL,
+    name VARCHAR(100) NOT NULL UNIQUE,
     description TEXT NOT NULL,
     beds_count INT NOT NULL,
     floor INT NOT NULL,
@@ -202,8 +202,9 @@ CREATE TABLE ICD10 (
 
 CREATE TABLE KEN (
     ken_code VARCHAR(10) NOT NULL,
-    base_cost DECIMAL(10,2) NOT NULL,
-    avg_days INT NOT NULL,
+    description TEXT NOT NULL,
+    base_cost DECIMAL(10,2),
+    avg_days INT,
 
     PRIMARY KEY (ken_code),
 
@@ -235,13 +236,14 @@ CREATE TABLE Triage (
 CREATE TABLE Hospitalization (
     hosp_id INT NOT NULL,
     patient_id BIGINT NOT NULL,
-    admission_date DATE NOT NULL,
-    discharge_date DATE,
-    total_cost DECIMAL(10,2),
     bed_id INT NOT NULL,
+    dept_name VARCHAR(50) NOT NULL,
+    admission_date DATE NOT NULL,
+    discharge_date DATE NOT NULL,
     diagnosis_in VARCHAR(10) NOT NULL,
     diagnosis_out VARCHAR(10),
     ken_code VARCHAR(10),
+    total_cost DECIMAL(10,2),
 
     PRIMARY KEY (hosp_id),
 
@@ -251,6 +253,10 @@ CREATE TABLE Hospitalization (
 
     CONSTRAINT fk_hosp_bed
         FOREIGN KEY (bed_id) REFERENCES Bed(bed_id)
+        ON DELETE CASCADE ON UPDATE CASCADE,
+
+    CONSTRAINT fk_hosp_dept
+        FOREIGN KEY (dept_name) REFERENCES Department(name)
         ON DELETE CASCADE ON UPDATE CASCADE,
 
     CONSTRAINT fk_hosp_icd_in

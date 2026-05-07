@@ -22,7 +22,7 @@ INTO TABLE Department
 FIELDS TERMINATED BY ','
 LINES TERMINATED BY '\n'
 IGNORE 1 ROWS;
--- DOCTORS needs to be loaded a couple of times due to self referencing
+
 LOAD DATA LOCAL INFILE '/home/aris/DB/DB-Project-12/ListForDB_csv/Doctor_Clean.csv'
 INTO TABLE Doctor
 FIELDS TERMINATED BY ','
@@ -40,10 +40,25 @@ INTO TABLE Patient
 FIELDS TERMINATED BY ','
 LINES TERMINATED BY '\n'
 IGNORE 1 ROWS;
--- up to here everything loads correctly
+
+LOAD DATA LOCAL INFILE '/home/aris/DB/DB-Project-12/ListForDB_csv/ICD10_codes.csv'
+INTO TABLE ICD10
+FIELDS TERMINATED BY ','
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS;
+
+LOAD DATA LOCAL INFILE '/home/aris/DB/DB-Project-12/ListForDB_csv/KEN_codes.csv'
+INTO TABLE KEN
+FIELDS TERMINATED BY ','
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS;
+
 LOAD DATA LOCAL INFILE '/home/aris/DB/DB-Project-12/ListForDB_csv/Hospitalizations_Clean.csv'
 INTO TABLE Hospitalization
 FIELDS TERMINATED BY ','
+ENCLOSED BY '"'
 LINES TERMINATED BY '\n'
 IGNORE 1 ROWS;
 
@@ -52,6 +67,7 @@ INTO TABLE HospitalizationRating
 FIELDS TERMINATED BY ','
 LINES TERMINATED BY '\n'
 IGNORE 1 ROWS;
+-- up to here everything loads correctly
 
 LOAD DATA LOCAL INFILE '/home/aris/DB/DB-Project-12/ListForDB_csv/Medical_Acts_Clean.csv'
 INTO TABLE MedicalProcedure
