@@ -2,7 +2,6 @@ USE test1;
 
 -- ONLY FOR PROTOTYPING
 SET FOREIGN_KEY_CHECKS = 0;
-DROP TABLE IF EXISTS DoctorRating;
 DROP TABLE IF EXISTS HospitalizationRating;
 DROP TABLE IF EXISTS ShiftAssignment;
 DROP TABLE IF EXISTS Shift;
@@ -460,22 +459,4 @@ CREATE TABLE HospitalizationRating (
         FOREIGN KEY (hosp_id) REFERENCES Hospitalization(hosp_id)
         ON DELETE CASCADE
         ON UPDATE CASCADE
-);
-
-CREATE TABLE DoctorRating (
-    patient_id BIGINT NOT NULL,
-    doctor_id BIGINT NOT NULL,
-    rating INT NOT NULL,
-
-    PRIMARY KEY (patient_id, doctor_id),
-
-    CHECK (rating BETWEEN 1 AND 5),
-
-    CONSTRAINT fk_drating_patient
-        FOREIGN KEY (patient_id) REFERENCES Patient(amka)
-        ON DELETE CASCADE ON UPDATE CASCADE,
-
-    CONSTRAINT fk_drating_doctor
-        FOREIGN KEY (doctor_id) REFERENCES Doctor(amka)
-        ON DELETE CASCADE ON UPDATE CASCADE
 );
