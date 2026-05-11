@@ -1,6 +1,6 @@
-<mxfile host="Electron">
+<mxfile host="app.diagrams.net">
   <diagram name="Hospital_EER" id="0">
-    <mxGraphModel dx="2026" dy="2380" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2336" pageHeight="1654" background="#ffffff" math="0" shadow="0">
+    <mxGraphModel dx="1179" dy="690" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2336" pageHeight="1654" background="#ffffff" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -77,9 +77,9 @@
           <mxGeometry height="70" width="190" y="50" as="geometry" />
         </mxCell>
         <mxCell id="B5t3BmvRQQ7wJzP6GV-l-3" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="ΑΣΘΕΝΗΣ&lt;div&gt;(Patient)&lt;/div&gt;" vertex="1">
-          <mxGeometry height="281" width="160" x="30" y="770" as="geometry" />
+          <mxGeometry height="281" width="160" x="30" y="730" as="geometry" />
         </mxCell>
-        <mxCell id="B5t3BmvRQQ7wJzP6GV-l-4" parent="B5t3BmvRQQ7wJzP6GV-l-3" style="align=left;strokeColor=#b85450;fillColor=#f8cecc;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="&lt;b&gt;&lt;u&gt;AMKA(PK)&lt;/u&gt;&lt;/b&gt;&lt;div&gt;name&lt;/div&gt;&lt;div&gt;surname&lt;/div&gt;&lt;div&gt;father_name&lt;/div&gt;&lt;div&gt;age&lt;/div&gt;&lt;div&gt;gender&lt;/div&gt;&lt;div&gt;weighr&lt;/div&gt;&lt;div&gt;height&lt;/div&gt;&lt;div&gt;address&lt;/div&gt;&lt;div&gt;phone&lt;/div&gt;&lt;div&gt;email&lt;/div&gt;&lt;div&gt;job&lt;/div&gt;&lt;div&gt;nationality&lt;/div&gt;&lt;div&gt;insurance{ΕΦΚΑ, ιδιωτική,&lt;/div&gt;&lt;div&gt;ανασφάλιστος}&lt;/div&gt;" vertex="1">
+        <mxCell id="B5t3BmvRQQ7wJzP6GV-l-4" parent="B5t3BmvRQQ7wJzP6GV-l-3" style="align=left;strokeColor=#b85450;fillColor=#f8cecc;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="&lt;b&gt;&lt;u&gt;AMKA(PK)&lt;/u&gt;&lt;/b&gt;&lt;div&gt;name&lt;/div&gt;&lt;div&gt;surname&lt;/div&gt;&lt;div&gt;father_name&lt;/div&gt;&lt;div&gt;age&lt;/div&gt;&lt;div&gt;gender&lt;/div&gt;&lt;div&gt;weighr&lt;/div&gt;&lt;div&gt;height&lt;/div&gt;&lt;div&gt;address&lt;/div&gt;&lt;div&gt;phone&lt;/div&gt;&lt;div&gt;email&lt;/div&gt;&lt;div&gt;job&lt;/div&gt;&lt;div&gt;nationality&lt;/div&gt;&lt;div&gt;next_of_kin&lt;/div&gt;&lt;div&gt;next_of_kin_phone&lt;/div&gt;&lt;div&gt;insurance{ΕΦΚΑ, ιδιωτική,&lt;/div&gt;&lt;div&gt;ανασφάλιστος}&lt;/div&gt;" vertex="1">
           <mxGeometry height="231" width="160" y="50" as="geometry" />
         </mxCell>
         <mxCell id="B5t3BmvRQQ7wJzP6GV-l-5" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="ΔΙΑΛΟΓΗ&lt;div&gt;(Triage)&lt;/div&gt;" vertex="1">

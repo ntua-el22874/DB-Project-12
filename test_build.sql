@@ -240,8 +240,8 @@ CREATE TABLE Hospitalization (
     admission_date DATE NOT NULL,
     discharge_date DATE NOT NULL,
     diagnosis_in VARCHAR(10) NOT NULL,
-    diagnosis_out VARCHAR(10),
-    ken_code VARCHAR(10),
+    diagnosis_out VARCHAR(10) NOT NULL,
+    ken_code VARCHAR(10) NOT NULL,
     total_cost DECIMAL(10,2),
 
     PRIMARY KEY (hosp_id),
