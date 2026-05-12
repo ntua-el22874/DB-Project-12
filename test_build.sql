@@ -25,6 +25,7 @@ DROP TABLE IF EXISTS Doctor;
 DROP TABLE IF EXISTS AdminStaff;
 DROP TABLE IF EXISTS Nurse;
 DROP TABLE IF EXISTS Staff;
+DROP TABLE IF EXISTS Next_of_kin;
 SET FOREIGN_KEY_CHECKS = 1;
 
 
@@ -181,8 +182,6 @@ CREATE TABLE Patient (
     email VARCHAR(255) NOT NULL UNIQUE,
     job VARCHAR(100) NOT NULL,
     nationality VARCHAR(100) NOT NULL,
-    next_of_kin VARCHAR(100) NOT NULL,
-    next_of_kin_phone BIGINT NOT NULL,
     insurance VARCHAR(30) NOT NULL,
 
     PRIMARY KEY (amka),
@@ -190,6 +189,17 @@ CREATE TABLE Patient (
     CHECK (age >= 0),
     CHECK (gender IN ('Male', 'Female')),
     CHECK (insurance IN ('ΕΦΚΑ', 'Ιδιωτική Ασφάλεια', 'Ανασφάλιστος'))
+);
+
+CREATE TABLE Next_of_kin(
+    patient_id BIGINT NOT NULL,
+    name VARCHAR(100) NOT NULL,
+    phone BIGINT NOT NULL,
+    realationship VARCHAR(100),
+
+    CONSTRAINT fk_patient
+        FOREIGN KEY (patient_id) REFERENCES Patient(amka)
+        ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 CREATE TABLE ICD10 (
