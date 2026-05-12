@@ -1,4 +1,4 @@
-USE test1;
+USE test_1;
 
 -- ONLY FOR PROTOTYPING
 SET FOREIGN_KEY_CHECKS = 0;
@@ -19,7 +19,7 @@ DROP TABLE IF EXISTS KEN;
 DROP TABLE IF EXISTS ICD10;
 DROP TABLE IF EXISTS Patient;
 DROP TABLE IF EXISTS Bed;
-DROP TABLE IF EXISTS Doctor_Department;
+DROP TABLE IF EXISTS Staff_Department;
 DROP TABLE IF EXISTS Department;
 DROP TABLE IF EXISTS Doctor;
 DROP TABLE IF EXISTS AdminStaff;
@@ -133,18 +133,18 @@ CREATE TABLE Department (
         ON UPDATE CASCADE
 );
 
-CREATE TABLE Doctor_Department (
-    doctor_id BIGINT NOT NULL,
+CREATE TABLE Staff_Department (
+    Staff_id BIGINT NOT NULL,
     dept_id INT NOT NULL,
 
-    PRIMARY KEY (doctor_id, dept_id),
+    PRIMARY KEY (Staff_id, dept_id),
 
-    CONSTRAINT fk_doctor_department_doctor
-        FOREIGN KEY (doctor_id) REFERENCES Doctor(amka)
+    CONSTRAINT fk_Staff_department_Staff
+        FOREIGN KEY (Staff_id) REFERENCES Staff(amka)
         ON DELETE CASCADE
         ON UPDATE CASCADE,
 
-    CONSTRAINT fk_doctor_department_department
+    CONSTRAINT fk_Staff_department_department
         FOREIGN KEY (dept_id) REFERENCES Department(dept_id)
         ON DELETE CASCADE
         ON UPDATE CASCADE
@@ -240,8 +240,8 @@ CREATE TABLE Hospitalization (
     admission_date DATE NOT NULL,
     discharge_date DATE NOT NULL,
     diagnosis_in VARCHAR(10) NOT NULL,
-    diagnosis_out VARCHAR(10) NOT NULL,
-    ken_code VARCHAR(10) NOT NULL,
+    diagnosis_out VARCHAR(10),
+    ken_code VARCHAR(10),
     total_cost DECIMAL(10,2),
 
     PRIMARY KEY (hosp_id),
@@ -252,11 +252,11 @@ CREATE TABLE Hospitalization (
 
     CONSTRAINT fk_hosp_bed
         FOREIGN KEY (bed_id) REFERENCES Bed(bed_id)
-        ON DELETE CASCADE ON UPDATE CASCADE,
+        ON DELETE CASCADE ON UPDATE CASCADE,-- mporei na mh theloume delete
 
     CONSTRAINT fk_hosp_dept
         FOREIGN KEY (dept_name) REFERENCES Department(name)
-        ON DELETE CASCADE ON UPDATE CASCADE,
+        ON DELETE CASCADE ON UPDATE CASCADE,-- mporei na mh theloume delete
 
     CONSTRAINT fk_hosp_icd_in
         FOREIGN KEY (diagnosis_in) REFERENCES ICD10(code)
