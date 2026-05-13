@@ -1,4 +1,4 @@
-USE test_1;
+USE test1;
 
 -- ONLY FOR PROTOTYPING
 SET FOREIGN_KEY_CHECKS = 0;
@@ -223,11 +223,12 @@ CREATE TABLE KEN (
 
 CREATE TABLE Triage (
     triage_id INT NOT NULL AUTO_INCREMENT,
+    patient_id BIGINT NOT NULL,
+    nurse_id BIGINT NOT NULL,
     arrival_time DATETIME NOT NULL,
     urgency_level INT NOT NULL,
     symptoms TEXT NOT NULL,
-    patient_id BIGINT NOT NULL,
-    nurse_id BIGINT NOT NULL,
+
 
     PRIMARY KEY (triage_id),
 

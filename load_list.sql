@@ -79,8 +79,13 @@ INTO TABLE HospitalizationRating
 FIELDS TERMINATED BY ','
 LINES TERMINATED BY '\n'
 IGNORE 1 ROWS;
--- up to here everything loads correctly
 
+LOAD DATA LOCAL INFILE './ListForDB_csv/Triage_Clean.csv'
+INTO TABLE Triage
+FIELDS TERMINATED BY ','
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS;
+-- up to here everything loads correctly
 LOAD DATA LOCAL INFILE './ListForDB_csv/Medical_Acts_Clean.csv'
 INTO TABLE MedicalProcedure
 FIELDS TERMINATED BY ','
@@ -99,8 +104,3 @@ FIELDS TERMINATED BY ','
 LINES TERMINATED BY '\n'
 IGNORE 1 ROWS;
 
-LOAD DATA LOCAL INFILE './ListForDB_csv/Triage_Clean.csv'
-INTO TABLE Triage
-FIELDS TERMINATED BY ','
-LINES TERMINATED BY '\n'
-IGNORE 1 ROWS;
