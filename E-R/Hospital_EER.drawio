@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Hospital_EER" id="0">
-    <mxGraphModel dx="2260" dy="3032" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2336" pageHeight="1654" background="#ffffff" math="0" shadow="0">
+    <mxGraphModel dx="2279" dy="2835" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2336" pageHeight="1654" background="#ffffff" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -105,7 +105,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="B5t3BmvRQQ7wJzP6GV-l-21" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="ΦΑΡΜΑΚΟ&lt;div&gt;(Drug)&lt;/div&gt;" vertex="1">
-          <mxGeometry height="184.43" width="160" x="2092" y="1480" as="geometry" />
+          <mxGeometry height="184.43" width="160" x="2230" y="1460.85" as="geometry" />
         </mxCell>
         <mxCell id="B5t3BmvRQQ7wJzP6GV-l-22" parent="B5t3BmvRQQ7wJzP6GV-l-21" style="align=left;strokeColor=#d6b656;fillColor=#fff2cc;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="&lt;b&gt;&lt;u&gt;drug_id(PK)&lt;/u&gt;&lt;/b&gt;&lt;div&gt;name&lt;/div&gt;&lt;div&gt;substances&lt;/div&gt;&lt;div&gt;administration&lt;/div&gt;&lt;div&gt;auth_country&lt;/div&gt;&lt;div&gt;market_auth_holder&lt;/div&gt;&lt;div&gt;ph_location&lt;/div&gt;&lt;div&gt;enquires_email&lt;/div&gt;&lt;div&gt;enquires_tel&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="134.43" width="160" y="50" as="geometry" />
@@ -247,7 +247,7 @@
         <mxCell id="B5t3BmvRQQ7wJzP6GV-l-114" parent="1" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;fillColor=#f8cecc;strokeColor=#b85450;" value="ΑΦΟΡΑ" vertex="1">
           <mxGeometry height="60" width="120" x="853.5" y="1422.07" as="geometry" />
         </mxCell>
-        <mxCell id="B5t3BmvRQQ7wJzP6GV-l-121" edge="1" parent="1" source="B5t3BmvRQQ7wJzP6GV-l-19" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;endFill=1;startArrow=classic;startFill=1;edgeStyle=orthogonalEdgeStyle;" target="B5t3BmvRQQ7wJzP6GV-l-21" value="">
+        <mxCell id="B5t3BmvRQQ7wJzP6GV-l-121" edge="1" parent="1" source="ak6XrQ55uK8_i55DLiUd-1" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;endFill=1;startArrow=none;startFill=0;edgeStyle=orthogonalEdgeStyle;" target="B5t3BmvRQQ7wJzP6GV-l-21" value="">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="1972" y="1510" as="sourcePoint" />
             <mxPoint x="2132" y="1510" as="targetPoint" />
@@ -635,6 +635,15 @@
         </mxCell>
         <mxCell id="iiBPE5tRVLAcawNrnsho-23" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;" value="Role" vertex="1">
           <mxGeometry height="40" width="100" x="2021" y="1189.57" as="geometry" />
+        </mxCell>
+        <mxCell id="ak6XrQ55uK8_i55DLiUd-2" edge="1" parent="1" source="B5t3BmvRQQ7wJzP6GV-l-19" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;endFill=0;startArrow=none;startFill=0;edgeStyle=orthogonalEdgeStyle;" target="ak6XrQ55uK8_i55DLiUd-1" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1962" y="1510" as="sourcePoint" />
+            <mxPoint x="2230" y="1507" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ak6XrQ55uK8_i55DLiUd-1" parent="1" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;fillColor=#f8cecc;strokeColor=#b85450;" value="ΠΕΡΙΕΧΕΙ" vertex="1">
+          <mxGeometry height="60" width="120" x="2030" y="1482.07" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

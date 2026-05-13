@@ -10,10 +10,10 @@
             "server": "localhost",
             "port": 3306,
             "driver": "MariaDB",
-            "database": "test_1",
-            "username": "usr",
+            "name": "test1_laptop",
             "password": "1234",
-            "name": "test_1"
+            "username": "usr",
+            "database": "test1"
         },
         {
             "mysqlOptions": {
@@ -25,10 +25,10 @@
             "server": "localhost",
             "port": 3306,
             "driver": "MariaDB",
-            "name": "test1_laptop",
-            "password": "1234",
+            "database": "test_1",
             "username": "usr",
-            "database": "test1"
+            "password": "1234",
+            "name": "test_1"
         }
     ]
 }

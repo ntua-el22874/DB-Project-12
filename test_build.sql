@@ -1,4 +1,4 @@
-USE test1;
+USE test_1;
 
 -- ONLY FOR PROTOTYPING
 SET FOREIGN_KEY_CHECKS = 0;
@@ -260,6 +260,7 @@ CREATE TABLE PatientAllergy
 (
     patient_id   BIGINT NOT NULL,
     substance_id INT NOT NULL,
+    reaction TEXT,
 
     PRIMARY KEY (patient_id, substance_id),
 
