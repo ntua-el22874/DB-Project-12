@@ -158,3 +158,19 @@ FIELDS TERMINATED BY ','
 LINES TERMINATED BY '\n'
 IGNORE 1 ROWS
 (room_id, type);
+
+LOAD DATA LOCAL INFILE './ListForDB_csv/Examinations_Clean.csv'
+INTO TABLE Examination
+FIELDS TERMINATED BY ','
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS
+(code, type, exam_date, result, cost, hosp_id, doctor_id);
+
+LOAD DATA LOCAL INFILE './ListForDB_csv/Medical_Procedures_Clean.csv'
+INTO TABLE MedicalProcedureOp
+FIELDS TERMINATED BY ','
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS
+(proc_code, category, duration, start_datetime, cost, room_id, hosp_id);
