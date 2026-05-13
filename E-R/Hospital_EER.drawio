@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Hospital_EER" id="0">
-    <mxGraphModel dx="1519" dy="2442" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2336" pageHeight="1654" background="#ffffff" math="0" shadow="0">
+    <mxGraphModel dx="2712" dy="3308" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2336" pageHeight="1654" background="#ffffff" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -532,10 +532,10 @@
         <mxCell id="8yaWdxjNxA50f_M88j0Z-58" edge="1" parent="1" source="B5t3BmvRQQ7wJzP6GV-l-163" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.862;entryY=0.975;entryDx=0;entryDy=0;entryPerimeter=0;" target="VKujEfLfV1JH3WWzGjoR-20">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="8yaWdxjNxA50f_M88j0Z-60" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="ΙΑΤΡΙΚΗ ΠΡΑΞΗ&lt;div&gt;(Medical Procedure)&lt;/div&gt;" vertex="1">
+        <mxCell id="8yaWdxjNxA50f_M88j0Z-60" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="ΙΑΤΡΙΚΗ ΠΡΑΞΗ&lt;div&gt;(Medical Procedure)&lt;/div&gt;" vertex="1">
           <mxGeometry height="120" width="160" x="1670" y="681.5" as="geometry" />
         </mxCell>
-        <mxCell id="8yaWdxjNxA50f_M88j0Z-61" parent="8yaWdxjNxA50f_M88j0Z-60" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="&lt;u&gt;&lt;b&gt;code(PK)&lt;/b&gt;&lt;/u&gt;&lt;div&gt;greek_name&lt;/div&gt;" vertex="1">
+        <mxCell id="8yaWdxjNxA50f_M88j0Z-61" parent="8yaWdxjNxA50f_M88j0Z-60" style="align=left;strokeColor=#d79b00;fillColor=#ffe6cc;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="&lt;u&gt;&lt;b&gt;code(PK)&lt;/b&gt;&lt;/u&gt;&lt;div&gt;greek_name&lt;/div&gt;" vertex="1">
           <mxGeometry height="70" width="160" y="50" as="geometry" />
         </mxCell>
         <mxCell id="8yaWdxjNxA50f_M88j0Z-62" edge="1" parent="1" source="8yaWdxjNxA50f_M88j0Z-70" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;" target="8yaWdxjNxA50f_M88j0Z-61">
@@ -596,10 +596,10 @@
             <mxPoint x="256" y="10" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="iiBPE5tRVLAcawNrnsho-2" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="Room" vertex="1">
+        <mxCell id="iiBPE5tRVLAcawNrnsho-2" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Room" vertex="1">
           <mxGeometry height="120" width="160" x="1939.5" y="820" as="geometry" />
         </mxCell>
-        <mxCell id="iiBPE5tRVLAcawNrnsho-3" parent="iiBPE5tRVLAcawNrnsho-2" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="&lt;b style=&quot;&quot;&gt;&lt;u&gt;room_id(PK)&lt;/u&gt;&lt;/b&gt;&lt;div&gt;room_type{surgery, intervention_room}&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="iiBPE5tRVLAcawNrnsho-3" parent="iiBPE5tRVLAcawNrnsho-2" style="align=left;strokeColor=#d79b00;fillColor=#ffe6cc;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="&lt;b style=&quot;&quot;&gt;&lt;u&gt;room_id(PK)&lt;/u&gt;&lt;/b&gt;&lt;div&gt;room_type{surgery, intervention_room}&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="70" width="160" y="50" as="geometry" />
         </mxCell>
         <mxCell id="iiBPE5tRVLAcawNrnsho-11" parent="1" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;fillColor=#fff2cc;gradientColor=#ffd966;strokeColor=#d6b656;" value="ΧΡΗΣΙΜΟΠΟΙΕΙ" vertex="1">
