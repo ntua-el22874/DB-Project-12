@@ -6,7 +6,8 @@ DROP TABLE IF EXISTS HospitalizationRating;
 DROP TABLE IF EXISTS ShiftAssignment;
 DROP TABLE IF EXISTS Shift;
 DROP TABLE IF EXISTS ProcedureParticipation;
-DROP TABLE IF EXISTS MedicalProcedure;
+DROP TABLE IF EXISTS MedicalProcedureOp;
+DROP TABLE IF EXISTS MedicalAct;
 DROP TABLE IF EXISTS PatientAllergy;
 DROP TABLE IF EXISTS Prescription;
 DROP TABLE IF EXISTS DrugSubstance;
@@ -386,6 +387,12 @@ CREATE TABLE Prescription (
         ON DELETE CASCADE ON UPDATE CASCADE
 );
 
+CREATE TABLE MedicalAct(
+    code VARCHAR(16) NOT NULL,
+    name TEXT NOT NULL,
+
+    PRIMARY KEY (code)
+);
 
 CREATE TABLE Examination (
     exam_id INT NOT NULL,
@@ -408,7 +415,7 @@ CREATE TABLE Examination (
 );
 
 
-CREATE TABLE MedicalProcedure (
+CREATE TABLE MedicalProcedureOp (
     proc_id INT NOT NULL,
     name VARCHAR(100) NOT NULL,
     category VARCHAR(30) NOT NULL,
@@ -439,7 +446,7 @@ CREATE TABLE ProcedureParticipation (
     CHECK (role IN ('MAIN_SURGEON', 'ASSISTANT')),
 
     CONSTRAINT fk_part_proc
-        FOREIGN KEY (proc_id) REFERENCES MedicalProcedure(proc_id)
+        FOREIGN KEY (proc_id) REFERENCES MedicalProcedureOp(proc_id)
         ON DELETE CASCADE
         ON UPDATE CASCADE,
 
