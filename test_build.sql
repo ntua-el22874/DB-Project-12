@@ -362,6 +362,31 @@ CREATE TABLE HospitalizationRating (
         ON UPDATE CASCADE
 );
 
+CREATE TABLE Prescription (
+    doctor_id BIGINT NOT NULL,
+    hosp_id INT NOT NULL,
+    drug_id INT NOT NULL,
+    start_date DATE NOT NULL,
+    end_date DATE,
+    dosage VARCHAR(100) NOT NULL,
+    frequency VARCHAR(100) NOT NULL,
+
+    PRIMARY KEY (doctor_id, hosp_id, drug_id, start_date),
+
+    CONSTRAINT fk_presc_doctor
+        FOREIGN KEY (doctor_id) REFERENCES Doctor(amka)
+        ON DELETE CASCADE ON UPDATE CASCADE,
+
+    CONSTRAINT fk_presc_hospitalization
+        FOREIGN KEY (hosp_id) REFERENCES Hospitalization(hosp_id)
+        ON DELETE CASCADE ON UPDATE CASCADE,
+
+    CONSTRAINT fk_presc_drug
+        FOREIGN KEY (drug_id) REFERENCES Drug(drug_id)
+        ON DELETE CASCADE ON UPDATE CASCADE
+);
+
+
 CREATE TABLE Examination (
     exam_id INT NOT NULL,
     type VARCHAR(100) NOT NULL,
@@ -379,30 +404,6 @@ CREATE TABLE Examination (
 
     CONSTRAINT fk_exam_doctor
         FOREIGN KEY (doctor_id) REFERENCES Doctor(amka)
-        ON DELETE CASCADE ON UPDATE CASCADE
-);
-
-CREATE TABLE Prescription (
-    doctor_id BIGINT NOT NULL,
-    patient_id BIGINT NOT NULL,
-    drug_id INT NOT NULL,
-    start_date DATE NOT NULL,
-    end_date DATE,
-    dosage VARCHAR(100) NOT NULL,
-    frequency VARCHAR(100) NOT NULL,
-
-    PRIMARY KEY (doctor_id, patient_id, drug_id, start_date),
-
-    CONSTRAINT fk_presc_doctor
-        FOREIGN KEY (doctor_id) REFERENCES Doctor(amka)
-        ON DELETE CASCADE ON UPDATE CASCADE,
-
-    CONSTRAINT fk_presc_patient
-        FOREIGN KEY (patient_id) REFERENCES Patient(amka)
-        ON DELETE CASCADE ON UPDATE CASCADE,
-
-    CONSTRAINT fk_presc_drug
-        FOREIGN KEY (drug_id) REFERENCES Drug(drug_id)
         ON DELETE CASCADE ON UPDATE CASCADE
 );
 

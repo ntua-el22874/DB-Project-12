@@ -1,301 +1,753 @@
-Prescription_ID,Doctor_AMKA,Patient_AMKA,Product_Name,Active_Substances,Start_Date,End_Date,Dosage,Frequency
-1,74997800957,88777792801,Dicynone,Etamsylate,2025-10-21,2025-11-12,500mg,After lunch
-2,30639295654,99064254588,Osqay,Denosumab,2025-01-04,2025-01-28,2 pills,After lunch
-3,96575194408,46499927205,Metoprolol-Egis,Metoprolol Tartrate,2026-01-13,2026-01-17,2 pills,After lunch
-4,82857924186,29869861533,Cytarabin Hikma,Cytarabine,2026-03-22,2026-04-05,1 spoon,Twice a day
-5,94613426776,88968226918,Aprokam,Cefuroxime,2025-01-13,2025-02-02,500mg,Once a day
-6,37233268274,69237465396,Cefazolin Mip,Cefazolin Sodium,2025-04-04,2025-05-03,500mg,Every 8 hours
-7,52288372388,29572535212,Dequalinium Chloride Ratiopharm,Dequalinium Chloride,2025-02-20,2025-03-04,1 vial,Every 8 hours
-8,13706183648,32602560891,Zitromax,Azithromycin Dihydrate,2025-12-11,2025-12-14,1 vial,After lunch
-9,67697807470,13444119814,Lidinafree,Ketotifen,2025-09-24,2025-10-14,1 pill,Every 12 hours
-10,20140926142,40009025265,Tetravac,"Diphtheria Toxoid, Tetanus Toxoid, Pertussis Toxoid, Pertussis Filamentous Haemagglutinin, Poliovirus (Inactivated) Type 3 (Saukett Strain), Poliovirus (Inactivated) Type 2 (Mef-1 Strain), Poliovirus (Inactivated) Type 1 (Mahoney Strain), Algeldrate",2026-03-27,2026-04-14,500mg,Once a day
-11,62066779638,44060356137,Olfen Neo,Diclofenac Diethylamine,2025-03-30,2025-04-21,2 pills,Once a day
-12,60170274590,32602560891,Xylometazoline Hydrochloride Sameko,Xylometazoline Hydrochloride,2025-12-16,2025-12-26,1 vial,After lunch
-13,62743168874,90124206333,Starazolin,Tetryzoline Hydrochloride,2025-02-19,2025-03-15,1 pill,Every 8 hours
-14,60334753081,64401533943,Viburcol Compositum,"Pulsatilla Pratensis D4, Atropa Bella-Donna D4, Calcium Carbonicum Hahnemanni D8, Matricaria Recutita D4, Plantago Major D4",2025-10-04,2025-10-09,2 pills,After lunch
-15,96575194408,18352921227,Amiodarone Hydrochloride Ennogen Ip,Amiodarone Hydrochloride,2026-01-24,2026-02-08,1000mg,After lunch
-16,33575450249,71563728074,Gopten,Trandolapril,2025-06-06,2025-06-10,2 pills,After lunch
-17,56650467990,46762883228,Olmetec,Olmesartan Medoxomil,2026-03-02,2026-03-05,500mg,Every 12 hours
-18,84320135602,90877920694,Arctuvan,Dry Bearberry Leaf Extract (Der 2.5 - 4.5:1),2026-01-08,2026-01-24,1 pill,Every 12 hours
-19,19276620746,37997771362,Vlofinox,Levofloxacin,2025-09-23,2025-10-10,2 pills,Every 12 hours
-20,30639295654,20821766978,Nintedanib Teva,Nintedanib,2025-09-14,2025-09-21,1 spoon,Once a day
-21,27946441835,37712184811,Egoropal,Paliperidone Palmitate,2025-11-13,2025-12-03,1000mg,Every 8 hours
-22,48486875122,15914109671,Asentra,Sertraline,2025-06-25,2025-07-22,1 vial,Twice a day
-23,47960718664,33857231431,Cefotaxim Hameln,Cefotaxime Sodium,2025-12-29,2026-01-07,1 spoon,Every 12 hours
-24,85282038277,90877920694,Sunitinib Stada,Sunitinib,2025-08-16,2025-08-26,1000mg,After lunch
-25,48486875122,16963648622,Mag2,Magnesium Pidolate,2025-05-20,2025-05-31,1 pill,Twice a day
-26,95448079151,18352921227,"Tadalafil ""teva""",Tadalafil,2025-01-08,2025-01-27,1000mg,Once a day
-27,95448079151,75406843147,Loperamide Grindeks,Loperamide Hydrochloride,2025-03-31,2025-04-17,1000mg,Every 8 hours
-28,27946441835,89153247356,Amzelix,"Memantine Hydrochloride, Donepezil Hydrochloride",2025-09-07,2025-09-25,1 pill,Twice a day
-29,38538288127,16716715515,Bortezomib Glenmark,Bortezomib,2025-11-15,2025-11-22,500mg,Every 8 hours
-30,60170274590,67243789496,Cremarol,Glycerol,2025-01-28,2025-02-16,1 vial,Twice a day
-31,82857924186,69237465396,Deferasirox Glenmark,Deferasirox,2025-11-22,2025-12-07,500mg,Every 12 hours
-32,31551628292,60675545554,Sunitinib Teva Uk,Sunitinib,2025-05-13,2025-05-28,1 vial,Twice a day
-33,92698522280,38935118118,Mibrex,Rivaroxaban,2025-10-26,2025-11-16,1 pill,After lunch
-34,38538288127,90973275997,Fumarato De Dimetilo Vivanta,Dimethyl Fumarate,2025-03-09,2025-04-07,1000mg,After lunch
-35,20287442157,51746273679,Loperamide Arrow Conseil,Loperamide Hydrochloride,2025-02-01,2025-02-07,1 spoon,Once a day
-36,37233268274,77560259223,Vaxelis Suspension For Injection,"Aluminium Phosphate, Haemophilus Influenzae Type B Polyribosylribitol Phosphate Conjugated To Meningococcal Protein Adsorbed On Amorphous Aluminium Hydroxyphosphate Sulfate, Diphtheria Toxoid Adsorbed On Aluminium Phosphate, Tetanus Toxoid Adsorbed On Aluminium Phosphate, Bordetella Pertussis Toxoid Adsorbed On Aluminium Phosphate, Bordetella Pertussis Filamentous Haemagglutinin Adsorbed On Aluminium Phosphate, Bordetella Pertussis Pertactin Adsorbed On Aluminium Phosphate, Bordetella Pertussis Fimbriae Type 2 And 3 Adsorbed On Aluminium Phosphate, Hepatitis B Surface Antigen (Rdna) Adsorbed On Amorphous Aluminium Hydroxyphosphate Sulphate [produced In S. Cerevisiae By Rdna], Poliovirus (Inactivated) Type 1 (Mahoney Strain) Produced On Vero Cells, Poliovirus (Inactivated) Type 2 (Mef-1 Strain) Produced On Vero Cells, Poliovirus (Inactivated) Type 3 (Saukett Strain) Produced On Vero Cells, Amorphous Aluminium Hydroxyphosphate Sulphate",2026-02-08,2026-03-08,1 vial,Every 12 hours
-37,62743168874,23206152564,Omniscan,Gadodiamide,2025-01-12,2025-02-07,1 pill,Twice a day
-38,94613426776,16963648622,Linezolid Krka,Linezolid,2025-07-05,2025-07-29,1 spoon,Twice a day
-39,53727815147,94804778024,Indoramin Chemidex Pharma,Indoramin,2025-01-19,2025-01-30,2 pills,After lunch
-40,50922589695,91048487331,Fluarix Tetra,"B/Phuket/3073/2013-Like Virus (B/Phuket/3073/2013, Wild Type), Influenza Virus B/Austria/1359417/2021-Like Strain (B/Austria/1359417/2021, Bvr-26), Influenza A/Victoria/4897/2022 Ivr-238 (H1n1), Inactivated, Influenza Virus A/Thailand/8/2022 (H3n2) Ivr-237-Like Strain (A/Thailand/8/2022)",2025-02-13,2025-02-23,1000mg,Once a day
-41,52288372388,83278214895,Methadon Hcl Expharma,Methadone Hydrochloride,2025-06-24,2025-06-27,1 pill,Every 8 hours
-42,85282038277,18352921227,Desarena,"Adapalene, Benzoyl Peroxide",2025-07-06,2025-07-12,500mg,Every 8 hours
-43,62743168874,54288371049,Flamexin,Piroxicam Betadex,2025-04-16,2025-05-09,1 spoon,Every 12 hours
-44,41069533517,86564797930,Zonisamida Stada,Zonisamide,2025-07-01,2025-07-17,1 pill,Every 12 hours
-45,60334753081,11744318225,Meloxicam Niche Generics,Meloxicam,2025-11-20,2025-12-04,500mg,Once a day
-46,22585413484,90973275997,Allertec Effect,Bilastine,2025-06-26,2025-07-01,1 vial,Twice a day
-47,81344410739,52610866930,Periolimel N4e,"Valine, Alanine, Arginine, Histidine, Isoleucine, Leucine, Methionine, Phenylalanine, Proline, Serine, Threonine, Tyrosine, Aspartic Acid, Glutamic Acid, Glycine, Olive Oil, Refined, Soya-Bean Oil Refined, Tryptophan, Magnesium Chloride Hexahydrate, Potassium Chloride, Calcium Chloride Dihydrate, Glucose Monohydrate, Sodium Acetate Trihydrate, Lysine Acetate, Sodium Glycerophosphate Hydrate",2026-01-02,2026-01-20,500mg,Once a day
-48,84320135602,39430819071,Ertapenem Qilu,Ertapenem,2025-03-29,2025-04-04,500mg,Twice a day
-49,90656248238,82069926186,Exemestan Sandoz,Exemestane,2025-02-02,2025-02-07,500mg,Twice a day
-50,27946441835,54288371049,Bioclavid,"Amoxicillin, Clavulanic Acid",2025-02-18,2025-02-23,1 vial,Twice a day
-51,55878996856,19822423053,Venlafaxina Retard Teva,Venlafaxine Hydrochloride,2025-06-09,2025-06-27,1 pill,Once a day
-52,73253025603,31753001276,Pigmentum Castellani,"Boric Acid, Phenol, Resorcinol",2025-08-22,2025-09-10,1 vial,Once a day
-53,35134846364,74229039891,Rytmonorm,Propafenone Hydrochloride,2025-06-20,2025-07-15,1 spoon,Twice a day
-54,47960718664,11774503770,Ringerova Otopina B. Braun,"Potassium Chloride, Sodium Chloride, Calcium Chloride Dihydrate",2026-02-14,2026-02-25,2 pills,After lunch
-55,62496380045,96763184814,Serlan,Sertraline,2026-03-23,2026-04-20,2 pills,Every 12 hours
-56,94374664371,70521038594,Etraga,Azacitidine,2025-01-31,2025-02-17,1 vial,Every 8 hours
-57,18716063973,16963648622,Paroxetina Aurovitas,Paroxetine,2025-08-06,2025-08-13,1 spoon,Every 8 hours
-58,53434182353,15914109671,Zotinar Capilar,Desonide,2025-03-10,2025-03-21,1 pill,After lunch
-59,39243562439,24297420672,Vancocina A.P.,Vancomycin Hydrochloride,2026-01-24,2026-02-06,1 pill,Once a day
-60,31551628292,18074378002,Tidimaz,"Dorzolamide Hydrochloride, Timolol Maleate",2025-01-30,2025-02-16,1 pill,Once a day
-61,44869451267,36584847761,Sertralin Ratiopharm,Sertraline,2025-12-27,2026-01-03,1 pill,Once a day
-62,57199282441,67407829976,Pomalidomide Reig Jofre,Pomalidomide,2025-04-27,2025-05-26,1 spoon,Every 12 hours
-63,65063112418,60892712796,Primovist,"Gadoxetic Acid, Disodium",2025-02-14,2025-02-22,1 spoon,Once a day
-64,94374664371,64696919163,Lecrolyn,Sodium Cromoglicate,2026-02-16,2026-02-26,1000mg,Once a day
-65,75339133780,91542731389,Letrozol Sandoz,Letrozole,2025-09-28,2025-10-18,2 pills,Every 12 hours
-66,38538288127,91048487331,Losec Mups,Omeprazole Magnesium,2025-05-31,2025-06-12,500mg,Once a day
-67,27946441835,77560259223,Zylena,Olanzapine,2025-10-01,2025-10-28,500mg,Once a day
-68,19276620746,80997555070,Myoview,Tetrofosmin,2025-06-11,2025-06-26,2 pills,Twice a day
-69,74895326292,58145615428,Mofecet,Bupivacaine Hydrochloride Monohydrate,2026-01-17,2026-02-01,500mg,Every 12 hours
-70,53434182353,90124206333,Ketorol,Ketorolac Trometamol,2025-05-30,2025-06-18,1 spoon,Every 12 hours
-71,95448079151,78871328875,Potassium Chloride & Sodium Chloride Baxter Holding,"Potassium Chloride, Sodium Chloride",2026-01-28,2026-02-26,1 spoon,After lunch
-72,98901183989,33044110184,Temgesic,Buprenorphine Hydrochloride,2026-03-25,2026-04-04,1 spoon,Every 12 hours
-73,53434182353,79902457715,Magnesiiumsulfaat Teva,Magnesium Sulfate,2025-04-28,2025-05-04,1 vial,After lunch
-74,77117947422,81706746451,Salvysat,"Sage Leaves Dry Extract (4-7:1), Extraction Solvent Water",2025-02-16,2025-02-27,2 pills,Every 8 hours
-75,40889689402,64696919163,Erythromycin Ethylsuccinate Amdipharm Uk,Erythromycin Ethylsuccinate,2025-12-02,2025-12-14,1 spoon,Once a day
-76,90134508778,94455644293,Riluzol Pmcs,Riluzole,2026-01-20,2026-02-09,1 spoon,Every 8 hours
-77,33860842912,77458145750,Clopidogrel Farmalid,Clopidogrel,2025-01-15,2025-02-06,1 spoon,Every 8 hours
-78,83923788555,82069926186,Omalin,Iron(Iii) Ion,2025-08-11,2025-08-14,2 pills,Every 8 hours
-79,56784597458,66756898100,Buronil,Melperone Hydrochloride,2025-12-15,2026-01-02,1 spoon,Twice a day
-80,92698522280,46812026582,Pertussin,"Thyme Herb Dry Extract (6-10:1), Extracting Agent: Ethanol 70% (V/V)",2025-04-14,2025-04-26,1000mg,Twice a day
-81,65063112418,81706746451,Morrisons One-A-Day Hayfever & Allergy Relief,Loratadine,2025-08-31,2025-09-16,500mg,Every 8 hours
-82,74997800957,46499927205,Fulvestrant Hikma,Fulvestrant,2025-01-25,2025-02-22,500mg,After lunch
-83,18716063973,79902457715,Panadol Max Strength Cold And Flu Hot Berry Plus Vitamin C,"Ascorbic Acid, Paracetamol",2025-11-22,2025-12-04,1 vial,Every 12 hours
-84,40889689402,90973275997,Montelukast Teva-Ratiopharm,Montelukast Sodium,2025-08-08,2025-08-25,2 pills,After lunch
-85,19276620746,94763453856,Heviran Comfort,Aciclovir,2025-06-17,2025-07-04,500mg,After lunch
-86,53262763012,97562086883,Tetraciclina Atb,Tetracycline Hydrochloride,2025-04-28,2025-05-16,1 pill,Twice a day
-87,99795619901,67407829976,Mobilisin,"Flufenamic Acid, Hydroxyethyl Salicylate, Chondroitin Polysulfate",2025-11-09,2025-11-21,1 pill,Once a day
-88,91367023329,60710128556,Taxat,Atorvastatin,2025-05-28,2025-06-01,1 pill,After lunch
-89,48486875122,56140410465,Xylonor Spray,"Cetrimide, Lidocaine",2025-10-24,2025-10-31,1 vial,Twice a day
-90,21389790404,82069926186,Metfogamma,Metformin Hydrochloride,2025-05-15,2025-05-31,1000mg,Twice a day
-91,85282038277,14642682175,Navirel,Vinorelbine,2025-04-24,2025-05-01,500mg,Once a day
-92,51927673524,55469341762,Dioralyte Blackcurrant,"Potassium Chloride, Sodium Chloride, Glucose, Disodium Hydrogen Citrate",2025-05-20,2025-06-13,2 pills,Every 12 hours
-93,39243562439,66756898100,Aceclofenaco Normon,Aceclofenac,2026-03-23,2026-04-07,1 vial,Twice a day
-94,62066779638,46056241622,Ondansetrón Serraclinics,Ondansetron,2026-03-26,2026-04-07,1 vial,Every 8 hours
-95,62743168874,11744318225,Moxifloxacin Orion,Moxifloxacin,2026-02-26,2026-03-05,1000mg,Once a day
-96,51734845697,11744318225,Cardiostad,Lisinopril,2025-01-17,2025-02-08,1 vial,Once a day
-97,38538288127,47007408557,Kytril,Granisetron,2025-05-28,2025-06-14,2 pills,Once a day
-98,57199282441,23726466207,Vancomycin Hameln Pharma,Vancomycin Hydrochloride,2025-09-02,2025-09-22,2 pills,After lunch
-99,53262763012,46812026582,Apixaban Teva,Apixaban,2026-01-24,2026-02-01,500mg,Every 12 hours
-100,36702445480,44060356137,Venomenhal,Wasp Venom (Vespula Spp),2025-11-30,2025-12-16,500mg,Every 8 hours
-101,52288372388,54288371049,Celecoxib Krka,Celecoxib,2025-11-15,2025-11-24,1 vial,Once a day
-102,22585413484,82222304170,Efluelda,"Influenza Virus B/Michigan/01/2021, Influenza A/Victoria/4897/2022 Ivr-238 (H1n1), Inactivated, Influenza A Virus, A/Croatia/10136rv/2023 (H3n2) Like Strain X-425a, Inactivated",2025-11-29,2025-12-07,1 vial,Twice a day
-103,80036372124,23752690099,Losartan/Hydrochlorothiazide Stada,"Losartan Potassium, Hydrochlorothiazide",2025-05-03,2025-05-15,2 pills,Once a day
-104,74997800957,47734553672,Блокмакс Рапид,Ibuprofen Lysine,2025-10-14,2025-10-22,1000mg,Twice a day
-105,19276620746,29450522876,Slinda,Drospirenone | Lactose.,2025-10-27,2025-11-02,1000mg,Every 12 hours
-106,22585413484,57714356848,Testarzon,Testosterone,2025-08-21,2025-09-03,1 vial,Once a day
-107,92698522280,93964239543,Amlodipina Bluepharma,Amlodipine,2025-11-29,2025-12-17,1 vial,Every 8 hours
-108,53727815147,60513785856,Floxapen,Flucloxacillin,2025-08-15,2025-09-04,500mg,After lunch
-109,56784597458,93964239543,Paduden Cu Aromă De Caise,Ibuprofen,2025-12-24,2026-01-20,1000mg,Every 8 hours
-110,35895166626,70667592099,Letrozol Accord,Letrozole,2025-03-29,2025-04-14,1 pill,Once a day
-111,94613426776,64696919163,Bicalutamide Arrow Lab,Bicalutamide,2026-01-26,2026-02-24,1 vial,Every 8 hours
-112,20140926142,67407829976,Midazolam Sandoz,Midazolam,2025-12-21,2026-01-05,2 pills,Once a day
-113,21389790404,57714356848,Trimethoprim Milpharm,Trimethoprim,2025-09-23,2025-09-27,1 spoon,Every 8 hours
-114,35895166626,29450522876,Lisinopril Grindeks,Lisinopril,2025-05-16,2025-05-20,500mg,After lunch
-115,62496380045,60197902331,L107,"Colocynthis D 4, Belladonna D3, Ipeca D 4, China Rubra D3, Matricaria Recutita D9, Acidum Arsenicosum D6, Hydrargyrum Bichloratum D6, Strychnos Nux-Vomica D4",2025-06-13,2025-07-09,1 spoon,Once a day
-116,30639295654,54288371049,Luan,Lidocaine Hydrochloride,2025-10-18,2025-10-26,1 pill,Every 8 hours
-117,52288372388,84047176955,Amixal,"Valine, Alanine, Arginine, Histidine, Isoleucine, Leucine, Methionine, Phenylalanine, Proline, Serine, Threonine, Tyrosine, Aspartic Acid, Glutamic Acid, Glycine, Tryptophan, Lysine Acetate, Lysine Monohydrate",2026-03-07,2026-04-05,1000mg,Once a day
-118,46055220563,89153247356,Albunorm,Human Serum Albumin,2025-07-21,2025-08-18,500mg,Every 12 hours
-119,98901183989,91048487331,Amlodipine Krka,Amlodipine,2025-02-13,2025-02-18,2 pills,Once a day
-120,13706183648,66041820343,Donepezil Accord,Donepezil Hydrochloride,2025-12-28,2026-01-04,1 pill,Every 8 hours
-121,41069533517,56466512485,Unguentum,Salicylic Acid,2025-11-03,2025-11-25,1 pill,Every 8 hours
-122,56784597458,37624612283,Pantoprazol Basi,Pantoprazole,2025-08-31,2025-09-26,1 spoon,After lunch
-123,60170274590,80997555070,Cocodamol Actavis,"Paracetamol, Codeine Phosphate Hemihydrate",2025-07-06,2025-07-11,500mg,Once a day
-124,51927673524,70521038594,Blanel,"Sodium Hydrogen Carbonate, Sodium Carbonate, Citric Acid Anhydrous, Potassium Citrate Monohydrate",2025-03-22,2025-03-29,1000mg,After lunch
-125,44869451267,90877920694,Rivastigmin Beta,Rivastigmine,2025-06-28,2025-07-15,1 spoon,Once a day
-126,78832401220,47997346659,Lindynette,"Ethinylestradiol, Gestodene",2025-11-30,2025-12-29,1000mg,Twice a day
-127,31976884284,94804778024,Posiforlid,Bibrocathol,2025-08-13,2025-08-21,1 vial,Every 12 hours
-128,50922589695,69470469937,Artrotec,"Diclofenac Sodium, Misoprostol",2025-10-10,2025-10-14,1 pill,Once a day
-129,56650467990,88968226918,Zarvite,Tadalafil,2025-05-08,2025-06-06,1 vial,Every 12 hours
-130,39243562439,13578442492,Sandostatin Lar,Octreotide,2025-12-14,2026-01-08,1 pill,Every 8 hours
-131,60344799227,28604483021,Flector,Diclofenac Epolamine,2025-02-15,2025-02-25,2 pills,Every 8 hours
-132,51734845697,23206152564,Recombinate,Octocog Alfa,2025-02-19,2025-03-19,500mg,Twice a day
-133,21389790404,90124206333,Betadine,"Povidone, Iodinated",2025-08-01,2025-08-10,1000mg,Once a day
-134,62496380045,64696919163,Imatilek,Imatinib,2025-11-29,2025-12-11,1 vial,After lunch
-135,96575194408,79193941824,Fsme-Immun Junior,"Tick-Borne Encephalitis Virus (Inactivated), Neudoerfl Strain",2025-10-01,2025-10-19,1 vial,Every 8 hours
-136,30871168286,64401533943,Arseentrioxide Cf,Arsenic Trioxide,2026-03-22,2026-03-27,2 pills,Once a day
-137,84320135602,23585968077,Lysomucil,Acetylcysteine,2025-06-24,2025-07-11,1 spoon,After lunch
-138,30639295654,23585968077,Rizatriptan Milpharm,Rizatriptan Benzoate,2026-03-13,2026-04-04,1 pill,After lunch
-139,52288372388,33044110184,Vulkania Heilwasser,"Calcium Ion, Magnesium, Silicic Acid, Sodium Ion, Hydrogen Carbonate",2025-02-01,2025-02-11,1 vial,Once a day
-140,60552999461,99832744737,Strepfen Honig & Eukalyptus,Flurbiprofen,2025-12-06,2025-12-25,1 pill,Twice a day
-141,52288372388,86071834076,Carbamazepina Wynn,Carbamazepine,2025-08-20,2025-08-24,2 pills,Once a day
-142,92698522280,15679628443,Trazodone Eg,Trazodone Hydrochloride,2025-09-13,2025-09-24,1 pill,After lunch
-143,39243562439,29572535212,Augmentin Duo,"Amoxicillin, Clavulanic Acid",2025-07-10,2025-08-02,1 vial,Twice a day
-144,90656248238,13912513577,Nitrolingual,Glyceryl Trinitrate,2025-10-17,2025-11-10,1000mg,Twice a day
-145,30639295654,66041820343,Tabinera,"Emtricitabine, Tenofovir Disoproxil Fumarate",2025-10-26,2025-11-16,1 pill,Twice a day
-146,65063112418,92003088193,Darrow-Glukose,"Potassium Chloride, Sodium Chloride, Glucose Monohydrate, Sodium-L-Lactate",2025-07-09,2025-08-03,500mg,Every 8 hours
-147,33575450249,13361231045,Apixabán Zentiva,Apixaban,2025-04-19,2025-04-30,1 pill,Twice a day
-148,89981892222,21354669087,Atorvastatina Abc Farmaceutici,Atorvastatin,2025-01-11,2025-01-19,1 spoon,Once a day
-149,19276620746,82646811210,Diclofenac Ratiopharm,Diclofenac Sodium,2025-05-26,2025-06-04,1 pill,After lunch
-150,51734845697,13666164809,Baclosal,Baclofen,2025-11-08,2025-11-29,1 pill,Every 8 hours
-151,35895166626,24297420672,Staloral Pollenek Kezdo,Corylus Avellana L.,2025-07-31,2025-08-15,1 pill,Every 8 hours
-152,74895326292,13361231045,Neo-Angin,"Amylmetacresol, Levomenthol, 2,4 Dichlorobenzyl Alcohol",2025-03-06,2025-03-14,1 vial,Every 8 hours
-153,99795619901,32602560891,Montelucaste Teva,Montelukast Sodium,2025-08-10,2025-08-24,1 pill,After lunch
-154,38538288127,13912513577,Aprokam,Cefuroxime,2026-01-08,2026-02-04,2 pills,After lunch
-155,98901183989,90973275997,Pemetrexed Sandoz,Pemetrexed,2025-11-05,2025-11-14,500mg,After lunch
-156,18193427864,94455644293,Escitalopram Mylan,Escitalopram,2026-03-22,2026-04-18,1000mg,Twice a day
-157,18193427864,93904760474,Bylica Pospolita Prick Test Hal Allergy,Artemisia Vulgaris,2025-05-25,2025-06-05,1 spoon,Every 8 hours
-158,19276620746,79902457715,Huile De Paraffine,Liquid Paraffin,2025-11-10,2025-11-17,1 spoon,Every 8 hours
-159,75339133780,73050978275,Eltrombopag Teva,Eltrombopag Olamine,2025-11-03,2025-11-30,1000mg,After lunch
-160,74895326292,56140410465,Safumide Easyhaler,"Fluticasone Propionate, Salmeterol Xinafoate",2025-10-20,2025-11-04,1000mg,After lunch
-161,84320135602,18352921227,Naltrexona Amomed,Naltrexone Hydrochloride,2025-09-23,2025-10-18,2 pills,After lunch
-162,78832401220,32602560891,Sufenta Forte,Sufentanil,2025-02-06,2025-02-26,2 pills,Every 12 hours
-163,94374664371,37997771362,Atgam,"Anti-T Lymphocyte Immunoglobulin For Human Use, Horse",2025-07-17,2025-08-04,1 vial,Every 12 hours
-164,30689575097,51746273679,Angusta®,Misoprostol,2025-09-30,2025-10-12,1000mg,Every 8 hours
-165,22561283452,60710128556,Hanonephrin Zur Anwendung Beim Menschen,"Juniperus Communis Ø, Equisetum Arvense (Hab 34) Urt., Uva Ursi Mother Tincture",2025-02-10,2025-02-23,1000mg,Every 12 hours
-166,92698522280,23585968077,Oxycodone Accord,Oxycodone Hydrochloride,2025-06-20,2025-07-20,1 spoon,Once a day
-167,40889689402,11744318225,Dexamethasone Krka,Dexamethasone,2025-12-24,2025-12-28,1000mg,Every 12 hours
-168,51734845697,34375838574,Dormonoct,Loprazolam,2025-03-11,2025-04-04,1000mg,After lunch
-169,92698522280,41960363426,Beclojet,Beclometasone Dipropionate Anhydrous,2025-09-15,2025-09-30,1 spoon,Every 8 hours
-170,56784597458,16716715515,Fucicort Lipid,"Fusidic Acid, Betamethasone",2025-11-18,2025-12-14,500mg,Every 8 hours
-171,44869451267,95162779500,Letrozole Eugia,Letrozole,2026-01-30,2026-03-01,2 pills,Every 8 hours
-172,19276620746,23726466207,Colitofalk,Mesalazine,2026-03-11,2026-04-05,2 pills,Once a day
-173,44869451267,37997771362,Amoxicilline/Clavulaanzuur Sandoz,"Amoxicillin, Clavulanic Acid",2025-02-10,2025-03-08,1 pill,Twice a day
-174,62743168874,67243789496,Duphalac,Lactulose,2026-02-22,2026-03-22,500mg,Every 12 hours
-175,51927673524,56186517766,Atorvastatina Teva,Atorvastatin,2025-02-03,2025-03-05,1 vial,Once a day
-176,22561283452,56466512485,Benlysta,Belimumab,2025-03-09,2025-03-14,2 pills,Every 12 hours
-177,74895326292,99064254588,Sildenafil Accord,Sildenafil,2025-07-23,2025-08-03,500mg,After lunch
-178,53434182353,80207593880,Lakcid Forte,Lactobacillus Rhamnosus,2025-05-03,2025-05-10,1 pill,After lunch
-179,73253025603,76273240493,Haemate P,"Human Coagulation Factor Viii, Human Von Willebrand Factor",2025-07-08,2025-07-20,1 pill,Twice a day
-180,52288372388,82152244235,Torvazin Plus,"Atorvastatin, Ezetimibe",2025-05-19,2025-06-02,1 pill,Every 12 hours
-181,99795619901,82152244235,Dorzolamid/Timolol Brown & Burk,"Dorzolamide, Timolol",2025-09-29,2025-10-08,2 pills,Every 12 hours
-182,39243562439,77560259223,5-Флуороурацил “ебеве”,Fluorouracil,2025-07-10,2025-07-14,500mg,Every 12 hours
-183,41069533517,91542731389,Morfine Kalceks,Morphine Hydrochloride Trihydrate,2025-07-29,2025-08-02,1 vial,Once a day
-184,84320135602,58145615428,Valsaros,"Valsartan, Rosuvastatin",2025-08-02,2025-08-20,500mg,Once a day
-185,60552999461,77560259223,Venofer,Iron Sucrose,2026-01-26,2026-02-10,1 spoon,Every 8 hours
-186,67697807470,29572535212,Ivermectin Medical Valley,Ivermectin,2025-08-12,2025-08-18,1 pill,Every 12 hours
-187,27946441835,73050978275,Кардолакс,Metoprolol Tartrate,2025-07-06,2025-07-11,2 pills,Twice a day
-188,13706183648,33169238506,Losartán Inicio Cinfa,Losartan Potassium,2025-07-05,2025-08-04,1 pill,After lunch
-189,60334753081,41960363426,Bepanthen Plus,"Chlorhexidine Dihydrochloride, Dexpanthenol",2025-08-14,2025-09-12,1000mg,Twice a day
-190,51734845697,70667592099,Ranitidina Eg,Ranitidine,2026-03-05,2026-03-25,1 pill,After lunch
-191,78832401220,28604483021,Ornibel,"Ethinylestradiol, Etonogestrel",2025-11-10,2025-11-14,1 spoon,Once a day
-192,94613426776,96763184814,Евофекс,Fexofenadine Hydrochloride,2025-08-13,2025-09-12,500mg,After lunch
-193,22561283452,18352921227,Atropinesulfaat Accord,Atropine Sulfate Monohydrate,2025-08-27,2025-08-30,2 pills,Twice a day
-194,20140926142,79193941824,Ibuprofen,Ibuprofen,2025-11-21,2025-12-07,1 vial,Twice a day
-195,99795619901,57869321901,Cormagnesin,Magnesium Sulfate Heptahydrate,2025-06-20,2025-07-12,2 pills,After lunch
-196,98870684482,90124206333,Amlodipin [besilat] Abz,Amlodipine,2025-08-26,2025-09-24,500mg,Every 12 hours
-197,56650467990,23752690099,Celery Seed Gnc Live Well,Celery Seed Extract,2026-01-25,2026-02-12,2 pills,Twice a day
-198,52288372388,32181508606,Abirateron Sandoz,Abiraterone Acetate,2025-11-03,2025-11-25,2 pills,Every 8 hours
-199,91367023329,66041820343,Lenzetto,Estradiol Hemihydrate,2026-03-12,2026-03-20,1000mg,Every 8 hours
-200,38538288127,38935118118,Akynzeo,"Palonosetron, Fosnetupitant",2025-04-27,2025-05-15,1 pill,Once a day
-201,45979296668,96763184814,Juzimette,"Metformin Hydrochloride, Sitagliptin",2025-03-20,2025-04-17,1 pill,Every 8 hours
-202,98870684482,45834447187,Viralipid Adult,"Retinol Palmitate, Ergocalciferol, Phytomenadione, Dl-Alpha-Tocopherol",2025-10-21,2025-11-16,1 pill,After lunch
-203,80036372124,88968226918,Mitomycine Accord,Mitomycin,2025-12-03,2025-12-30,1 spoon,After lunch
-204,52288372388,47007408557,Celiprolol Hcl Teva,Celiprolol Hydrochloride,2025-08-05,2025-08-18,1 vial,Once a day
-205,98451520706,24297420672,Sodio Cloruro S.A.L.F.,Sodium Chloride,2025-06-27,2025-07-12,1 spoon,Twice a day
-206,90134508778,64696919163,Dutasteride Crescent Pharma,Dutasteride,2025-05-15,2025-06-03,2 pills,After lunch
-207,35895166626,64696919163,Dimetilfumarato Sun,Dimethyl Fumarate,2025-12-22,2026-01-06,1 pill,Every 12 hours
-208,83923788555,75973661145,Sertraline Ranbaxy (Uk),Sertraline,2025-05-26,2025-06-24,1000mg,Twice a day
-209,62496380045,74229039891,Imaavy,Nipocalimab,2025-06-25,2025-07-17,500mg,Once a day
-210,62743168874,29869861533,Acriflex,Chlorhexidine Gluconate,2026-01-07,2026-02-02,1 pill,Once a day
-211,53727815147,94763453856,Vancomycin Bioglan,Vancomycin Hydrochloride,2025-12-28,2026-01-01,1 vial,After lunch
-212,19276620746,36024341293,Olanzapin Actavis,Olanzapine,2025-11-16,2025-12-15,500mg,Every 8 hours
-213,40850595762,41960363426,Kynmobi,Apomorphine Hydrochloride Hemihydrate,2025-05-04,2025-05-18,2 pills,Once a day
-214,15517900330,98085604477,Ceftazidime Hameln,Ceftazidime,2025-02-20,2025-03-04,2 pills,Every 8 hours
-215,53727815147,92131335755,Valsartan + Hidroclorotiazida Farmoz,"Valsartan, Hydrochlorothiazide",2025-10-29,2025-11-10,1 vial,Every 12 hours
-216,83923788555,91542731389,Thorens,Colecalciferol,2025-08-25,2025-09-24,1 pill,After lunch
-217,38538288127,81960982018,Cefixima Neclife,Cefixime,2025-08-13,2025-09-09,1 vial,Twice a day
-218,60344799227,46812026582,Levide,Levosulpiride,2025-05-27,2025-06-05,1000mg,After lunch
-219,19276620746,73757238292,Bortezomib Ever Pharma,Bortezomib,2025-01-18,2025-02-10,1000mg,Every 12 hours
-220,83923788555,37997771362,Topiramaat Accord,Topiramate,2025-08-29,2025-09-01,1 spoon,Every 12 hours
-221,53434182353,78871328875,Stadalax,Bisacodyl,2025-10-31,2025-11-18,1 pill,Every 8 hours
-222,67758463500,16963648622,Bucain,Bupivacaine Hydrochloride,2025-10-28,2025-11-17,1 spoon,Once a day
-223,97287210691,36472981413,Lacosamid 1 A Pharma,Lacosamide,2025-01-24,2025-02-21,500mg,After lunch
-224,31551628292,84047176955,Apixaban Stada,Apixaban,2025-01-21,2025-02-12,1 vial,After lunch
-225,22561283452,32981302546,Sertaconazole Substipharm,Sertaconazole Nitrate,2025-10-05,2025-10-18,1000mg,Every 12 hours
-226,98901183989,57869321901,Taisa,"Drospirenone, Ethinylestradiol",2026-02-08,2026-03-05,500mg,After lunch
-227,65063112418,24472724997,Fulvestrant Sandoz,Fulvestrant,2025-01-12,2025-01-18,2 pills,Every 8 hours
-228,67758463500,64696919163,Imigran,Sumatriptan,2025-02-18,2025-03-12,1 vial,After lunch
-229,22561283452,90973275997,Rabeprazolnatrium Teva,Rabeprazole Sodium,2025-12-27,2026-01-03,500mg,Twice a day
-230,33860842912,21354669087,Moxifloxacina Demo,Moxifloxacin,2025-05-25,2025-06-23,1 vial,Once a day
-231,65063112418,98081585082,Morfin Dak,Morphine Hydrochloride,2026-02-25,2026-03-06,500mg,Every 12 hours
-232,20140926142,13444119814,Claritromicina Teva,Clarithromycin,2025-12-08,2026-01-07,2 pills,Once a day
-233,83923788555,33263898781,Tramadol Hydrochloride/Paracetamol,"Tramadol Hydrochloride, Paracetamol",2026-01-27,2026-02-25,500mg,Once a day
-234,89981892222,46812026582,Tuma,"Ivy Leaf Dry Extract (Ethanol 40% V/V), Der Native 6-7:1",2025-05-22,2025-05-25,1 pill,Twice a day
-235,20140926142,46812026582,Imuran Mitis,Azathioprine,2025-09-15,2025-10-10,1 spoon,Every 8 hours
-236,20287442157,36472981413,Tevimbra,Tislelizumab,2025-02-14,2025-03-14,1 spoon,After lunch
-237,56650467990,39430819071,Edoxaban Crescent Pharma,Edoxaban,2025-07-05,2025-07-29,500mg,After lunch
-238,60552999461,73757238292,Ylpio,"Indapamide, Telmisartan",2025-11-14,2025-12-09,1 pill,After lunch
-239,40889689402,29450522876,Rhodiologes,"Dry Extract From Rhodiola Rosea Root With Rhizome (1.5-5: 1), Extraction Solvent: Ethanol 70% (V/V)",2025-09-10,2025-09-20,1000mg,Once a day
-240,67697807470,96763184814,Gingiva Suis-Injeel,"Gingiva Suis D10, Gingiva Suis D200, Gingiva Suis D30",2026-03-05,2026-03-13,1 spoon,Twice a day
-241,97287210691,61249169584,Липантил Супра,Fenofibrate,2025-06-12,2025-07-11,1 spoon,Once a day
-242,40889689402,40107859093,Actira,Moxifloxacin,2026-01-08,2026-02-04,1000mg,Once a day
-243,53434182353,14642682175,Erythrocine,Erythromycin,2025-05-23,2025-06-11,2 pills,Every 12 hours
-244,56784597458,99064254588,Yasminelle,"Drospirenone, Ethinylestradiol",2026-02-05,2026-02-11,1 vial,After lunch
-245,53727815147,74229039891,Terbinafina Ciclum,Terbinafine,2025-04-20,2025-05-13,1 spoon,Every 12 hours
-246,57199282441,91542731389,Bufomix Easyhaler,"Budesonide, Formoterol Fumarate Dihydrate",2025-10-09,2025-11-02,1 vial,After lunch
-247,78832401220,39430819071,Midazolam Hameln,Midazolam Hydrochloride,2025-10-27,2025-11-16,2 pills,Once a day
-248,97287210691,12633175052,Ivadal,Zolpidem Hemitartrate,2025-05-12,2025-06-08,1000mg,Every 12 hours
-249,21389790404,71563728074,Hund Prick Test Rx Roxall Medizin,Dog Epithelium Extract,2025-07-11,2025-08-05,1 pill,Twice a day
-250,52288372388,94774676260,Tramadolor Long,Tramadol Hydrochloride,2025-09-19,2025-10-07,1 spoon,Twice a day
-251,22585413484,79838249029,Actilyse Cathflo,Alteplase,2026-02-13,2026-02-18,1000mg,Every 8 hours
-252,22561283452,32181508606,Aneurine Co. Forte,"Thiamine Hydrochloride, Nicotinamide, Riboflavin, Pyridoxine Hydrochloride",2025-04-16,2025-05-09,500mg,Once a day
-253,32379434579,54288371049,Rigevidon,"Ethinylestradiol, Levonorgestrel",2025-05-08,2025-05-15,1 pill,Twice a day
-254,62743168874,40009025265,Nephrotect,"Acetylcysteine, Glycine, L-Lysine Acetate, L-Tryptophan, Glycyl-Tyrosine, L-Arginine, L-Histidine, L-Isoleucine, L-Leucine, L-Methionine, L-Proline, L-Serine, L-Threonine, L-Tyrosine, L-Valine, L-Phenylalanine, L-Alanine",2025-10-27,2025-11-09,500mg,Once a day
-255,77117947422,24964725321,Levosimendan Ibi,Levosimendan,2025-05-18,2025-05-28,1 pill,Twice a day
-256,52288372388,71563728074,Copaxone,Glatiramer Acetate,2025-09-16,2025-10-11,1 spoon,Twice a day
-257,81344410739,79193941824,Todacitan,Cytisinicline,2025-01-15,2025-02-05,1 pill,Every 8 hours
-258,60344799227,33380044151,Calciomax  M.A,"Calcium Carbonate, Calcium Lactate Gluconate",2025-10-15,2025-11-14,2 pills,Twice a day
-259,30871168286,60197902331,Pregabalin Viatris,Pregabalin,2025-03-31,2025-04-30,1 pill,Every 8 hours
-260,62066779638,64401533943,Heparin Panpharma,Heparin Sodium,2025-09-19,2025-10-11,1 pill,Every 8 hours
-261,78832401220,80029940384,Florinef,Fludrocortisone Acetate,2025-05-02,2025-05-18,1 spoon,Every 12 hours
-262,98870684482,20821766978,Abirateron Teva,Abiraterone Acetate,2026-01-31,2026-02-12,2 pills,Twice a day
-263,67697807470,57714356848,Zanclora,"Olmesartan Medoxomil, Amlodipine",2025-06-03,2025-06-20,1 vial,Every 8 hours
-264,67758463500,94455644293,Triticum Comp. I,"Triticum Aestivum E Fructibus Germinatis Ferm 33d Dil. D19 (Hab, Vs. 33d), Truncus Cerebri Bovis Gl Dil. D7 (Hab, Vs. 41a)",2026-03-18,2026-04-13,500mg,Every 12 hours
-265,82857924186,78871328875,Vinorelbin Eugia,Vinorelbine Tartrate,2025-12-27,2025-12-30,1000mg,Twice a day
-266,98870684482,99138936275,Antigrippine Trieffect Tosse,"Phenylephrine Hydrochloride, Guaifenesin, Paracetamol",2025-08-28,2025-09-15,500mg,After lunch
-267,98451520706,29179888281,Letropen,Letrozole,2025-10-25,2025-11-15,500mg,After lunch
-268,51927673524,90973275997,Movicol Chocolate Sachet,"Sodium Hydrogen Carbonate, Potassium Chloride, Sodium Chloride, Macrogol 3350",2026-03-25,2026-04-21,500mg,Every 8 hours
-269,18193427864,73342830116,Arnica-Creme-Heel S,Arnica Montana Mother Tincture,2026-03-23,2026-03-27,1 spoon,Every 8 hours
-270,62496380045,83278214895,Tramylpa,"Tramadol Hydrochloride, Paracetamol",2025-07-31,2025-08-24,500mg,Twice a day
-271,60552999461,52610866930,Zinnat,Cefuroxime,2026-03-23,2026-03-30,500mg,Every 12 hours
-272,27946441835,90877920694,Óxido Nitroso Medicinal Gas Air Liquide,Nitrous Oxide,2025-04-20,2025-05-07,2 pills,Twice a day
-273,44869451267,24297420672,Pinex Major,"Paracetamol, Codeine Phosphate Hemihydrate",2025-06-03,2025-06-06,1000mg,After lunch
-274,98451520706,94804778024,Hospisept Gebrauchsfertig,"Ethanol (96 Per Cent), Propanol Ph. Eur.",2026-03-04,2026-03-27,500mg,Every 12 hours
-275,98451520706,70873138282,Apixaban Grindeks,Apixaban,2025-12-29,2026-01-12,1000mg,Twice a day
-276,91367023329,51746273679,Lasix,Furosemide,2025-05-17,2025-06-08,500mg,After lunch
-277,62496380045,44060356137,Choligrip Menthol Active,"Phenylephrine Hydrochloride, Ascorbic Acid, Paracetamol",2026-01-28,2026-02-24,1 vial,Every 12 hours
-278,62743168874,54686989143,Azathioprin Sandoz,Azathioprine,2026-03-07,2026-03-14,1000mg,Every 8 hours
-279,83923788555,24472724997,Elettrolitica Reidratante Con Glucosio E Calcio Gluconato Fresenius Kabi Italia,"Dipotassium Phosphate, Sodium Chloride, Glucose Monohydrate, Magnesium Sulfate Heptahydrate, Potassium Acetate, Calcium Gluconate Monohydrate",2025-01-04,2025-01-09,1000mg,Every 8 hours
-280,36702445480,11774503770,Bronchipret,"Fluid Extract From Ivy Leaves (1:1), Extracting Agent: Ethanol 70% (V/V), Liquid Extract From Thyme Herb (Der 1:2-2,5), Extraction Solvents: Ammonia Solution 10 % (M/M), Glycerol 85%, Ethanol 90%, Water (1:20:70:109)",2025-06-07,2025-06-24,500mg,Every 12 hours
-281,65063112418,42145824142,Teicoplanin Pharmline,Teicoplanin,2025-05-09,2025-06-08,2 pills,Every 12 hours
-282,30639295654,40009025265,Lamotrigin Abz,Lamotrigine,2025-04-15,2025-05-12,1 pill,Twice a day
-283,45979296668,93826706493,Melatonin Colonis Pharma,Melatonin,2025-06-07,2025-07-05,1 vial,Every 8 hours
-284,20140926142,29450522876,Mebeverine Hcl Retard,Mebeverine Hydrochloride,2025-02-24,2025-03-26,1 spoon,Once a day
-285,73253025603,29572535212,Hyoscine Butylbromide Ria Generics,Hyoscine Butylbromide,2025-08-28,2025-09-14,1 pill,After lunch
-286,20140926142,94763453856,Quetiapina Combix,Quetiapine,2025-01-17,2025-02-01,1 vial,Once a day
-287,62743168874,96763184814,Gasenlan,Gabapentin,2025-10-27,2025-10-31,1 pill,Every 8 hours
-288,82857924186,98081585082,Losartan Plus Eurogenerics,"Losartan Potassium, Hydrochlorothiazide",2025-04-19,2025-05-08,1 vial,After lunch
-289,52288372388,70667592099,Vasculocis,Human Serum Albumin,2025-08-23,2025-09-11,1000mg,Once a day
-290,33860842912,12492568041,Omeprazol,Omeprazole,2026-01-17,2026-02-07,500mg,Every 12 hours
-291,96575194408,52334260261,Vasostenoon,Alprostadil,2025-08-04,2025-08-30,2 pills,Every 8 hours
-292,33860842912,34468214623,Flukloksacilin Kabi,Flucloxacillin Sodium,2025-11-16,2025-12-16,1 pill,Once a day
-293,74895326292,60892712796,Sodium Cromoglicate Preservative Free Rafarm,Sodium Cromoglicate,2026-03-24,2026-04-20,2 pills,Once a day
-294,20287442157,57714356848,Pioglitazona Cinfa,Pioglitazone,2025-03-08,2025-03-29,1 pill,Every 8 hours
-295,53262763012,30276014150,Arcoxia,Etoricoxib,2026-03-22,2026-04-17,1 pill,Once a day
-296,40850595762,84047176955,Дона,"Glucosamine Sulfate, Sodium Chloride",2025-08-01,2025-08-04,1000mg,Every 12 hours
-297,37233268274,60513785856,Abacavir/Lamivudin Heumann,"Abacavir, Lamivudine",2025-07-09,2025-07-27,2 pills,Every 8 hours
-298,57199282441,87956752664,Naxalgan,Pregabalin,2025-06-21,2025-06-28,500mg,Once a day
-299,52288372388,40009025265,Otrivin Menthol Ukonserveret,Xylometazoline Hydrochloride,2025-12-02,2025-12-31,1 spoon,Twice a day
-300,40889689402,64914681191,Otriven Gegen Schnupfen Dosierspray Ohne Konservierungsstoffe Für Erwachsene Und Kinder Ab 12 Jahren,Xylometazoline Hydrochloride,2025-01-22,2025-02-20,1000mg,Twice a day
+Doctor_AMKA,hosp_id,drug_id,Start_Date,End_Date,Dosage,Frequency
+74997800957,81,41502,2025-10-21,2025-11-12,500mg,After lunch
+74997800957,173,41502,2025-10-21,2025-11-12,500mg,After lunch
+74997800957,260,41502,2025-10-21,2025-11-12,500mg,After lunch
+74997800957,330,41502,2025-10-21,2025-11-12,500mg,After lunch
+96575194408,175,91401,2026-01-13,2026-01-17,2 pills,After lunch
+96575194408,335,91401,2026-01-13,2026-01-17,2 pills,After lunch
+82857924186,17,36002,2026-03-22,2026-04-05,1 spoon,Twice a day
+82857924186,75,36002,2026-03-22,2026-04-05,1 spoon,Twice a day
+82857924186,217,36002,2026-03-22,2026-04-05,1 spoon,Twice a day
+82857924186,271,36002,2026-03-22,2026-04-05,1 spoon,Twice a day
+94613426776,120,11128,2025-01-13,2025-02-02,500mg,Once a day
+94613426776,182,11128,2025-01-13,2025-02-02,500mg,Once a day
+37233268274,225,26954,2025-04-04,2025-05-03,500mg,Every 8 hours
+37233268274,293,26954,2025-04-04,2025-05-03,500mg,Every 8 hours
+37233268274,384,26954,2025-04-04,2025-05-03,500mg,Every 8 hours
+52288372388,30,38995,2025-02-20,2025-03-04,1 vial,Every 8 hours
+52288372388,96,38995,2025-02-20,2025-03-04,1 vial,Every 8 hours
+52288372388,110,38995,2025-02-20,2025-03-04,1 vial,Every 8 hours
+52288372388,165,38995,2025-02-20,2025-03-04,1 vial,Every 8 hours
+13706183648,306,157630,2025-12-11,2025-12-14,1 vial,After lunch
+13706183648,336,157630,2025-12-11,2025-12-14,1 vial,After lunch
+13706183648,427,157630,2025-12-11,2025-12-14,1 vial,After lunch
+67697807470,119,82005,2025-09-24,2025-10-14,1 pill,Every 12 hours
+67697807470,248,82005,2025-09-24,2025-10-14,1 pill,Every 12 hours
+67697807470,451,82005,2025-09-24,2025-10-14,1 pill,Every 12 hours
+67697807470,480,82005,2025-09-24,2025-10-14,1 pill,Every 12 hours
+67697807470,496,82005,2025-09-24,2025-10-14,1 pill,Every 12 hours
+20140926142,166,142023,2026-03-27,2026-04-14,500mg,Once a day
+62066779638,313,103850,2025-03-30,2025-04-21,2 pills,Once a day
+62066779638,433,103850,2025-03-30,2025-04-21,2 pills,Once a day
+62066779638,471,103850,2025-03-30,2025-04-21,2 pills,Once a day
+60170274590,306,155964,2025-12-16,2025-12-26,1 vial,After lunch
+60170274590,336,155964,2025-12-16,2025-12-26,1 vial,After lunch
+60170274590,427,155964,2025-12-16,2025-12-26,1 vial,After lunch
+62743168874,309,135302,2025-02-19,2025-03-15,1 pill,Every 8 hours
+62743168874,450,135302,2025-02-19,2025-03-15,1 pill,Every 8 hours
+60334753081,104,152025,2025-10-04,2025-10-09,2 pills,After lunch
+60334753081,387,152025,2025-10-04,2025-10-09,2 pills,After lunch
+60334753081,455,152025,2025-10-04,2025-10-09,2 pills,After lunch
+96575194408,108,7172,2026-01-24,2026-02-08,1000mg,After lunch
+33575450249,375,65425,2025-06-06,2025-06-10,2 pills,After lunch
+56650467990,137,104503,2026-03-02,2026-03-05,500mg,Every 12 hours
+56650467990,299,104503,2026-03-02,2026-03-05,500mg,Every 12 hours
+56650467990,361,104503,2026-03-02,2026-03-05,500mg,Every 12 hours
+84320135602,125,11384,2026-01-08,2026-01-24,1 pill,Every 12 hours
+84320135602,301,11384,2026-01-08,2026-01-24,1 pill,Every 12 hours
+84320135602,363,11384,2026-01-08,2026-01-24,1 pill,Every 12 hours
+84320135602,421,11384,2026-01-08,2026-01-24,1 pill,Every 12 hours
+19276620746,25,153711,2025-09-23,2025-10-10,2 pills,Every 12 hours
+19276620746,262,153711,2025-09-23,2025-10-10,2 pills,Every 12 hours
+19276620746,443,153711,2025-09-23,2025-10-10,2 pills,Every 12 hours
+30639295654,12,100143,2025-09-14,2025-09-21,1 spoon,Once a day
+30639295654,97,100143,2025-09-14,2025-09-21,1 spoon,Once a day
+30639295654,412,100143,2025-09-14,2025-09-21,1 spoon,Once a day
+27946441835,10,47807,2025-11-13,2025-12-03,1000mg,Every 8 hours
+27946441835,418,47807,2025-11-13,2025-12-03,1000mg,Every 8 hours
+27946441835,482,47807,2025-11-13,2025-12-03,1000mg,Every 8 hours
+48486875122,51,12605,2025-06-25,2025-07-22,1 vial,Twice a day
+48486875122,113,12605,2025-06-25,2025-07-22,1 vial,Twice a day
+48486875122,195,12605,2025-06-25,2025-07-22,1 vial,Twice a day
+48486875122,266,12605,2025-06-25,2025-07-22,1 vial,Twice a day
+48486875122,366,12605,2025-06-25,2025-07-22,1 vial,Twice a day
+48486875122,416,12605,2025-06-25,2025-07-22,1 vial,Twice a day
+47960718664,476,27223,2025-12-29,2026-01-07,1 spoon,Every 12 hours
+85282038277,125,137216,2025-08-16,2025-08-26,1000mg,After lunch
+85282038277,301,137216,2025-08-16,2025-08-26,1000mg,After lunch
+85282038277,363,137216,2025-08-16,2025-08-26,1000mg,After lunch
+85282038277,421,137216,2025-08-16,2025-08-26,1000mg,After lunch
+48486875122,60,86649,2025-05-20,2025-05-31,1 pill,Twice a day
+48486875122,118,86649,2025-05-20,2025-05-31,1 pill,Twice a day
+48486875122,389,86649,2025-05-20,2025-05-31,1 pill,Twice a day
+95448079151,108,138162,2025-01-08,2025-01-27,1000mg,Once a day
+95448079151,141,84351,2025-03-31,2025-04-17,1000mg,Every 8 hours
+95448079151,305,84351,2025-03-31,2025-04-17,1000mg,Every 8 hours
+95448079151,438,84351,2025-03-31,2025-04-17,1000mg,Every 8 hours
+38538288127,93,20697,2025-11-15,2025-11-22,500mg,Every 8 hours
+38538288127,337,20697,2025-11-15,2025-11-22,500mg,Every 8 hours
+38538288127,396,20697,2025-11-15,2025-11-22,500mg,Every 8 hours
+60170274590,49,35267,2025-01-28,2025-02-16,1 vial,Twice a day
+60170274590,111,35267,2025-01-28,2025-02-16,1 vial,Twice a day
+60170274590,144,35267,2025-01-28,2025-02-16,1 vial,Twice a day
+60170274590,220,35267,2025-01-28,2025-02-16,1 vial,Twice a day
+60170274590,270,35267,2025-01-28,2025-02-16,1 vial,Twice a day
+60170274590,298,35267,2025-01-28,2025-02-16,1 vial,Twice a day
+82857924186,225,38208,2025-11-22,2025-12-07,500mg,Every 12 hours
+82857924186,293,38208,2025-11-22,2025-12-07,500mg,Every 12 hours
+82857924186,384,38208,2025-11-22,2025-12-07,500mg,Every 12 hours
+31551628292,2,137260,2025-05-13,2025-05-28,1 vial,Twice a day
+31551628292,214,137260,2025-05-13,2025-05-28,1 vial,Twice a day
+31551628292,218,137260,2025-05-13,2025-05-28,1 vial,Twice a day
+31551628292,386,137260,2025-05-13,2025-05-28,1 vial,Twice a day
+31551628292,395,137260,2025-05-13,2025-05-28,1 vial,Twice a day
+92698522280,219,91873,2025-10-26,2025-11-16,1 pill,After lunch
+38538288127,268,61445,2025-03-09,2025-04-07,1000mg,After lunch
+20287442157,53,84321,2025-02-01,2025-02-07,1 spoon,Once a day
+20287442157,203,84321,2025-02-01,2025-02-07,1 spoon,Once a day
+37233268274,27,150461,2026-02-08,2026-03-08,1 vial,Every 12 hours
+37233268274,235,150461,2026-02-08,2026-03-08,1 vial,Every 12 hours
+62743168874,127,105250,2025-01-12,2025-02-07,1 pill,Twice a day
+62743168874,310,105250,2025-01-12,2025-02-07,1 pill,Twice a day
+94613426776,60,82767,2025-07-05,2025-07-29,1 spoon,Twice a day
+94613426776,118,82767,2025-07-05,2025-07-29,1 spoon,Twice a day
+94613426776,389,82767,2025-07-05,2025-07-29,1 spoon,Twice a day
+53727815147,38,71609,2025-01-19,2025-01-30,2 pills,After lunch
+53727815147,256,71609,2025-01-19,2025-01-30,2 pills,After lunch
+53727815147,317,71609,2025-01-19,2025-01-30,2 pills,After lunch
+53727815147,382,71609,2025-01-19,2025-01-30,2 pills,After lunch
+50922589695,236,58175,2025-02-13,2025-02-23,1000mg,Once a day
+52288372388,252,90590,2025-06-24,2025-06-27,1 pill,Every 8 hours
+52288372388,368,90590,2025-06-24,2025-06-27,1 pill,Every 8 hours
+52288372388,413,90590,2025-06-24,2025-06-27,1 pill,Every 8 hours
+52288372388,429,90590,2025-06-24,2025-06-27,1 pill,Every 8 hours
+85282038277,108,39169,2025-07-06,2025-07-12,500mg,Every 8 hours
+62743168874,28,57567,2025-04-16,2025-05-09,1 spoon,Every 12 hours
+62743168874,154,57567,2025-04-16,2025-05-09,1 spoon,Every 12 hours
+62743168874,167,57567,2025-04-16,2025-05-09,1 spoon,Every 12 hours
+62743168874,448,57567,2025-04-16,2025-05-09,1 spoon,Every 12 hours
+41069533517,84,158452,2025-07-01,2025-07-17,1 pill,Every 12 hours
+41069533517,242,158452,2025-07-01,2025-07-17,1 pill,Every 12 hours
+41069533517,352,158452,2025-07-01,2025-07-17,1 pill,Every 12 hours
+41069533517,393,158452,2025-07-01,2025-07-17,1 pill,Every 12 hours
+41069533517,437,158452,2025-07-01,2025-07-17,1 pill,Every 12 hours
+60334753081,303,88788,2025-11-20,2025-12-04,500mg,Once a day
+22585413484,268,5057,2025-06-26,2025-07-01,1 vial,Twice a day
+81344410739,43,112766,2026-01-02,2026-01-20,500mg,Once a day
+81344410739,346,112766,2026-01-02,2026-01-20,500mg,Once a day
+81344410739,414,112766,2026-01-02,2026-01-20,500mg,Once a day
+81344410739,445,112766,2026-01-02,2026-01-20,500mg,Once a day
+84320135602,133,51476,2025-03-29,2025-04-04,500mg,Twice a day
+84320135602,287,51476,2025-03-29,2025-04-04,500mg,Twice a day
+84320135602,358,51476,2025-03-29,2025-04-04,500mg,Twice a day
+84320135602,410,51476,2025-03-29,2025-04-04,500mg,Twice a day
+90656248238,34,53861,2025-02-02,2025-02-07,500mg,Twice a day
+90656248238,238,53861,2025-02-02,2025-02-07,500mg,Twice a day
+27946441835,28,19214,2025-02-18,2025-02-23,1 vial,Twice a day
+27946441835,154,19214,2025-02-18,2025-02-23,1 vial,Twice a day
+27946441835,167,19214,2025-02-18,2025-02-23,1 vial,Twice a day
+27946441835,448,19214,2025-02-18,2025-02-23,1 vial,Twice a day
+55878996856,249,150957,2025-06-09,2025-06-27,1 pill,Once a day
+55878996856,339,150957,2025-06-09,2025-06-27,1 pill,Once a day
+55878996856,378,150957,2025-06-09,2025-06-27,1 pill,Once a day
+73253025603,302,113692,2025-08-22,2025-09-10,1 vial,Once a day
+73253025603,400,113692,2025-08-22,2025-09-10,1 vial,Once a day
+73253025603,430,113692,2025-08-22,2025-09-10,1 vial,Once a day
+35134846364,42,126818,2025-06-20,2025-07-15,1 spoon,Twice a day
+35134846364,444,126818,2025-06-20,2025-07-15,1 spoon,Twice a day
+47960718664,29,123536,2026-02-14,2026-02-25,2 pills,After lunch
+62496380045,71,129301,2026-03-23,2026-04-20,2 pills,Every 12 hours
+62496380045,157,129301,2026-03-23,2026-04-20,2 pills,Every 12 hours
+62496380045,492,129301,2026-03-23,2026-04-20,2 pills,Every 12 hours
+94374664371,202,53279,2025-01-31,2025-02-17,1 vial,Every 8 hours
+94374664371,288,53279,2025-01-31,2025-02-17,1 vial,Every 8 hours
+18716063973,60,111058,2025-08-06,2025-08-13,1 spoon,Every 8 hours
+18716063973,118,111058,2025-08-06,2025-08-13,1 spoon,Every 8 hours
+18716063973,389,111058,2025-08-06,2025-08-13,1 spoon,Every 8 hours
+53434182353,51,158685,2025-03-10,2025-03-21,1 pill,After lunch
+53434182353,113,158685,2025-03-10,2025-03-21,1 pill,After lunch
+53434182353,195,158685,2025-03-10,2025-03-21,1 pill,After lunch
+53434182353,266,158685,2025-03-10,2025-03-21,1 pill,After lunch
+53434182353,366,158685,2025-03-10,2025-03-21,1 pill,After lunch
+53434182353,416,158685,2025-03-10,2025-03-21,1 pill,After lunch
+39243562439,275,149747,2026-01-24,2026-02-06,1 pill,Once a day
+39243562439,420,149747,2026-01-24,2026-02-06,1 pill,Once a day
+31551628292,230,143208,2025-01-30,2025-02-16,1 pill,Once a day
+44869451267,150,129503,2025-12-27,2026-01-03,1 pill,Once a day
+44869451267,345,129503,2025-12-27,2026-01-03,1 pill,Once a day
+44869451267,415,129503,2025-12-27,2026-01-03,1 pill,Once a day
+57199282441,69,115391,2025-04-27,2025-05-26,1 spoon,Every 12 hours
+57199282441,251,115391,2025-04-27,2025-05-26,1 spoon,Every 12 hours
+65063112418,18,117440,2025-02-14,2025-02-22,1 spoon,Once a day
+65063112418,134,117440,2025-02-14,2025-02-22,1 spoon,Once a day
+65063112418,406,117440,2025-02-14,2025-02-22,1 spoon,Once a day
+94374664371,164,79080,2026-02-16,2026-02-26,1000mg,Once a day
+94374664371,295,79080,2026-02-16,2026-02-26,1000mg,Once a day
+94374664371,377,79080,2026-02-16,2026-02-26,1000mg,Once a day
+94374664371,403,79080,2026-02-16,2026-02-26,1000mg,Once a day
+94374664371,460,79080,2026-02-16,2026-02-26,1000mg,Once a day
+38538288127,236,85306,2025-05-31,2025-06-12,500mg,Once a day
+27946441835,27,158950,2025-10-01,2025-10-28,500mg,Once a day
+27946441835,235,158950,2025-10-01,2025-10-28,500mg,Once a day
+19276620746,196,96337,2025-06-11,2025-06-26,2 pills,Twice a day
+19276620746,201,96337,2025-06-11,2025-06-26,2 pills,Twice a day
+19276620746,494,96337,2025-06-11,2025-06-26,2 pills,Twice a day
+74895326292,102,93994,2026-01-17,2026-02-01,500mg,Every 12 hours
+74895326292,109,93994,2026-01-17,2026-02-01,500mg,Every 12 hours
+74895326292,136,93994,2026-01-17,2026-02-01,500mg,Every 12 hours
+74895326292,272,93994,2026-01-17,2026-02-01,500mg,Every 12 hours
+74895326292,422,93994,2026-01-17,2026-02-01,500mg,Every 12 hours
+74895326292,465,93994,2026-01-17,2026-02-01,500mg,Every 12 hours
+53434182353,309,75935,2025-05-30,2025-06-18,1 spoon,Every 12 hours
+53434182353,450,75935,2025-05-30,2025-06-18,1 spoon,Every 12 hours
+95448079151,407,115803,2026-01-28,2026-02-26,1 spoon,After lunch
+98901183989,95,140655,2026-03-25,2026-04-04,1 spoon,Every 12 hours
+98901183989,186,140655,2026-03-25,2026-04-04,1 spoon,Every 12 hours
+98901183989,189,140655,2026-03-25,2026-04-04,1 spoon,Every 12 hours
+98901183989,312,140655,2026-03-25,2026-04-04,1 spoon,Every 12 hours
+77117947422,24,127575,2025-02-16,2025-02-27,2 pills,Every 8 hours
+77117947422,241,127575,2025-02-16,2025-02-27,2 pills,Every 8 hours
+77117947422,322,127575,2025-02-16,2025-02-27,2 pills,Every 8 hours
+40889689402,164,51585,2025-12-02,2025-12-14,1 spoon,Once a day
+40889689402,295,51585,2025-12-02,2025-12-14,1 spoon,Once a day
+40889689402,377,51585,2025-12-02,2025-12-14,1 spoon,Once a day
+40889689402,403,51585,2025-12-02,2025-12-14,1 spoon,Once a day
+40889689402,460,51585,2025-12-02,2025-12-14,1 spoon,Once a day
+90134508778,162,123286,2026-01-20,2026-02-09,1 spoon,Every 8 hours
+90134508778,391,123286,2026-01-20,2026-02-09,1 spoon,Every 8 hours
+90134508778,490,123286,2026-01-20,2026-02-09,1 spoon,Every 8 hours
+33860842912,124,32284,2025-01-15,2025-02-06,1 spoon,Every 8 hours
+33860842912,159,32284,2025-01-15,2025-02-06,1 spoon,Every 8 hours
+83923788555,34,104690,2025-08-11,2025-08-14,2 pills,Every 8 hours
+83923788555,238,104690,2025-08-11,2025-08-14,2 pills,Every 8 hours
+56784597458,468,23197,2025-12-15,2026-01-02,1 spoon,Twice a day
+92698522280,35,112925,2025-04-14,2025-04-26,1000mg,Twice a day
+92698522280,207,112925,2025-04-14,2025-04-26,1000mg,Twice a day
+92698522280,244,112925,2025-04-14,2025-04-26,1000mg,Twice a day
+92698522280,478,112925,2025-04-14,2025-04-26,1000mg,Twice a day
+65063112418,24,94974,2025-08-31,2025-09-16,500mg,Every 8 hours
+65063112418,241,94974,2025-08-31,2025-09-16,500mg,Every 8 hours
+65063112418,322,94974,2025-08-31,2025-09-16,500mg,Every 8 hours
+74997800957,175,61282,2025-01-25,2025-02-22,500mg,After lunch
+74997800957,335,61282,2025-01-25,2025-02-22,500mg,After lunch
+40889689402,268,94733,2025-08-08,2025-08-25,2 pills,After lunch
+19276620746,9,67140,2025-06-17,2025-07-04,500mg,After lunch
+19276620746,233,67140,2025-06-17,2025-07-04,500mg,After lunch
+19276620746,234,67140,2025-06-17,2025-07-04,500mg,After lunch
+53262763012,140,141986,2025-04-28,2025-05-16,1 pill,Twice a day
+53262763012,188,141986,2025-04-28,2025-05-16,1 pill,Twice a day
+53262763012,449,141986,2025-04-28,2025-05-16,1 pill,Twice a day
+99795619901,69,93874,2025-11-09,2025-11-21,1 pill,Once a day
+99795619901,251,93874,2025-11-09,2025-11-21,1 pill,Once a day
+91367023329,4,139794,2025-05-28,2025-06-01,1 pill,After lunch
+91367023329,170,139794,2025-05-28,2025-06-01,1 pill,After lunch
+91367023329,282,139794,2025-05-28,2025-06-01,1 pill,After lunch
+48486875122,5,155997,2025-10-24,2025-10-31,1 vial,Twice a day
+48486875122,231,155997,2025-10-24,2025-10-31,1 vial,Twice a day
+48486875122,392,155997,2025-10-24,2025-10-31,1 vial,Twice a day
+48486875122,398,155997,2025-10-24,2025-10-31,1 vial,Twice a day
+48486875122,411,155997,2025-10-24,2025-10-31,1 vial,Twice a day
+21389790404,34,90162,2025-05-15,2025-05-31,1000mg,Twice a day
+21389790404,238,90162,2025-05-15,2025-05-31,1000mg,Twice a day
+85282038277,321,97689,2025-04-24,2025-05-01,500mg,Once a day
+51927673524,446,42442,2025-05-20,2025-06-13,2 pills,Every 12 hours
+51927673524,459,42442,2025-05-20,2025-06-13,2 pills,Every 12 hours
+39243562439,468,910,2026-03-23,2026-04-07,1 vial,Twice a day
+62066779638,16,105603,2026-03-26,2026-04-07,1 vial,Every 8 hours
+62066779638,172,105603,2026-03-26,2026-04-07,1 vial,Every 8 hours
+62743168874,303,95308,2026-02-26,2026-03-05,1000mg,Once a day
+51734845697,303,25919,2025-01-17,2025-02-08,1 vial,Once a day
+38538288127,180,77033,2025-05-28,2025-06-14,2 pills,Once a day
+38538288127,388,77033,2025-05-28,2025-06-14,2 pills,Once a day
+57199282441,357,149805,2025-09-02,2025-09-22,2 pills,After lunch
+53262763012,35,10452,2026-01-24,2026-02-01,500mg,Every 12 hours
+53262763012,207,10452,2026-01-24,2026-02-01,500mg,Every 12 hours
+53262763012,244,10452,2026-01-24,2026-02-01,500mg,Every 12 hours
+53262763012,478,10452,2026-01-24,2026-02-01,500mg,Every 12 hours
+36702445480,313,151106,2025-11-30,2025-12-16,500mg,Every 8 hours
+36702445480,433,151106,2025-11-30,2025-12-16,500mg,Every 8 hours
+36702445480,471,151106,2025-11-30,2025-12-16,500mg,Every 8 hours
+52288372388,28,28157,2025-11-15,2025-11-24,1 vial,Once a day
+52288372388,154,28157,2025-11-15,2025-11-24,1 vial,Once a day
+52288372388,167,28157,2025-11-15,2025-11-24,1 vial,Once a day
+52288372388,448,28157,2025-11-15,2025-11-24,1 vial,Once a day
+22585413484,226,47691,2025-11-29,2025-12-07,1 vial,Twice a day
+22585413484,247,47691,2025-11-29,2025-12-07,1 vial,Twice a day
+22585413484,323,47691,2025-11-29,2025-12-07,1 vial,Twice a day
+22585413484,470,47691,2025-11-29,2025-12-07,1 vial,Twice a day
+80036372124,122,85230,2025-05-03,2025-05-15,2 pills,Once a day
+80036372124,198,85230,2025-05-03,2025-05-15,2 pills,Once a day
+80036372124,383,85230,2025-05-03,2025-05-15,2 pills,Once a day
+80036372124,462,85230,2025-05-03,2025-05-15,2 pills,Once a day
+74997800957,364,159716,2025-10-14,2025-10-22,1000mg,Twice a day
+74997800957,442,159716,2025-10-14,2025-10-22,1000mg,Twice a day
+19276620746,56,132398,2025-10-27,2025-11-02,1000mg,Every 12 hours
+19276620746,206,132398,2025-10-27,2025-11-02,1000mg,Every 12 hours
+19276620746,307,132398,2025-10-27,2025-11-02,1000mg,Every 12 hours
+19276620746,374,132398,2025-10-27,2025-11-02,1000mg,Every 12 hours
+22585413484,224,141762,2025-08-21,2025-09-03,1 vial,Once a day
+92698522280,155,7612,2025-11-29,2025-12-17,1 vial,Every 8 hours
+92698522280,320,7612,2025-11-29,2025-12-17,1 vial,Every 8 hours
+53727815147,419,58082,2025-08-15,2025-09-04,500mg,After lunch
+56784597458,155,108339,2025-12-24,2026-01-20,1000mg,Every 8 hours
+56784597458,320,108339,2025-12-24,2026-01-20,1000mg,Every 8 hours
+35895166626,417,80112,2025-03-29,2025-04-14,1 pill,Once a day
+94613426776,164,18499,2026-01-26,2026-02-24,1 vial,Every 8 hours
+94613426776,295,18499,2026-01-26,2026-02-24,1 vial,Every 8 hours
+94613426776,377,18499,2026-01-26,2026-02-24,1 vial,Every 8 hours
+94613426776,403,18499,2026-01-26,2026-02-24,1 vial,Every 8 hours
+94613426776,460,18499,2026-01-26,2026-02-24,1 vial,Every 8 hours
+20140926142,69,92372,2025-12-21,2026-01-05,2 pills,Once a day
+20140926142,251,92372,2025-12-21,2026-01-05,2 pills,Once a day
+21389790404,224,146819,2025-09-23,2025-09-27,1 spoon,Every 8 hours
+35895166626,56,83478,2025-05-16,2025-05-20,500mg,After lunch
+35895166626,206,83478,2025-05-16,2025-05-20,500mg,After lunch
+35895166626,307,83478,2025-05-16,2025-05-20,500mg,After lunch
+35895166626,374,83478,2025-05-16,2025-05-20,500mg,After lunch
+62496380045,152,77072,2025-06-13,2025-07-09,1 spoon,Once a day
+62496380045,222,77072,2025-06-13,2025-07-09,1 spoon,Once a day
+30639295654,28,85551,2025-10-18,2025-10-26,1 pill,Every 8 hours
+30639295654,154,85551,2025-10-18,2025-10-26,1 pill,Every 8 hours
+30639295654,167,85551,2025-10-18,2025-10-26,1 pill,Every 8 hours
+30639295654,448,85551,2025-10-18,2025-10-26,1 pill,Every 8 hours
+52288372388,64,7360,2026-03-07,2026-04-05,1000mg,Once a day
+98901183989,236,7729,2025-02-13,2025-02-18,2 pills,Once a day
+13706183648,385,43704,2025-12-28,2026-01-04,1 pill,Every 8 hours
+13706183648,481,43704,2025-12-28,2026-01-04,1 pill,Every 8 hours
+41069533517,338,148012,2025-11-03,2025-11-25,1 pill,Every 8 hours
+56784597458,228,109297,2025-08-31,2025-09-26,1 spoon,After lunch
+56784597458,379,109297,2025-08-31,2025-09-26,1 spoon,After lunch
+56784597458,454,109297,2025-08-31,2025-09-26,1 spoon,After lunch
+60170274590,196,33060,2025-07-06,2025-07-11,500mg,Once a day
+60170274590,201,33060,2025-07-06,2025-07-11,500mg,Once a day
+60170274590,494,33060,2025-07-06,2025-07-11,500mg,Once a day
+51927673524,202,20051,2025-03-22,2025-03-29,1000mg,After lunch
+51927673524,288,20051,2025-03-22,2025-03-29,1000mg,After lunch
+44869451267,125,124694,2025-06-28,2025-07-15,1 spoon,Once a day
+44869451267,301,124694,2025-06-28,2025-07-15,1 spoon,Once a day
+44869451267,363,124694,2025-06-28,2025-07-15,1 spoon,Once a day
+44869451267,421,124694,2025-06-28,2025-07-15,1 spoon,Once a day
+78832401220,91,82627,2025-11-30,2025-12-29,1000mg,Twice a day
+78832401220,319,82627,2025-11-30,2025-12-29,1000mg,Twice a day
+31976884284,38,115681,2025-08-13,2025-08-21,1 vial,Every 12 hours
+31976884284,256,115681,2025-08-13,2025-08-21,1 vial,Every 12 hours
+31976884284,317,115681,2025-08-13,2025-08-21,1 vial,Every 12 hours
+31976884284,382,115681,2025-08-13,2025-08-21,1 vial,Every 12 hours
+50922589695,19,12415,2025-10-10,2025-10-14,1 pill,Once a day
+50922589695,20,12415,2025-10-10,2025-10-14,1 pill,Once a day
+50922589695,498,12415,2025-10-10,2025-10-14,1 pill,Once a day
+56650467990,120,156666,2025-05-08,2025-06-06,1 vial,Every 12 hours
+56650467990,182,156666,2025-05-08,2025-06-06,1 vial,Every 12 hours
+39243562439,58,127695,2025-12-14,2026-01-08,1 pill,Every 8 hours
+39243562439,77,127695,2025-12-14,2026-01-08,1 pill,Every 8 hours
+39243562439,250,127695,2025-12-14,2026-01-08,1 pill,Every 8 hours
+39243562439,286,127695,2025-12-14,2026-01-08,1 pill,Every 8 hours
+60344799227,82,57751,2025-02-15,2025-02-25,2 pills,Every 8 hours
+60344799227,373,57751,2025-02-15,2025-02-25,2 pills,Every 8 hours
+51734845697,127,121500,2025-02-19,2025-03-19,500mg,Twice a day
+51734845697,310,121500,2025-02-19,2025-03-19,500mg,Twice a day
+21389790404,309,17753,2025-08-01,2025-08-10,1000mg,Once a day
+21389790404,450,17753,2025-08-01,2025-08-10,1000mg,Once a day
+62496380045,164,70610,2025-11-29,2025-12-11,1 vial,After lunch
+62496380045,295,70610,2025-11-29,2025-12-11,1 vial,After lunch
+62496380045,377,70610,2025-11-29,2025-12-11,1 vial,After lunch
+62496380045,403,70610,2025-11-29,2025-12-11,1 vial,After lunch
+62496380045,460,70610,2025-11-29,2025-12-11,1 vial,After lunch
+96575194408,1,60969,2025-10-01,2025-10-19,1 vial,Every 8 hours
+96575194408,8,60969,2025-10-01,2025-10-19,1 vial,Every 8 hours
+96575194408,23,60969,2025-10-01,2025-10-19,1 vial,Every 8 hours
+96575194408,61,60969,2025-10-01,2025-10-19,1 vial,Every 8 hours
+96575194408,232,60969,2025-10-01,2025-10-19,1 vial,Every 8 hours
+96575194408,255,60969,2025-10-01,2025-10-19,1 vial,Every 8 hours
+96575194408,294,60969,2025-10-01,2025-10-19,1 vial,Every 8 hours
+96575194408,333,60969,2025-10-01,2025-10-19,1 vial,Every 8 hours
+96575194408,397,60969,2025-10-01,2025-10-19,1 vial,Every 8 hours
+30871168286,104,12191,2026-03-22,2026-03-27,2 pills,Once a day
+30871168286,387,12191,2026-03-22,2026-03-27,2 pills,Once a day
+30871168286,455,12191,2026-03-22,2026-03-27,2 pills,Once a day
+84320135602,169,86117,2025-06-24,2025-07-11,1 spoon,After lunch
+30639295654,169,124962,2026-03-13,2026-04-04,1 pill,After lunch
+52288372388,95,154531,2025-02-01,2025-02-11,1 vial,Once a day
+52288372388,186,154531,2025-02-01,2025-02-11,1 vial,Once a day
+52288372388,189,154531,2025-02-01,2025-02-11,1 vial,Once a day
+52288372388,312,154531,2025-02-01,2025-02-11,1 vial,Once a day
+60552999461,86,135800,2025-12-06,2025-12-25,1 pill,Twice a day
+60552999461,191,135800,2025-12-06,2025-12-25,1 pill,Twice a day
+60552999461,253,135800,2025-12-06,2025-12-25,1 pill,Twice a day
+60552999461,315,135800,2025-12-06,2025-12-25,1 pill,Twice a day
+60552999461,488,135800,2025-12-06,2025-12-25,1 pill,Twice a day
+92698522280,135,146134,2025-09-13,2025-09-24,1 pill,After lunch
+92698522280,474,146134,2025-09-13,2025-09-24,1 pill,After lunch
+39243562439,30,14506,2025-07-10,2025-08-02,1 vial,Twice a day
+39243562439,96,14506,2025-07-10,2025-08-02,1 vial,Twice a day
+39243562439,110,14506,2025-07-10,2025-08-02,1 vial,Twice a day
+39243562439,165,14506,2025-07-10,2025-08-02,1 vial,Twice a day
+90656248238,59,100554,2025-10-17,2025-11-10,1000mg,Twice a day
+90656248238,115,100554,2025-10-17,2025-11-10,1000mg,Twice a day
+30639295654,385,138034,2025-10-26,2025-11-16,1 pill,Twice a day
+30639295654,481,138034,2025-10-26,2025-11-16,1 pill,Twice a day
+33575450249,6,10560,2025-04-19,2025-04-30,1 pill,Twice a day
+33575450249,87,10560,2025-04-19,2025-04-30,1 pill,Twice a day
+33575450249,148,10560,2025-04-19,2025-04-30,1 pill,Twice a day
+33575450249,380,10560,2025-04-19,2025-04-30,1 pill,Twice a day
+89981892222,83,13862,2025-01-11,2025-01-19,1 spoon,Once a day
+89981892222,121,13862,2025-01-11,2025-01-19,1 spoon,Once a day
+89981892222,469,13862,2025-01-11,2025-01-19,1 spoon,Once a day
+19276620746,156,41251,2025-05-26,2025-06-04,1 pill,After lunch
+19276620746,426,41251,2025-05-26,2025-06-04,1 pill,After lunch
+51734845697,343,16050,2025-11-08,2025-11-29,1 pill,Every 8 hours
+51734845697,376,16050,2025-11-08,2025-11-29,1 pill,Every 8 hours
+51734845697,485,16050,2025-11-08,2025-11-29,1 pill,Every 8 hours
+35895166626,275,135185,2025-07-31,2025-08-15,1 pill,Every 8 hours
+35895166626,420,135185,2025-07-31,2025-08-15,1 pill,Every 8 hours
+74895326292,6,98169,2025-03-06,2025-03-14,1 vial,Every 8 hours
+74895326292,87,98169,2025-03-06,2025-03-14,1 vial,Every 8 hours
+74895326292,148,98169,2025-03-06,2025-03-14,1 vial,Every 8 hours
+74895326292,380,98169,2025-03-06,2025-03-14,1 vial,Every 8 hours
+99795619901,306,94505,2025-08-10,2025-08-24,1 pill,After lunch
+99795619901,336,94505,2025-08-10,2025-08-24,1 pill,After lunch
+99795619901,427,94505,2025-08-10,2025-08-24,1 pill,After lunch
+38538288127,59,11128,2026-01-08,2026-02-04,2 pills,After lunch
+38538288127,115,11128,2026-01-08,2026-02-04,2 pills,After lunch
+98901183989,268,111852,2025-11-05,2025-11-14,500mg,After lunch
+18193427864,162,51855,2026-03-22,2026-04-18,1000mg,Twice a day
+18193427864,391,51855,2026-03-22,2026-04-18,1000mg,Twice a day
+18193427864,490,51855,2026-03-22,2026-04-18,1000mg,Twice a day
+18193427864,158,23415,2025-05-25,2025-06-05,1 spoon,Every 8 hours
+18193427864,283,23415,2025-05-25,2025-06-05,1 spoon,Every 8 hours
+18193427864,291,23415,2025-05-25,2025-06-05,1 spoon,Every 8 hours
+18193427864,402,23415,2025-05-25,2025-06-05,1 spoon,Every 8 hours
+75339133780,85,48546,2025-11-03,2025-11-30,1000mg,After lunch
+75339133780,447,48546,2025-11-03,2025-11-30,1000mg,After lunch
+74895326292,5,127089,2025-10-20,2025-11-04,1000mg,After lunch
+74895326292,231,127089,2025-10-20,2025-11-04,1000mg,After lunch
+74895326292,392,127089,2025-10-20,2025-11-04,1000mg,After lunch
+74895326292,398,127089,2025-10-20,2025-11-04,1000mg,After lunch
+74895326292,411,127089,2025-10-20,2025-11-04,1000mg,After lunch
+84320135602,108,96711,2025-09-23,2025-10-18,2 pills,After lunch
+78832401220,306,136338,2025-02-06,2025-02-26,2 pills,Every 12 hours
+78832401220,336,136338,2025-02-06,2025-02-26,2 pills,Every 12 hours
+78832401220,427,136338,2025-02-06,2025-02-26,2 pills,Every 12 hours
+94374664371,25,13375,2025-07-17,2025-08-04,1 vial,Every 12 hours
+94374664371,262,13375,2025-07-17,2025-08-04,1 vial,Every 12 hours
+94374664371,443,13375,2025-07-17,2025-08-04,1 vial,Every 12 hours
+30689575097,53,9608,2025-09-30,2025-10-12,1000mg,Every 8 hours
+30689575097,203,9608,2025-09-30,2025-10-12,1000mg,Every 8 hours
+22561283452,4,66244,2025-02-10,2025-02-23,1000mg,Every 12 hours
+22561283452,170,66244,2025-02-10,2025-02-23,1000mg,Every 12 hours
+22561283452,282,66244,2025-02-10,2025-02-23,1000mg,Every 12 hours
+92698522280,169,107749,2025-06-20,2025-07-20,1 spoon,Once a day
+40889689402,303,40022,2025-12-24,2025-12-28,1000mg,Every 12 hours
+51734845697,453,44150,2025-03-11,2025-04-04,1000mg,After lunch
+56784597458,93,61029,2025-11-18,2025-12-14,500mg,Every 8 hours
+56784597458,337,61029,2025-11-18,2025-12-14,500mg,Every 8 hours
+56784597458,396,61029,2025-11-18,2025-12-14,500mg,Every 8 hours
+19276620746,357,33718,2026-03-11,2026-04-05,2 pills,Once a day
+44869451267,25,8580,2025-02-10,2025-03-08,1 pill,Twice a day
+44869451267,262,8580,2025-02-10,2025-03-08,1 pill,Twice a day
+44869451267,443,8580,2025-02-10,2025-03-08,1 pill,Twice a day
+62743168874,49,46092,2026-02-22,2026-03-22,500mg,Every 12 hours
+62743168874,111,46092,2026-02-22,2026-03-22,500mg,Every 12 hours
+62743168874,144,46092,2026-02-22,2026-03-22,500mg,Every 12 hours
+62743168874,220,46092,2026-02-22,2026-03-22,500mg,Every 12 hours
+62743168874,270,46092,2026-02-22,2026-03-22,500mg,Every 12 hours
+62743168874,298,46092,2026-02-22,2026-03-22,500mg,Every 12 hours
+51927673524,261,13951,2025-02-03,2025-03-05,1 vial,Once a day
+22561283452,338,17222,2025-03-09,2025-03-14,2 pills,Every 12 hours
+53434182353,129,77691,2025-05-03,2025-05-10,1 pill,After lunch
+53434182353,153,77691,2025-05-03,2025-05-10,1 pill,After lunch
+73253025603,116,65983,2025-07-08,2025-07-20,1 pill,Twice a day
+73253025603,359,65983,2025-07-08,2025-07-20,1 pill,Twice a day
+52288372388,21,144820,2025-05-19,2025-06-02,1 pill,Every 12 hours
+52288372388,221,144820,2025-05-19,2025-06-02,1 pill,Every 12 hours
+52288372388,477,144820,2025-05-19,2025-06-02,1 pill,Every 12 hours
+99795619901,21,44208,2025-09-29,2025-10-08,2 pills,Every 12 hours
+99795619901,221,44208,2025-09-29,2025-10-08,2 pills,Every 12 hours
+99795619901,477,44208,2025-09-29,2025-10-08,2 pills,Every 12 hours
+39243562439,27,162930,2025-07-10,2025-07-14,500mg,Every 12 hours
+39243562439,235,162930,2025-07-10,2025-07-14,500mg,Every 12 hours
+84320135602,102,149335,2025-08-02,2025-08-20,500mg,Once a day
+84320135602,109,149335,2025-08-02,2025-08-20,500mg,Once a day
+84320135602,136,149335,2025-08-02,2025-08-20,500mg,Once a day
+84320135602,272,149335,2025-08-02,2025-08-20,500mg,Once a day
+84320135602,422,149335,2025-08-02,2025-08-20,500mg,Once a day
+84320135602,465,149335,2025-08-02,2025-08-20,500mg,Once a day
+60552999461,27,151068,2026-01-26,2026-02-10,1 spoon,Every 8 hours
+60552999461,235,151068,2026-01-26,2026-02-10,1 spoon,Every 8 hours
+67697807470,30,74180,2025-08-12,2025-08-18,1 pill,Every 12 hours
+67697807470,96,74180,2025-08-12,2025-08-18,1 pill,Every 12 hours
+67697807470,110,74180,2025-08-12,2025-08-18,1 pill,Every 12 hours
+67697807470,165,74180,2025-08-12,2025-08-18,1 pill,Every 12 hours
+27946441835,85,160688,2025-07-06,2025-07-11,2 pills,Twice a day
+27946441835,447,160688,2025-07-06,2025-07-11,2 pills,Twice a day
+13706183648,78,85014,2025-07-05,2025-08-04,1 pill,After lunch
+13706183648,163,85014,2025-07-05,2025-08-04,1 pill,After lunch
+13706183648,192,85014,2025-07-05,2025-08-04,1 pill,After lunch
+51734845697,417,120909,2026-03-05,2026-03-25,1 pill,After lunch
+78832401220,82,106431,2025-11-10,2025-11-14,1 spoon,Once a day
+78832401220,373,106431,2025-11-10,2025-11-14,1 spoon,Once a day
+94613426776,71,160255,2025-08-13,2025-09-12,500mg,After lunch
+94613426776,157,160255,2025-08-13,2025-09-12,500mg,After lunch
+94613426776,492,160255,2025-08-13,2025-09-12,500mg,After lunch
+22561283452,108,14316,2025-08-27,2025-08-30,2 pills,Twice a day
+20140926142,1,69251,2025-11-21,2025-12-07,1 vial,Twice a day
+20140926142,8,69251,2025-11-21,2025-12-07,1 vial,Twice a day
+20140926142,23,69251,2025-11-21,2025-12-07,1 vial,Twice a day
+20140926142,61,69251,2025-11-21,2025-12-07,1 vial,Twice a day
+20140926142,232,69251,2025-11-21,2025-12-07,1 vial,Twice a day
+20140926142,255,69251,2025-11-21,2025-12-07,1 vial,Twice a day
+20140926142,294,69251,2025-11-21,2025-12-07,1 vial,Twice a day
+20140926142,333,69251,2025-11-21,2025-12-07,1 vial,Twice a day
+20140926142,397,69251,2025-11-21,2025-12-07,1 vial,Twice a day
+99795619901,229,34649,2025-06-20,2025-07-12,2 pills,After lunch
+99795619901,327,34649,2025-06-20,2025-07-12,2 pills,After lunch
+98870684482,309,7405,2025-08-26,2025-09-24,500mg,Every 12 hours
+98870684482,450,7405,2025-08-26,2025-09-24,500mg,Every 12 hours
+56650467990,122,28246,2026-01-25,2026-02-12,2 pills,Twice a day
+56650467990,198,28246,2026-01-25,2026-02-12,2 pills,Twice a day
+56650467990,383,28246,2026-01-25,2026-02-12,2 pills,Twice a day
+56650467990,462,28246,2026-01-25,2026-02-12,2 pills,Twice a day
+52288372388,259,355,2025-11-03,2025-11-25,2 pills,Every 8 hours
+91367023329,385,79788,2026-03-12,2026-03-20,1000mg,Every 8 hours
+91367023329,481,79788,2026-03-12,2026-03-20,1000mg,Every 8 hours
+38538288127,219,3930,2025-04-27,2025-05-15,1 pill,Once a day
+45979296668,71,74766,2025-03-20,2025-04-17,1 pill,Every 8 hours
+45979296668,157,74766,2025-03-20,2025-04-17,1 pill,Every 8 hours
+45979296668,492,74766,2025-03-20,2025-04-17,1 pill,Every 8 hours
+80036372124,120,93751,2025-12-03,2025-12-30,1 spoon,After lunch
+80036372124,182,93751,2025-12-03,2025-12-30,1 spoon,After lunch
+52288372388,180,28289,2025-08-05,2025-08-18,1 vial,Once a day
+52288372388,388,28289,2025-08-05,2025-08-18,1 vial,Once a day
+98451520706,275,132766,2025-06-27,2025-07-12,1 spoon,Twice a day
+98451520706,420,132766,2025-06-27,2025-07-12,1 spoon,Twice a day
+90134508778,164,46422,2025-05-15,2025-06-03,2 pills,After lunch
+90134508778,295,46422,2025-05-15,2025-06-03,2 pills,After lunch
+90134508778,377,46422,2025-05-15,2025-06-03,2 pills,After lunch
+90134508778,403,46422,2025-05-15,2025-06-03,2 pills,After lunch
+90134508778,460,46422,2025-05-15,2025-06-03,2 pills,After lunch
+35895166626,164,42303,2025-12-22,2026-01-06,1 pill,Every 12 hours
+35895166626,295,42303,2025-12-22,2026-01-06,1 pill,Every 12 hours
+35895166626,377,42303,2025-12-22,2026-01-06,1 pill,Every 12 hours
+35895166626,403,42303,2025-12-22,2026-01-06,1 pill,Every 12 hours
+35895166626,460,42303,2025-12-22,2026-01-06,1 pill,Every 12 hours
+83923788555,365,129679,2025-05-26,2025-06-24,1000mg,Twice a day
+83923788555,439,129679,2025-05-26,2025-06-24,1000mg,Twice a day
+83923788555,487,129679,2025-05-26,2025-06-24,1000mg,Twice a day
+62496380045,42,70573,2025-06-25,2025-07-17,500mg,Once a day
+62496380045,444,70573,2025-06-25,2025-07-17,500mg,Once a day
+62743168874,17,2063,2026-01-07,2026-02-02,1 pill,Once a day
+62743168874,75,2063,2026-01-07,2026-02-02,1 pill,Once a day
+62743168874,217,2063,2026-01-07,2026-02-02,1 pill,Once a day
+62743168874,271,2063,2026-01-07,2026-02-02,1 pill,Once a day
+53727815147,9,149783,2025-12-28,2026-01-01,1 vial,After lunch
+53727815147,233,149783,2025-12-28,2026-01-01,1 vial,After lunch
+53727815147,234,149783,2025-12-28,2026-01-01,1 vial,After lunch
+19276620746,193,103508,2025-11-16,2025-12-15,500mg,Every 8 hours
+19276620746,409,103508,2025-11-16,2025-12-15,500mg,Every 8 hours
+19276620746,499,103508,2025-11-16,2025-12-15,500mg,Every 8 hours
+15517900330,278,27519,2025-02-20,2025-03-04,2 pills,Every 8 hours
+15517900330,280,27519,2025-02-20,2025-03-04,2 pills,Every 8 hours
+53727815147,40,149347,2025-10-29,2025-11-10,1 vial,Every 12 hours
+38538288127,200,27162,2025-08-13,2025-09-09,1 vial,Twice a day
+38538288127,324,27162,2025-08-13,2025-09-09,1 vial,Twice a day
+38538288127,500,27162,2025-08-13,2025-09-09,1 vial,Twice a day
+60344799227,35,80864,2025-05-27,2025-06-05,1000mg,After lunch
+60344799227,207,80864,2025-05-27,2025-06-05,1000mg,After lunch
+60344799227,244,80864,2025-05-27,2025-06-05,1000mg,After lunch
+60344799227,478,80864,2025-05-27,2025-06-05,1000mg,After lunch
+19276620746,90,20664,2025-01-18,2025-02-10,1000mg,Every 12 hours
+19276620746,239,20664,2025-01-18,2025-02-10,1000mg,Every 12 hours
+19276620746,484,20664,2025-01-18,2025-02-10,1000mg,Every 12 hours
+83923788555,25,144464,2025-08-29,2025-09-01,1 spoon,Every 12 hours
+83923788555,262,144464,2025-08-29,2025-09-01,1 spoon,Every 12 hours
+83923788555,443,144464,2025-08-29,2025-09-01,1 spoon,Every 12 hours
+53434182353,407,135016,2025-10-31,2025-11-18,1 pill,Every 8 hours
+67758463500,60,22410,2025-10-28,2025-11-17,1 spoon,Once a day
+67758463500,118,22410,2025-10-28,2025-11-17,1 spoon,Once a day
+67758463500,389,22410,2025-10-28,2025-11-17,1 spoon,Once a day
+97287210691,184,77200,2025-01-24,2025-02-21,500mg,After lunch
+97287210691,440,77200,2025-01-24,2025-02-21,500mg,After lunch
+31551628292,64,10434,2025-01-21,2025-02-12,1 vial,After lunch
+22561283452,371,129440,2025-10-05,2025-10-18,1000mg,Every 12 hours
+22561283452,372,129440,2025-10-05,2025-10-18,1000mg,Every 12 hours
+22561283452,401,129440,2025-10-05,2025-10-18,1000mg,Every 12 hours
+22561283452,463,129440,2025-10-05,2025-10-18,1000mg,Every 12 hours
+98901183989,229,138626,2026-02-08,2026-03-05,500mg,After lunch
+98901183989,327,138626,2026-02-08,2026-03-05,500mg,After lunch
+65063112418,7,61322,2025-01-12,2025-01-18,2 pills,Every 8 hours
+65063112418,212,61322,2025-01-12,2025-01-18,2 pills,Every 8 hours
+65063112418,314,61322,2025-01-12,2025-01-18,2 pills,Every 8 hours
+67758463500,164,70848,2025-02-18,2025-03-12,1 vial,After lunch
+67758463500,295,70848,2025-02-18,2025-03-12,1 vial,After lunch
+67758463500,377,70848,2025-02-18,2025-03-12,1 vial,After lunch
+67758463500,403,70848,2025-02-18,2025-03-12,1 vial,After lunch
+67758463500,460,70848,2025-02-18,2025-03-12,1 vial,After lunch
+22561283452,268,120307,2025-12-27,2026-01-03,500mg,Twice a day
+33860842912,83,95351,2025-05-25,2025-06-23,1 vial,Once a day
+33860842912,121,95351,2025-05-25,2025-06-23,1 vial,Once a day
+33860842912,469,95351,2025-05-25,2025-06-23,1 vial,Once a day
+65063112418,107,94816,2026-02-25,2026-03-06,500mg,Every 12 hours
+65063112418,177,94816,2026-02-25,2026-03-06,500mg,Every 12 hours
+20140926142,119,31360,2025-12-08,2026-01-07,2 pills,Once a day
+20140926142,248,31360,2025-12-08,2026-01-07,2 pills,Once a day
+20140926142,451,31360,2025-12-08,2026-01-07,2 pills,Once a day
+20140926142,480,31360,2025-12-08,2026-01-07,2 pills,Once a day
+20140926142,496,31360,2025-12-08,2026-01-07,2 pills,Once a day
+83923788555,273,145277,2026-01-27,2026-02-25,500mg,Once a day
+89981892222,35,147367,2025-05-22,2025-05-25,1 pill,Twice a day
+89981892222,207,147367,2025-05-22,2025-05-25,1 pill,Twice a day
+89981892222,244,147367,2025-05-22,2025-05-25,1 pill,Twice a day
+89981892222,478,147367,2025-05-22,2025-05-25,1 pill,Twice a day
+20140926142,35,71321,2025-09-15,2025-10-10,1 spoon,Every 8 hours
+20140926142,207,71321,2025-09-15,2025-10-10,1 spoon,Every 8 hours
+20140926142,244,71321,2025-09-15,2025-10-10,1 spoon,Every 8 hours
+20140926142,478,71321,2025-09-15,2025-10-10,1 spoon,Every 8 hours
+20287442157,184,142127,2025-02-14,2025-03-14,1 spoon,After lunch
+20287442157,440,142127,2025-02-14,2025-03-14,1 spoon,After lunch
+56650467990,133,47239,2025-07-05,2025-07-29,500mg,After lunch
+56650467990,287,47239,2025-07-05,2025-07-29,500mg,After lunch
+56650467990,358,47239,2025-07-05,2025-07-29,500mg,After lunch
+56650467990,410,47239,2025-07-05,2025-07-29,500mg,After lunch
+60552999461,90,156281,2025-11-14,2025-12-09,1 pill,After lunch
+60552999461,239,156281,2025-11-14,2025-12-09,1 pill,After lunch
+60552999461,484,156281,2025-11-14,2025-12-09,1 pill,After lunch
+40889689402,56,122976,2025-09-10,2025-09-20,1000mg,Once a day
+40889689402,206,122976,2025-09-10,2025-09-20,1000mg,Once a day
+40889689402,307,122976,2025-09-10,2025-09-20,1000mg,Once a day
+40889689402,374,122976,2025-09-10,2025-09-20,1000mg,Once a day
+67697807470,71,63968,2026-03-05,2026-03-13,1 spoon,Twice a day
+67697807470,157,63968,2026-03-05,2026-03-13,1 spoon,Twice a day
+67697807470,492,63968,2026-03-05,2026-03-13,1 spoon,Twice a day
+97287210691,99,161027,2025-06-12,2025-07-11,1 spoon,Once a day
+40889689402,466,2215,2026-01-08,2026-02-04,1000mg,Once a day
+53434182353,321,51558,2025-05-23,2025-06-11,2 pills,Every 12 hours
+53727815147,42,141145,2025-04-20,2025-05-13,1 spoon,Every 12 hours
+53727815147,444,141145,2025-04-20,2025-05-13,1 spoon,Every 12 hours
+78832401220,133,92304,2025-10-27,2025-11-16,2 pills,Once a day
+78832401220,287,92304,2025-10-27,2025-11-16,2 pills,Once a day
+78832401220,358,92304,2025-10-27,2025-11-16,2 pills,Once a day
+78832401220,410,92304,2025-10-27,2025-11-16,2 pills,Once a day
+97287210691,54,74150,2025-05-12,2025-06-08,1000mg,Every 12 hours
+97287210691,205,74150,2025-05-12,2025-06-08,1000mg,Every 12 hours
+97287210691,491,74150,2025-05-12,2025-06-08,1000mg,Every 12 hours
+21389790404,375,68131,2025-07-11,2025-08-05,1 pill,Twice a day
+22585413484,44,2181,2026-02-13,2026-02-18,1000mg,Every 8 hours
+22585413484,146,2181,2026-02-13,2026-02-18,1000mg,Every 8 hours
+22585413484,147,2181,2026-02-13,2026-02-18,1000mg,Every 8 hours
+22585413484,267,2181,2026-02-13,2026-02-18,1000mg,Every 8 hours
+22585413484,353,2181,2026-02-13,2026-02-18,1000mg,Every 8 hours
+22561283452,259,9477,2025-04-16,2025-05-09,500mg,Once a day
+32379434579,28,123188,2025-05-08,2025-05-15,1 pill,Twice a day
+32379434579,154,123188,2025-05-08,2025-05-15,1 pill,Twice a day
+32379434579,167,123188,2025-05-08,2025-05-15,1 pill,Twice a day
+32379434579,448,123188,2025-05-08,2025-05-15,1 pill,Twice a day
+62743168874,166,98473,2025-10-27,2025-11-09,500mg,Once a day
+77117947422,55,81700,2025-05-18,2025-05-28,1 pill,Twice a day
+77117947422,94,81700,2025-05-18,2025-05-28,1 pill,Twice a day
+52288372388,375,34413,2025-09-16,2025-10-11,1 spoon,Twice a day
+81344410739,1,144092,2025-01-15,2025-02-05,1 pill,Every 8 hours
+81344410739,8,144092,2025-01-15,2025-02-05,1 pill,Every 8 hours
+81344410739,23,144092,2025-01-15,2025-02-05,1 pill,Every 8 hours
+81344410739,61,144092,2025-01-15,2025-02-05,1 pill,Every 8 hours
+81344410739,232,144092,2025-01-15,2025-02-05,1 pill,Every 8 hours
+81344410739,255,144092,2025-01-15,2025-02-05,1 pill,Every 8 hours
+81344410739,294,144092,2025-01-15,2025-02-05,1 pill,Every 8 hours
+81344410739,333,144092,2025-01-15,2025-02-05,1 pill,Every 8 hours
+81344410739,397,144092,2025-01-15,2025-02-05,1 pill,Every 8 hours
+60344799227,139,23921,2025-10-15,2025-11-14,2 pills,Twice a day
+60344799227,194,23921,2025-10-15,2025-11-14,2 pills,Twice a day
+60344799227,331,23921,2025-10-15,2025-11-14,2 pills,Twice a day
+30871168286,152,116747,2025-03-31,2025-04-30,1 pill,Every 8 hours
+30871168286,222,116747,2025-03-31,2025-04-30,1 pill,Every 8 hours
+62066779638,104,66859,2025-09-19,2025-10-11,1 pill,Every 8 hours
+62066779638,387,66859,2025-09-19,2025-10-11,1 pill,Every 8 hours
+62066779638,455,66859,2025-09-19,2025-10-11,1 pill,Every 8 hours
+78832401220,106,58054,2025-05-02,2025-05-18,1 spoon,Every 12 hours
+78832401220,257,58054,2025-05-02,2025-05-18,1 spoon,Every 12 hours
+78832401220,258,58054,2025-05-02,2025-05-18,1 spoon,Every 12 hours
+78832401220,405,58054,2025-05-02,2025-05-18,1 spoon,Every 12 hours
+78832401220,473,58054,2025-05-02,2025-05-18,1 spoon,Every 12 hours
+98870684482,12,372,2026-01-31,2026-02-12,2 pills,Twice a day
+98870684482,97,372,2026-01-31,2026-02-12,2 pills,Twice a day
+98870684482,412,372,2026-01-31,2026-02-12,2 pills,Twice a day
+67697807470,224,156568,2025-06-03,2025-06-20,1 vial,Every 8 hours
+67758463500,162,147042,2026-03-18,2026-04-13,500mg,Every 12 hours
+67758463500,391,147042,2026-03-18,2026-04-13,500mg,Every 12 hours
+67758463500,490,147042,2026-03-18,2026-04-13,500mg,Every 12 hours
+82857924186,407,152686,2025-12-27,2025-12-30,1000mg,Twice a day
+98870684482,105,9857,2025-08-28,2025-09-15,500mg,After lunch
+98870684482,290,9857,2025-08-28,2025-09-15,500mg,After lunch
+98870684482,308,9857,2025-08-28,2025-09-15,500mg,After lunch
+98870684482,326,9857,2025-08-28,2025-09-15,500mg,After lunch
+98451520706,325,80095,2025-10-25,2025-11-15,500mg,After lunch
+98451520706,344,80095,2025-10-25,2025-11-15,500mg,After lunch
+51927673524,268,95103,2026-03-25,2026-04-21,500mg,Every 8 hours
+18193427864,73,12073,2026-03-23,2026-03-27,1 spoon,Every 8 hours
+62496380045,252,145584,2025-07-31,2025-08-24,500mg,Twice a day
+62496380045,368,145584,2025-07-31,2025-08-24,500mg,Twice a day
+62496380045,413,145584,2025-07-31,2025-08-24,500mg,Twice a day
+62496380045,429,145584,2025-07-31,2025-08-24,500mg,Twice a day
+60552999461,43,157417,2026-03-23,2026-03-30,500mg,Every 12 hours
+60552999461,346,157417,2026-03-23,2026-03-30,500mg,Every 12 hours
+60552999461,414,157417,2026-03-23,2026-03-30,500mg,Every 12 hours
+60552999461,445,157417,2026-03-23,2026-03-30,500mg,Every 12 hours
+27946441835,125,107461,2025-04-20,2025-05-07,2 pills,Twice a day
+27946441835,301,107461,2025-04-20,2025-05-07,2 pills,Twice a day
+27946441835,363,107461,2025-04-20,2025-05-07,2 pills,Twice a day
+27946441835,421,107461,2025-04-20,2025-05-07,2 pills,Twice a day
+44869451267,275,113774,2025-06-03,2025-06-06,1000mg,After lunch
+44869451267,420,113774,2025-06-03,2025-06-06,1000mg,After lunch
+98451520706,38,67733,2026-03-04,2026-03-27,500mg,Every 12 hours
+98451520706,256,67733,2026-03-04,2026-03-27,500mg,Every 12 hours
+98451520706,317,67733,2026-03-04,2026-03-27,500mg,Every 12 hours
+98451520706,382,67733,2026-03-04,2026-03-27,500mg,Every 12 hours
+98451520706,464,10293,2025-12-29,2026-01-12,1000mg,Twice a day
+91367023329,53,78570,2025-05-17,2025-06-08,500mg,After lunch
+91367023329,203,78570,2025-05-17,2025-06-08,500mg,After lunch
+62496380045,313,29435,2026-01-28,2026-02-24,1 vial,Every 12 hours
+62496380045,433,29435,2026-01-28,2026-02-24,1 vial,Every 12 hours
+62496380045,471,29435,2026-01-28,2026-02-24,1 vial,Every 12 hours
+62743168874,149,15304,2026-03-07,2026-03-14,1000mg,Every 8 hours
+62743168874,171,15304,2026-03-07,2026-03-14,1000mg,Every 8 hours
+62743168874,178,15304,2026-03-07,2026-03-14,1000mg,Every 8 hours
+83923788555,7,48049,2025-01-04,2025-01-09,1000mg,Every 8 hours
+83923788555,212,48049,2025-01-04,2025-01-09,1000mg,Every 8 hours
+83923788555,314,48049,2025-01-04,2025-01-09,1000mg,Every 8 hours
+36702445480,29,21978,2025-06-07,2025-06-24,500mg,Every 12 hours
+65063112418,65,140159,2025-05-09,2025-06-08,2 pills,Every 12 hours
+65063112418,126,140159,2025-05-09,2025-06-08,2 pills,Every 12 hours
+30639295654,166,77930,2025-04-15,2025-05-12,1 pill,Twice a day
+45979296668,48,88436,2025-06-07,2025-07-05,1 vial,Every 8 hours
+45979296668,63,88436,2025-06-07,2025-07-05,1 vial,Every 8 hours
+45979296668,210,88436,2025-06-07,2025-07-05,1 vial,Every 8 hours
+45979296668,213,88436,2025-06-07,2025-07-05,1 vial,Every 8 hours
+45979296668,216,88436,2025-06-07,2025-07-05,1 vial,Every 8 hours
+45979296668,318,88436,2025-06-07,2025-07-05,1 vial,Every 8 hours
+20140926142,56,87726,2025-02-24,2025-03-26,1 spoon,Once a day
+20140926142,206,87726,2025-02-24,2025-03-26,1 spoon,Once a day
+20140926142,307,87726,2025-02-24,2025-03-26,1 spoon,Once a day
+20140926142,374,87726,2025-02-24,2025-03-26,1 spoon,Once a day
+73253025603,30,68694,2025-08-28,2025-09-14,1 pill,After lunch
+73253025603,96,68694,2025-08-28,2025-09-14,1 pill,After lunch
+73253025603,110,68694,2025-08-28,2025-09-14,1 pill,After lunch
+73253025603,165,68694,2025-08-28,2025-09-14,1 pill,After lunch
+20140926142,9,119898,2025-01-17,2025-02-01,1 vial,Once a day
+20140926142,233,119898,2025-01-17,2025-02-01,1 vial,Once a day
+20140926142,234,119898,2025-01-17,2025-02-01,1 vial,Once a day
+62743168874,71,62792,2025-10-27,2025-10-31,1 pill,Every 8 hours
+62743168874,157,62792,2025-10-27,2025-10-31,1 pill,Every 8 hours
+62743168874,492,62792,2025-10-27,2025-10-31,1 pill,Every 8 hours
+82857924186,107,85061,2025-04-19,2025-05-08,1 vial,After lunch
+82857924186,177,85061,2025-04-19,2025-05-08,1 vial,After lunch
+52288372388,417,150339,2025-08-23,2025-09-11,1000mg,Once a day
+33860842912,14,104785,2026-01-17,2026-02-07,500mg,Every 12 hours
+33860842912,128,104785,2026-01-17,2026-02-07,500mg,Every 12 hours
+96575194408,47,150405,2025-08-04,2025-08-30,2 pills,Every 8 hours
+96575194408,131,150405,2025-08-04,2025-08-30,2 pills,Every 8 hours
+96575194408,211,150405,2025-08-04,2025-08-30,2 pills,Every 8 hours
+96575194408,399,150405,2025-08-04,2025-08-30,2 pills,Every 8 hours
+33860842912,435,58903,2025-11-16,2025-12-16,1 pill,Once a day
+74895326292,18,132930,2026-03-24,2026-04-20,2 pills,Once a day
+74895326292,134,132930,2026-03-24,2026-04-20,2 pills,Once a day
+74895326292,406,132930,2026-03-24,2026-04-20,2 pills,Once a day
+20287442157,224,113798,2025-03-08,2025-03-29,1 pill,Every 8 hours
+53262763012,41,11354,2026-03-22,2026-04-17,1 pill,Once a day
+40850595762,64,160203,2025-08-01,2025-08-04,1000mg,Every 12 hours
+37233268274,419,48,2025-07-09,2025-07-27,2 pills,Every 8 hours
+57199282441,11,97702,2025-06-21,2025-06-28,500mg,Once a day
+57199282441,311,97702,2025-06-21,2025-06-28,500mg,Once a day
+57199282441,362,97702,2025-06-21,2025-06-28,500mg,Once a day
+52288372388,166,107032,2025-12-02,2025-12-31,1 spoon,Twice a day
+40889689402,68,106974,2025-01-22,2025-02-20,1000mg,Twice a day
+40889689402,80,106974,2025-01-22,2025-02-20,1000mg,Twice a day
+40889689402,486,106974,2025-01-22,2025-02-20,1000mg,Twice a day

@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Hospital_EER" id="0">
-    <mxGraphModel dx="2279" dy="2835" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2336" pageHeight="1654" background="#ffffff" math="0" shadow="0">
+    <mxGraphModel dx="1519" dy="2442" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2336" pageHeight="1654" background="#ffffff" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -92,17 +92,10 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="B5t3BmvRQQ7wJzP6GV-l-19" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="ΣΥΝΤΑΓΟΓΡΑΦΗΣΗ&lt;div&gt;(Prescription)&lt;/div&gt;" vertex="1">
-          <mxGeometry height="200" width="220" x="1742" y="1460" as="geometry" />
+          <mxGeometry height="170" width="220" x="1742" y="1460" as="geometry" />
         </mxCell>
-        <mxCell id="B5t3BmvRQQ7wJzP6GV-l-20" parent="B5t3BmvRQQ7wJzP6GV-l-19" style="align=left;strokeColor=#82b366;fillColor=#d5e8d4;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="&lt;b&gt;doctor_id&lt;/b&gt;&lt;div&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;patient_id&amp;nbsp;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;drug_id&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;start_date&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;dosage&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;frequency&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;end_date&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;u&gt;PK(&lt;/u&gt;doctor_id,patient_id,drug_id,&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;start_date)&lt;/b&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="150" width="220" y="50" as="geometry" />
-        </mxCell>
-        <mxCell id="WpAH-DKHkujoOkL6NEc0-16" edge="1" parent="B5t3BmvRQQ7wJzP6GV-l-19" style="endArrow=none;html=1;rounded=0;entryX=0.992;entryY=0.694;entryDx=0;entryDy=0;entryPerimeter=0;" value="">
-          <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <Array as="points" />
-            <mxPoint y="160" as="sourcePoint" />
-            <mxPoint x="218.24" y="161.92000000000007" as="targetPoint" />
-          </mxGeometry>
+        <mxCell id="B5t3BmvRQQ7wJzP6GV-l-20" parent="B5t3BmvRQQ7wJzP6GV-l-19" style="align=left;strokeColor=#82b366;fillColor=#d5e8d4;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="&lt;div&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;start_date&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;dosage&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;frequency&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;end_date&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;u&gt;PK(&lt;/u&gt;doctor_id,hosp_id,drug_id,&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;start_date)&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="220" y="50" as="geometry" />
         </mxCell>
         <mxCell id="B5t3BmvRQQ7wJzP6GV-l-21" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="ΦΑΡΜΑΚΟ&lt;div&gt;(Drug)&lt;/div&gt;" vertex="1">
           <mxGeometry height="184.43" width="160" x="2230" y="1460.85" as="geometry" />
@@ -233,7 +226,7 @@
         <mxCell id="B5t3BmvRQQ7wJzP6GV-l-107" parent="1" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;fillColor=#fff2cc;gradientColor=#ffd966;strokeColor=#d6b656;" value="ΑΝΗΚΕΙ ΣΕ&lt;div&gt;ΤΜΗΜΑ&lt;/div&gt;" vertex="1">
           <mxGeometry height="60" width="120" x="1101" y="862.5699999999999" as="geometry" />
         </mxCell>
-        <mxCell id="B5t3BmvRQQ7wJzP6GV-l-110" edge="1" parent="1" source="B5t3BmvRQQ7wJzP6GV-l-90" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;endFill=1;edgeStyle=orthogonalEdgeStyle;entryX=-0.002;entryY=0.084;entryDx=0;entryDy=0;entryPerimeter=0;" target="B5t3BmvRQQ7wJzP6GV-l-12" value="">
+        <mxCell id="B5t3BmvRQQ7wJzP6GV-l-110" edge="1" parent="1" source="B5t3BmvRQQ7wJzP6GV-l-90" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;endFill=0;edgeStyle=orthogonalEdgeStyle;entryX=-0.002;entryY=0.084;entryDx=0;entryDy=0;entryPerimeter=0;" target="B5t3BmvRQQ7wJzP6GV-l-12" value="">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="1171" y="1229.07" as="sourcePoint" />
             <mxPoint x="1371" y="1112.57" as="targetPoint" />
@@ -464,7 +457,7 @@
             <mxPoint x="730" y="110" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="8yaWdxjNxA50f_M88j0Z-14" edge="1" parent="1" source="B5t3BmvRQQ7wJzP6GV-l-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" target="B5t3BmvRQQ7wJzP6GV-l-90">
+        <mxCell id="8yaWdxjNxA50f_M88j0Z-14" edge="1" parent="1" source="B5t3BmvRQQ7wJzP6GV-l-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;startArrow=classic;startFill=1;" target="B5t3BmvRQQ7wJzP6GV-l-90">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="8yaWdxjNxA50f_M88j0Z-22" edge="1" parent="1" source="8yaWdxjNxA50f_M88j0Z-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="VKujEfLfV1JH3WWzGjoR-23">
@@ -644,6 +637,21 @@
         </mxCell>
         <mxCell id="ak6XrQ55uK8_i55DLiUd-1" parent="1" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;fillColor=#f8cecc;strokeColor=#b85450;" value="ΠΕΡΙΕΧΕΙ" vertex="1">
           <mxGeometry height="60" width="120" x="2030" y="1482.07" as="geometry" />
+        </mxCell>
+        <mxCell id="ak6XrQ55uK8_i55DLiUd-3" parent="1" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;fillColor=#f8cecc;strokeColor=#b85450;" value="ΧΟΡΗΓΕΙ" vertex="1">
+          <mxGeometry height="60" width="120" x="1350" y="1699.5" as="geometry" />
+        </mxCell>
+        <mxCell id="ak6XrQ55uK8_i55DLiUd-4" edge="1" parent="1" source="B5t3BmvRQQ7wJzP6GV-l-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" target="ak6XrQ55uK8_i55DLiUd-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ak6XrQ55uK8_i55DLiUd-6" edge="1" parent="1" source="ak6XrQ55uK8_i55DLiUd-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.7;entryDx=0;entryDy=0;entryPerimeter=0;" target="VKujEfLfV1JH3WWzGjoR-20">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="80" y="1730" />
+              <mxPoint x="80" y="290" />
+            </Array>
+            <mxPoint x="630" y="290" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
