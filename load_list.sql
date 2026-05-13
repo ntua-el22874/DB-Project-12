@@ -1,4 +1,5 @@
 -- cannot be run from sqltools(vscode) must be run from terminal
+--Every load instruction in this file tested on MariaDB Ver 15.1 Distrib 10.11.14-MariaDB, for debian-linux-gnu
 LOAD DATA LOCAL INFILE './ListForDB_csv/Staff_Clean.csv'
 INTO TABLE Staff 
 FIELDS TERMINATED BY ',' 
@@ -85,22 +86,31 @@ INTO TABLE Triage
 FIELDS TERMINATED BY ','
 LINES TERMINATED BY '\n'
 IGNORE 1 ROWS;
--- up to here everything loads correctly
-LOAD DATA LOCAL INFILE './ListForDB_csv/Medical_Acts_Clean.csv'
-INTO TABLE MedicalProcedure
-FIELDS TERMINATED BY ','
-LINES TERMINATED BY '\n'
-IGNORE 1 ROWS;
 
-LOAD DATA LOCAL INFILE './ListForDB_csv/Shifts_Clean.csv'
-INTO TABLE Shift
+LOAD DATA LOCAL INFILE './ListForDB_csv/Drugs_Clean.csv'
+INTO TABLE Drug
 FIELDS TERMINATED BY ','
+ENCLOSED BY '"'
 LINES TERMINATED BY '\n'
-IGNORE 1 ROWS;
+IGNORE 1 ROWS
+(product_name,
+route_of_administration,
+product_authorisation_country,
+marketing_authorisation_holder,
+pharmacovigilance_system_master_file_location,
+pharmacovigilance_enquiries_email_address,
+pharmacovigilance_enquiries_telephone_number);
 
 LOAD DATA LOCAL INFILE './ListForDB_csv/Substances_Clean.csv'
 INTO TABLE Substance
 FIELDS TERMINATED BY ','
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS
+(name);
+
+LOAD DATA LOCAL INFILE './ListForDB_csv/DrugSubstance_Clean.csv'
+INTO TABLE DrugSubstance
+FIELDS TERMINATED BY ','
 LINES TERMINATED BY '\n'
 IGNORE 1 ROWS;
-

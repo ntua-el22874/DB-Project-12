@@ -221,6 +221,57 @@ CREATE TABLE KEN (
     CHECK (avg_days > 0)
 );
 
+CREATE TABLE Drug (
+    drug_id INT AUTO_INCREMENT,
+    product_name VARCHAR(300) NOT NULL,
+    route_of_administration VARCHAR(220) NOT NULL,
+    product_authorisation_country VARCHAR(60) NOT NULL,
+    marketing_authorisation_holder VARCHAR(120) NOT NULL,
+    pharmacovigilance_system_master_file_location VARCHAR(60) NOT NULL,
+    pharmacovigilance_enquiries_email_address VARCHAR(100) NOT NULL,
+    pharmacovigilance_enquiries_telephone_number VARCHAR(80)NOT NULL,
+
+    PRIMARY KEY (drug_id)
+);
+
+CREATE TABLE Substance (
+    substance_id INT AUTO_INCREMENT,
+    name TEXT NOT NULL,
+
+    PRIMARY KEY (substance_id)
+);
+
+CREATE TABLE DrugSubstance (
+    drug_id INT NOT NULL,
+    substance_id INT NOT NULL,
+
+    PRIMARY KEY (drug_id, substance_id),
+
+    CONSTRAINT fk_ds_drug
+        FOREIGN KEY (drug_id) REFERENCES Drug(drug_id)
+        ON DELETE CASCADE ON UPDATE CASCADE,
+
+    CONSTRAINT fk_ds_substance
+        FOREIGN KEY (substance_id) REFERENCES Substance(substance_id)
+        ON DELETE CASCADE ON UPDATE CASCADE
+);
+
+CREATE TABLE PatientAllergy
+(
+    patient_id   BIGINT NOT NULL,
+    substance_id INT NOT NULL,
+
+    PRIMARY KEY (patient_id, substance_id),
+
+    CONSTRAINT fk_allergy_patient
+        FOREIGN KEY (patient_id) REFERENCES Patient (amka)
+            ON DELETE CASCADE ON UPDATE CASCADE,
+
+    CONSTRAINT fk_allergy_substance
+        FOREIGN KEY (substance_id) REFERENCES Substance (substance_id)
+            ON DELETE CASCADE ON UPDATE CASCADE
+);
+
 CREATE TABLE Triage (
     triage_id INT NOT NULL AUTO_INCREMENT,
     patient_id BIGINT NOT NULL,
@@ -282,6 +333,34 @@ CREATE TABLE Hospitalization (
         ON DELETE SET NULL ON UPDATE CASCADE
 );
 
+CREATE TABLE HospitalizationRating (
+    hosp_id INT NOT NULL,
+    patient_id BIGINT NOT NULL,
+    medical_care INT NOT NULL,
+    nursing_care INT NOT NULL,
+    cleanliness INT NOT NULL,
+    food INT NOT NULL,
+    overall INT NOT NULL,
+
+    PRIMARY KEY (hosp_id),
+
+    CHECK (medical_care BETWEEN 1 AND 5),
+    CHECK (nursing_care BETWEEN 1 AND 5),
+    CHECK (cleanliness BETWEEN 1 AND 5),
+    CHECK (food BETWEEN 1 AND 5),
+    CHECK (overall BETWEEN 1 AND 5),
+
+    CONSTRAINT fk_patient_rating
+        FOREIGN KEY (patient_id) REFERENCES Patient(amka)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE,
+
+    CONSTRAINT fk_rating_hosp
+        FOREIGN KEY (hosp_id) REFERENCES Hospitalization(hosp_id)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE
+);
+
 CREATE TABLE Examination (
     exam_id INT NOT NULL,
     type VARCHAR(100) NOT NULL,
@@ -299,35 +378,6 @@ CREATE TABLE Examination (
 
     CONSTRAINT fk_exam_doctor
         FOREIGN KEY (doctor_id) REFERENCES Doctor(amka)
-        ON DELETE CASCADE ON UPDATE CASCADE
-);
-
-CREATE TABLE Drug (
-    drug_id INT NOT NULL,
-    name VARCHAR(100) NOT NULL,
-
-    PRIMARY KEY (drug_id)
-);
-
-CREATE TABLE Substance (
-    substance_id INT NOT NULL,
-    name VARCHAR(100) NOT NULL,
-
-    PRIMARY KEY (substance_id)
-);
-
-CREATE TABLE DrugSubstance (
-    drug_id INT NOT NULL,
-    substance_id INT NOT NULL,
-
-    PRIMARY KEY (drug_id, substance_id),
-
-    CONSTRAINT fk_ds_drug
-        FOREIGN KEY (drug_id) REFERENCES Drug(drug_id)
-        ON DELETE CASCADE ON UPDATE CASCADE,
-
-    CONSTRAINT fk_ds_substance
-        FOREIGN KEY (substance_id) REFERENCES Substance(substance_id)
         ON DELETE CASCADE ON UPDATE CASCADE
 );
 
@@ -355,21 +405,6 @@ CREATE TABLE Prescription (
         ON DELETE CASCADE ON UPDATE CASCADE
 );
 
-CREATE TABLE PatientAllergy
-(
-    patient_id   BIGINT NOT NULL,
-    substance_id INT NOT NULL,
-
-    PRIMARY KEY (patient_id, substance_id),
-
-    CONSTRAINT fk_allergy_patient
-        FOREIGN KEY (patient_id) REFERENCES Patient (amka)
-            ON DELETE CASCADE ON UPDATE CASCADE,
-
-    CONSTRAINT fk_allergy_substance
-        FOREIGN KEY (substance_id) REFERENCES Substance (substance_id)
-            ON DELETE CASCADE ON UPDATE CASCADE
-);
 
 CREATE TABLE MedicalProcedure (
     proc_id INT NOT NULL,
@@ -444,30 +479,3 @@ CREATE TABLE ShiftAssignment (
         ON UPDATE CASCADE
 );
 
-CREATE TABLE HospitalizationRating (
-    hosp_id INT NOT NULL,
-    patient_id BIGINT NOT NULL,
-    medical_care INT NOT NULL,
-    nursing_care INT NOT NULL,
-    cleanliness INT NOT NULL,
-    food INT NOT NULL,
-    overall INT NOT NULL,
-
-    PRIMARY KEY (hosp_id),
-
-    CHECK (medical_care BETWEEN 1 AND 5),
-    CHECK (nursing_care BETWEEN 1 AND 5),
-    CHECK (cleanliness BETWEEN 1 AND 5),
-    CHECK (food BETWEEN 1 AND 5),
-    CHECK (overall BETWEEN 1 AND 5),
-
-    CONSTRAINT fk_patient_rating
-        FOREIGN KEY (patient_id) REFERENCES Patient(amka)
-        ON DELETE CASCADE
-        ON UPDATE CASCADE,
-
-    CONSTRAINT fk_rating_hosp
-        FOREIGN KEY (hosp_id) REFERENCES Hospitalization(hosp_id)
-        ON DELETE CASCADE
-        ON UPDATE CASCADE
-);
