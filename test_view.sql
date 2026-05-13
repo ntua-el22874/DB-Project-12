@@ -1,1 +1,1 @@
-SELECT * FROM Nurse;
+SELECT * FROM Hospitalization;

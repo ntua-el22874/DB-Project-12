@@ -119,7 +119,7 @@ CREATE TABLE Doctor (
 );
 
 CREATE TABLE Department (
-    dept_id INT NOT NULL AUTO_INCREMENT,
+    dept_id INT AUTO_INCREMENT,
     name VARCHAR(100) NOT NULL UNIQUE,
     description TEXT NOT NULL,
     beds_count INT NOT NULL,
@@ -154,7 +154,7 @@ CREATE TABLE Staff_Department (
 );
 
 CREATE TABLE Bed (
-    bed_id INT NOT NULL AUTO_INCREMENT,
+    bed_id INT AUTO_INCREMENT,
     type VARCHAR(30) NOT NULL,
     status VARCHAR(30) NOT NULL,
     dept_id INT NOT NULL,
@@ -276,7 +276,7 @@ CREATE TABLE PatientAllergy
 );
 
 CREATE TABLE Triage (
-    triage_id INT NOT NULL AUTO_INCREMENT,
+    triage_id INT AUTO_INCREMENT,
     patient_id BIGINT NOT NULL,
     nurse_id BIGINT NOT NULL,
     arrival_time DATETIME NOT NULL,
@@ -298,7 +298,7 @@ CREATE TABLE Triage (
 );
 
 CREATE TABLE Hospitalization (
-    hosp_id INT NOT NULL,
+    hosp_id INT AUTO_INCREMENT,
     patient_id BIGINT NOT NULL,
     bed_id INT NOT NULL,
     dept_name VARCHAR(50) NOT NULL,
@@ -405,7 +405,8 @@ CREATE TABLE Room(
 );
 
 CREATE TABLE Examination (
-    exam_id INT NOT NULL,
+    exam_id INT AUTO_INCREMENT,
+    code VARCHAR(16) NOT NULL,
     type VARCHAR(100) NOT NULL,
     exam_date DATE NOT NULL,
     result TEXT NOT NULL,
@@ -421,12 +422,16 @@ CREATE TABLE Examination (
 
     CONSTRAINT fk_exam_doctor
         FOREIGN KEY (doctor_id) REFERENCES Doctor(amka)
+        ON DELETE CASCADE ON UPDATE CASCADE,
+
+    CONSTRAINT fk_exam_name
+        FOREIGN KEY (code) REFERENCES MedicalAct(code)
         ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 
 CREATE TABLE MedicalProcedureOp (
-    proc_id INT NOT NULL,
+    proc_id INT AUTO_INCREMENT,
     proc_code VARCHAR(16) NOT NULL,
     category VARCHAR(30) NOT NULL,
     duration INT NOT NULL,
@@ -482,8 +487,6 @@ CREATE TABLE Shift (
     type VARCHAR(20) NOT NULL,
     dept INT NOT NULL
 
-    PRIMARY KEY (shift_id),
-
     CHECK (type IN ('MORNING', 'AFTERNOON', 'NIGHT')),
 
     CONSTRAINT fk_shift_dept
@@ -505,11 +508,11 @@ CREATE TABLE ShiftAssignment (
     CONSTRAINT fk_sa_staff
         FOREIGN KEY (amka) REFERENCES Staff(amka)
         ON DELETE CASCADE
-        ON UPDATE CASCADE,
-
-    CONSTRAINT fk_sa_shift
-        FOREIGN KEY (shift_id) REFERENCES Shift(shift_id)
-        ON DELETE CASCADE
         ON UPDATE CASCADE
+
+    -- CONSTRAINT fk_sa_shift
+    --     FOREIGN KEY (shift_id) REFERENCES Shift(shift_id)
+    --     ON DELETE CASCADE
+    --     ON UPDATE CASCADE
 );
 
