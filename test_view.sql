@@ -1,2 +1,1 @@
-SELECT * FROM Staff;
 SELECT * FROM Nurse;
