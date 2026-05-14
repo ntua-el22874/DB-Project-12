@@ -1,15 +1,21 @@
 DELIMITER //
 
+DROP TRIGGER IF EXISTS check_patient_allergy //
 CREATE TRIGGER check_patient_allergy
 BEFORE INSERT ON Prescription
 FOR EACH ROW
 BEGIN
+    DECLARE p_id BIGINT;
     DECLARE allergy_count INT;
+
+    SELECT patient_id INTO p_id
+    FROM Hospitalization
+    WHERE hosp_id = NEW.hosp_id;
 
     SELECT COUNT(*) INTO allergy_count
     FROM PatientAllergy
     JOIN DrugSubstance ON PatientAllergy.substance_id = DrugSubstance.substance_id
-    WHERE PatientAllergy.patient_id = NEW.patient_id
+    WHERE PatientAllergy.patient_id = p_id
       AND DrugSubstance.drug_id = NEW.drug_id;
 
     IF allergy_count > 0 THEN
@@ -18,6 +24,7 @@ BEGIN
     END IF;
 END //
 
+DROP TRIGGER IF EXISTS check_bed_status //
 CREATE TRIGGER check_bed_status
 BEFORE INSERT ON Hospitalization
 FOR EACH ROW
@@ -34,26 +41,40 @@ BEGIN
     END IF;
 END //
 
-CREATE TRIGGER check_shift_overlap
+DROP TRIGGER IF EXISTS check_shift_rules //
+CREATE TRIGGER check_shift_rules
 BEFORE INSERT ON ShiftAssignment
 FOR EACH ROW
 BEGIN
-    DECLARE overlap_count INT;
+    DECLARE violation_count INT DEFAULT 0;
+    DECLARE new_type VARCHAR(20);
+    DECLARE new_date DATE;
 
-    SELECT COUNT(*) INTO overlap_count
+    SELECT type, date INTO new_type, new_date
+    FROM Shift
+    WHERE shift_id = NEW.shift_id;
+
+    SELECT COUNT(*) INTO violation_count
     FROM ShiftAssignment
     JOIN Shift ON ShiftAssignment.shift_id = Shift.shift_id
     WHERE ShiftAssignment.amka = NEW.amka
-      AND Shift.date = (SELECT date FROM Shift WHERE shift_id = NEW.shift_id);
+      AND (
+          (Shift.date = new_date AND Shift.type = new_type)
+          OR (Shift.date = new_date AND new_type = 'MORNING' AND Shift.type = 'AFTERNOON')
+          OR (Shift.date = new_date AND new_type = 'AFTERNOON' AND Shift.type = 'MORNING')
+          OR (Shift.date = new_date AND new_type = 'AFTERNOON' AND Shift.type = 'NIGHT')
+          OR (Shift.date = new_date AND new_type = 'NIGHT' AND Shift.type = 'AFTERNOON')
+          OR (new_type = 'MORNING' AND Shift.type = 'NIGHT' AND Shift.date = DATE_SUB(new_date, INTERVAL 1 DAY))
+          OR (new_type = 'NIGHT' AND Shift.type = 'MORNING' AND Shift.date = DATE_ADD(new_date, INTERVAL 1 DAY))
+      );
 
-    IF overlap_count > 0 THEN
+    IF violation_count > 0 THEN
         SIGNAL SQLSTATE '45000'
-        SET MESSAGE_TEXT = 'Σφάλμα: Το μέλος του προσωπικού έχει ήδη βάρδια αυτή την ημερομηνία.';
+        SET MESSAGE_TEXT = 'Σφάλμα: Παραβίαση 8ωρης ανάπαυσης ή ο εργαζόμενος έχει ήδη βάρδια αυτή την ώρα.';
     END IF;
 END //
 
-
-
+DROP TRIGGER IF EXISTS check_monthly_shift_limits //
 CREATE TRIGGER check_monthly_shift_limits
 BEFORE INSERT ON ShiftAssignment
 FOR EACH ROW
@@ -94,14 +115,15 @@ BEGIN
     END IF;
 END //
 
-    CREATE TRIGGER check_room_overlap
-BEFORE INSERT ON MedicalProcedure
+DROP TRIGGER IF EXISTS check_room_overlap //
+CREATE TRIGGER check_room_overlap
+BEFORE INSERT ON MedicalProcedureOp
 FOR EACH ROW
 BEGIN
     DECLARE overlap_count INT;
 
     SELECT COUNT(*) INTO overlap_count
-    FROM MedicalProcedure
+    FROM MedicalProcedureOp
     WHERE room_id = NEW.room_id
       AND start_datetime < DATE_ADD(NEW.start_datetime, INTERVAL NEW.duration MINUTE)
       AND DATE_ADD(start_datetime, INTERVAL duration MINUTE) > NEW.start_datetime;
@@ -112,6 +134,7 @@ BEGIN
     END IF;
 END //
 
+DROP TRIGGER IF EXISTS check_doctor_surgery_overlap //
 CREATE TRIGGER check_doctor_surgery_overlap
 BEFORE INSERT ON ProcedureParticipation
 FOR EACH ROW
@@ -121,50 +144,23 @@ BEGIN
     DECLARE new_duration INT;
 
     SELECT start_datetime, duration INTO new_start, new_duration
-    FROM MedicalProcedure
+    FROM MedicalProcedureOp
     WHERE proc_id = NEW.proc_id;
 
     SELECT COUNT(*) INTO overlap_count
     FROM ProcedureParticipation
-    JOIN MedicalProcedure ON ProcedureParticipation.proc_id = MedicalProcedure.proc_id
+    JOIN MedicalProcedureOp ON ProcedureParticipation.proc_id = MedicalProcedureOp.proc_id
     WHERE ProcedureParticipation.amka = NEW.amka
-      AND MedicalProcedure.start_datetime < DATE_ADD(new_start, INTERVAL new_duration MINUTE)
-      AND DATE_ADD(MedicalProcedure.start_datetime, INTERVAL MedicalProcedure.duration MINUTE) > new_start;
+      AND MedicalProcedureOp.start_datetime < DATE_ADD(new_start, INTERVAL new_duration MINUTE)
+      AND DATE_ADD(MedicalProcedureOp.start_datetime, INTERVAL MedicalProcedureOp.duration MINUTE) > new_start;
 
     IF overlap_count > 0 THEN
         SIGNAL SQLSTATE '45000'
-        SET MESSAGE_TEXT = 'Σφάλμα: Ο ιατρός συμμετέχει ήδη σε άλλη επέμβαση αυτή την ώρα.';
+        SET MESSAGE_TEXT = 'Σφάλμα: Ο γιατρός συμμετέχει ήδη σε άλλη επέμβαση αυτή την ώρα.';
     END IF;
 END //
 
-CREATE TRIGGER check_8_hour_rest
-BEFORE INSERT ON ShiftAssignment
-FOR EACH ROW
-BEGIN
-    DECLARE new_start DATETIME;
-    DECLARE new_end DATETIME;
-    DECLARE rest_violations INT;
-
-    SELECT start_time, end_time INTO new_start, new_end
-    FROM Shift
-    WHERE shift_id = NEW.shift_id;
-
-    SELECT COUNT(*) INTO rest_violations
-    FROM ShiftAssignment
-    JOIN Shift ON ShiftAssignment.shift_id = Shift.shift_id
-    WHERE ShiftAssignment.amka = NEW.amka
-      AND (
-          (Shift.end_time > DATE_SUB(new_start, INTERVAL 8 HOUR) AND Shift.end_time <= new_start)
-          OR
-          (Shift.start_time < DATE_ADD(new_end, INTERVAL 8 HOUR) AND Shift.start_time >= new_end)
-      );
-
-    IF rest_violations > 0 THEN
-        SIGNAL SQLSTATE '45000'
-        SET MESSAGE_TEXT = 'Σφάλμα: Πρέπει να μεσολαβούν τουλάχιστον 8 ώρες ανάπαυσης μεταξύ των βαρδιών.';
-    END IF;
-END //
-
+DROP TRIGGER IF EXISTS check_three_nights //
 CREATE TRIGGER check_three_nights
 BEFORE INSERT ON ShiftAssignment
 FOR EACH ROW
@@ -188,8 +184,9 @@ BEGIN
 
         IF night_count = 2 THEN
             SIGNAL SQLSTATE '45000'
-            SET MESSAGE_TEXT = 'Σφάλμα: Απαγορεύεται η εργασία σε πάνω από 3 συνεχόμενες νυχτερινές βάρδιες.';
+            SET MESSAGE_TEXT = 'Σφάλμα: Απαγορεύεται η εργασία για πάνω από 3 συνεχόμενες νυχτερινές βάρδιες.';
         END IF;
     END IF;
 END //
+
 DELIMITER ;

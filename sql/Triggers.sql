@@ -1,4 +1,6 @@
 DELIMITER //
+
+DROP TRIGGER IF EXISTS check_doctor_supervisor_insert //
 CREATE TRIGGER check_doctor_supervisor_insert
 BEFORE INSERT ON Doctor
 FOR EACH ROW
@@ -12,9 +14,10 @@ BEGIN
         SIGNAL SQLSTATE '45000'
         SET MESSAGE_TEXT = 'Σφάλμα: Οι διευθυντές δεν μπορούν να έχουν επόπτη.';
     END IF;
-    
+
 END //
 
+DROP TRIGGER IF EXISTS check_doctor_supervisor_update //
 CREATE TRIGGER check_doctor_supervisor_update
 BEFORE UPDATE ON Doctor
 FOR EACH ROW
