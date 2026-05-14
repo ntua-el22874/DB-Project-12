@@ -174,3 +174,17 @@ ENCLOSED BY '"'
 LINES TERMINATED BY '\n'
 IGNORE 1 ROWS
 (proc_code, category, duration, start_datetime, cost, room_id, hosp_id);
+
+LOAD DATA LOCAL INFILE './ListForDB_csv/Shifts_Clean.csv'
+INTO TABLE Shift
+FIELDS TERMINATED BY ','
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS
+(date, type, dept);
+
+LOAD DATA LOCAL INFILE './ListForDB_csv/Shift_Assignment_Clean.csv'
+INTO TABLE ShiftAssignment
+FIELDS TERMINATED BY ','
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS
+(amka, shift_id, role);

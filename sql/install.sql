@@ -483,9 +483,12 @@ CREATE TABLE ProcedureParticipation (
 );
 
 CREATE TABLE Shift (
+    shift_id INT AUTO_INCREMENT,
     date DATE NOT NULL,
     type VARCHAR(20) NOT NULL,
-    dept INT NOT NULL
+    dept INT NOT NULL,
+
+    PRIMARY KEY (shift_id),
 
     CHECK (type IN ('MORNING', 'AFTERNOON', 'NIGHT')),
 
@@ -508,11 +511,11 @@ CREATE TABLE ShiftAssignment (
     CONSTRAINT fk_sa_staff
         FOREIGN KEY (amka) REFERENCES Staff(amka)
         ON DELETE CASCADE
-        ON UPDATE CASCADE
+        ON UPDATE CASCADE,
 
-    -- CONSTRAINT fk_sa_shift
-    --     FOREIGN KEY (shift_id) REFERENCES Shift(shift_id)
-    --     ON DELETE CASCADE
-    --     ON UPDATE CASCADE
+    CONSTRAINT fk_sa_shift
+        FOREIGN KEY (shift_id) REFERENCES Shift(shift_id)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE
 );
 
