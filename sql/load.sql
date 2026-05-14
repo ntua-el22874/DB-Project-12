@@ -97,9 +97,10 @@ IGNORE 1 ROWS
 LOAD DATA LOCAL INFILE './ListForDB_csv/Triage_Clean.csv'
 INTO TABLE Triage
 FIELDS TERMINATED BY ','
+ENCLOSED BY '"'
 LINES TERMINATED BY '\n'
 IGNORE 1 ROWS
-(patient_id, nurse_id, arrival_time, urgency_level, symptoms);
+(patient_id, nurse_id, arrival_time, urgency_level, symptoms, instructions,hospitalization);
 
 LOAD DATA LOCAL INFILE './ListForDB_csv/Drugs_Clean.csv'
 INTO TABLE Drug

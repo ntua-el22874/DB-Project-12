@@ -275,28 +275,6 @@ CREATE TABLE PatientAllergy
             ON DELETE CASCADE ON UPDATE CASCADE
 );
 
-CREATE TABLE Triage (
-    triage_id INT AUTO_INCREMENT,
-    patient_id BIGINT NOT NULL,
-    nurse_id BIGINT NOT NULL,
-    arrival_time DATETIME NOT NULL,
-    urgency_level INT NOT NULL,
-    symptoms TEXT NOT NULL,
-
-
-    PRIMARY KEY (triage_id),
-
-    CHECK (urgency_level BETWEEN 1 AND 5),
-
-    CONSTRAINT fk_triage_patient
-        FOREIGN KEY (patient_id) REFERENCES Patient(amka)
-        ON DELETE CASCADE ON UPDATE CASCADE,
-
-    CONSTRAINT fk_triage_nurse
-        FOREIGN KEY (nurse_id) REFERENCES Nurse(amka)
-        ON DELETE CASCADE ON UPDATE CASCADE
-);
-
 CREATE TABLE Hospitalization (
     hosp_id INT AUTO_INCREMENT,
     patient_id BIGINT NOT NULL,
@@ -335,6 +313,35 @@ CREATE TABLE Hospitalization (
         FOREIGN KEY (ken_code) REFERENCES KEN(ken_code)
         ON DELETE SET NULL ON UPDATE CASCADE
 );
+
+CREATE TABLE Triage (
+    triage_id INT AUTO_INCREMENT,
+    patient_id BIGINT NOT NULL,
+    nurse_id BIGINT NOT NULL,
+    arrival_time DATETIME NOT NULL,
+    urgency_level INT NOT NULL,
+    symptoms TEXT NOT NULL,
+    instructions TEXT,
+    hospitalization INT UNIQUE,
+
+
+    PRIMARY KEY (triage_id),
+
+    CHECK (urgency_level BETWEEN 1 AND 5),
+
+    CONSTRAINT fk_triage_patient
+        FOREIGN KEY (patient_id) REFERENCES Patient(amka)
+        ON DELETE CASCADE ON UPDATE CASCADE,
+    
+    CONSTRAINT fk_triage_hosp
+        FOREIGN KEY (hospitalization) REFERENCES Hospitalization(hosp_id)
+        ON DELETE CASCADE ON UPDATE CASCADE,
+
+    CONSTRAINT fk_triage_nurse
+        FOREIGN KEY (nurse_id) REFERENCES Nurse(amka)
+        ON DELETE CASCADE ON UPDATE CASCADE
+);
+
 
 CREATE TABLE HospitalizationRating (
     hosp_id INT NOT NULL,
