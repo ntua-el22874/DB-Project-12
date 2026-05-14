@@ -182,7 +182,7 @@ LINES TERMINATED BY '\n'
 IGNORE 1 ROWS
 (date, type, dept);
 
-LOAD DATA LOCAL INFILE './ListForDB_csv/Shift_Assignment_Clean.csv'
+LOAD DATA LOCAL INFILE './ListForDB_csv/Shift_Assignments_Clean.csv'
 INTO TABLE ShiftAssignment
 FIELDS TERMINATED BY ','
 LINES TERMINATED BY '\n'

@@ -1,4 +1,4 @@
-USE test_1;
+USE test1;
 
 -- ONLY FOR PROTOTYPING
 SET FOREIGN_KEY_CHECKS = 0;
@@ -445,7 +445,7 @@ CREATE TABLE MedicalProcedureOp (
     CHECK (category IN ('SURGICAL', 'DIAGNOSTIC', 'THERAPEUTIC')),
     CHECK (cost >= 0),
 
-    CONSTRAINT fk_proc_hosp
+    CONSTRAINT fk_proc_hos
         FOREIGN KEY (hosp_id) REFERENCES Hospitalization(hosp_id)
         ON DELETE CASCADE
         ON UPDATE CASCADE,
