@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Hospital_EER" id="0">
-    <mxGraphModel dx="1519" dy="2442" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2336" pageHeight="1654" background="#ffffff" math="0" shadow="0">
+    <mxGraphModel dx="1548" dy="2556" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2336" pageHeight="1654" background="#ffffff" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -652,6 +652,14 @@
             </Array>
             <mxPoint x="630" y="290" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="aaHtVFyRlooDs-wDnHsi-3" edge="1" parent="1" source="aaHtVFyRlooDs-wDnHsi-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1110" y="1500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aaHtVFyRlooDs-wDnHsi-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=left;perimeterSpacing=0;fontSize=12;verticalAlign=top;" value="&lt;b&gt;&lt;u&gt;Περιορισμοί:&lt;/u&gt;&lt;/b&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Απαγορεύεται η χορήγηση ενός φαρμάκου σε ασθενή που έχει αλλεργία σε μία ή περισσότερες από τις δραστικές ουσίες που περιέχονται σε αυτό&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="279" x="973.5" y="1595" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
