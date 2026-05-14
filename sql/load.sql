@@ -188,3 +188,10 @@ FIELDS TERMINATED BY ','
 LINES TERMINATED BY '\n'
 IGNORE 1 ROWS
 (amka, shift_id, role);
+
+LOAD DATA LOCAL INFILE './ListForDB_csv/Procedure_Participation_Clean.csv'
+INTO TABLE ProcedureParticipation
+FIELDS TERMINATED BY ','
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS
+(proc_id, amka, role);
