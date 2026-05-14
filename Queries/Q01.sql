@@ -1,6 +1,6 @@
 SELECT
     SUM(total_cost) AS total_cost,
-    SUM(total_cost - base_cost) AS total_additional_cost,
+    SUM(GREATEST(0, total_cost - base_cost)) AS total_additional_cost,
     SUM(base_cost) AS total_base_cost,
     dept_name,
     YEAR(discharge_date) AS year,
