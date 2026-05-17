@@ -1,4 +1,4 @@
-LOAD DATA LOCAL INFILE './ListForDB_csv/Hospitalization.csv'
+LOAD DATA LOCAL INFILE './ListForDB_csv/hospitalization.csv'
 INTO TABLE Hospitalization
 FIELDS TERMINATED BY ','
 ENCLOSED BY '"'
