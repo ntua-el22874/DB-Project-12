@@ -1,3 +1,5 @@
+-- (α) Κανονικό Πλάνο Εκτέλεσης (EXPLAIN ANALYZE)
+-- Η βάση χρησιμοποιεί τα Primary Keys και τα Foreign Keys για γρήγορη αναζήτηση.
 ANALYZE
 SELECT
     AVG(HospitalizationRating.medical_care) AS average_medical_care,
@@ -8,3 +10,4 @@ WHERE hosp_id IN (
     FROM Examination
     WHERE doctor_id = 56784597458
 );
+

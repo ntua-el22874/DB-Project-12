@@ -1,5 +1,6 @@
--- (α) Κανονικό Πλάνο Εκτέλεσης (EXPLAIN ANALYZE)
--- Η βάση θα χρησιμοποιήσει το index που φτιάξαμε για τον patient_id.
+-- (β) Εναλλακτικό Πλάνο Εκτέλεσης με χρήση HINT
+-- Απαγορεύουμε στη βάση να χρησιμοποιήσει τα δικά μας ευρετήρια.
+-- Χωρίς αυτά, η μηχανή αναγκάζεται να ψάξει όλο τον πίνακα Hospitalization (Full Scan).
 EXPLAIN ANALYZE
 SELECT
     Hospitalization.patient_id,
@@ -9,9 +10,8 @@ SELECT
     icd_in.description AS diagnosis_in_desc,
     icd_out.description AS diagnosis_out_desc,
     (IFNULL(medical_care,0) + IFNULL(nursing_care,0) + IFNULL(cleanliness,0) + IFNULL(food,0) + IFNULL(overall,0))/5.0 AS average_rating
-FROM Hospitalization 
+FROM Hospitalization IGNORE INDEX (idx_hosp_patient_dept, idx_hosp_patient_admission)
     LEFT JOIN HospitalizationRating ON Hospitalization.hosp_id = HospitalizationRating.hosp_id
     LEFT JOIN ICD10 AS icd_in ON Hospitalization.diagnosis_in = icd_in.code
     LEFT JOIN ICD10 AS icd_out ON Hospitalization.diagnosis_out = icd_out.code
 WHERE Hospitalization.patient_id = 79193941824;
-
