@@ -1,6 +1,5 @@
 USE test_1;
 
--- ONLY FOR PROTOTYPING
 SET FOREIGN_KEY_CHECKS = 0;
 DROP TABLE IF EXISTS HospitalizationRating;
 DROP TABLE IF EXISTS ShiftAssignment;
