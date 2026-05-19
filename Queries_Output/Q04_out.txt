@@ -1,0 +1,5 @@
+HospitalizationRating
+---
+| average_medical_care | average_overall_experience | 
+| ---: | ---: | 
+| 2.3333 | 1.0000 | 

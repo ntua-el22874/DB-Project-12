@@ -1,0 +1,19 @@
+UnknownTable
+---
+| specialty | name | surname | number_of_surgeries_as_main_surgeon | shifts | 
+| --- | --- | --- | ---: | ---: | 
+| GENERAL_SURGEON | Δημήτρης | Λάσκαρης | 13 | 10 | 
+| GENERAL_SURGEON | Νίκος | Καραγιάννης | 13 | 10 | 
+| GENERAL_SURGEON | Βασίλης | Γεωργίου | 13 | 10 | 
+| GENERAL_SURGEON | Θανάσης | Σταματόπουλος | 12 | 10 | 
+| GENERAL_SURGEON | Ελένη | Νικολάου | 12 | 10 | 
+| GENERAL_SURGEON | Σοφία | Παπαδόπουλου | 7 | 10 | 
+| GENERAL_SURGEON | Δήμητρα | Γεωργίου | 12 | 10 | 
+| GENERAL_SURGEON | Δήμητρα | Διαμαντής | 5 | 10 | 
+| GENERAL_SURGEON | Παναγιώτης | Γεωργίου | 8 | 10 | 
+| GENERAL_SURGEON | Κατερίνα | Παππάς | 12 | 10 | 
+| GENERAL_SURGEON | Γεωργία | Γεωργίου | 12 | 10 | 
+| GENERAL_SURGEON | Γεωργία | Μακρής | 12 | 10 | 
+| GENERAL_SURGEON | Ελένη | Παπαδάκη | 6 | 10 | 
+| GENERAL_SURGEON | Αγγελική | Μακρής | 13 | 10 | 
+| GENERAL_SURGEON | Θανάσης | Καραγιάννης | 5 | 10 | 

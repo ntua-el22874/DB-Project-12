@@ -1,0 +1,7 @@
+substance
+---
+| substance_1 | substance_2 | frequency | 
+| --- | --- | ---: | 
+| Ibuprofen | Cytisinicline | 9 | 
+| Algeldrate | Cytisinicline | 9 | 
+| Glycerol | Lactulose | 6 | 

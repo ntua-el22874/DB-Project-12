@@ -1,0 +1,393 @@
+ShiftAssignment
+---
+| dept_id | department_name | date | shift_type | staff_category | subclass | staff_count | 
+| ---: | --- | --- | --- | --- | --- | ---: | 
+| 6 | Επειγόντων Περιστατικών | 2026-05-12 | MORNING | NURSE | ADMIN_NURSE | 1 | 
+| 6 | Επειγόντων Περιστατικών | 2026-05-12 | MORNING | NURSE | ASS_NURSE | 3 | 
+| 6 | Επειγόντων Περιστατικών | 2026-05-12 | MORNING | NURSE | NURSE | 2 | 
+| 6 | Επειγόντων Περιστατικών | 2026-05-12 | MORNING | DOCTOR | CARDIOLOGIST | 1 | 
+| 6 | Επειγόντων Περιστατικών | 2026-05-12 | MORNING | DOCTOR | EMERGENCY_MEDICINE_PHYSICIAN | 1 | 
+| 6 | Επειγόντων Περιστατικών | 2026-05-12 | MORNING | DOCTOR | INTERNAL_MEDICINE_PHYSICIAN | 1 | 
+| 6 | Επειγόντων Περιστατικών | 2026-05-12 | MORNING | ADMIN | ACCOUNTANT | 1 | 
+| 6 | Επειγόντων Περιστατικών | 2026-05-12 | MORNING | ADMIN | SECRETARY | 1 | 
+| 6 | Επειγόντων Περιστατικών | 2026-05-13 | MORNING | NURSE | ADMIN_NURSE | 3 | 
+| 6 | Επειγόντων Περιστατικών | 2026-05-13 | MORNING | NURSE | ASS_NURSE | 1 | 
+| 6 | Επειγόντων Περιστατικών | 2026-05-13 | MORNING | NURSE | NURSE | 2 | 
+| 6 | Επειγόντων Περιστατικών | 2026-05-13 | MORNING | DOCTOR | PATHOLOGIST | 1 | 
+| 6 | Επειγόντων Περιστατικών | 2026-05-13 | MORNING | DOCTOR | PEDIATRICIAN | 2 | 
+| 6 | Επειγόντων Περιστατικών | 2026-05-13 | MORNING | ADMIN | ACCOUNTANT | 1 | 
+| 6 | Επειγόντων Περιστατικών | 2026-05-13 | MORNING | ADMIN | DIRECTOR | 1 | 
+| 6 | Επειγόντων Περιστατικών | 2026-05-14 | MORNING | NURSE | ASS_NURSE | 4 | 
+| 6 | Επειγόντων Περιστατικών | 2026-05-14 | MORNING | NURSE | NURSE | 2 | 
+| 6 | Επειγόντων Περιστατικών | 2026-05-14 | MORNING | DOCTOR | CARDIOLOGIST | 1 | 
+| 6 | Επειγόντων Περιστατικών | 2026-05-14 | MORNING | DOCTOR | EMERGENCY_MEDICINE_PHYSICIAN | 2 | 
+| 6 | Επειγόντων Περιστατικών | 2026-05-14 | MORNING | ADMIN | ACCOUNTANT | 1 | 
+| 6 | Επειγόντων Περιστατικών | 2026-05-14 | MORNING | ADMIN | DIRECTOR | 1 | 
+| 6 | Επειγόντων Περιστατικών | 2026-05-15 | MORNING | NURSE | ADMIN_NURSE | 3 | 
+| 6 | Επειγόντων Περιστατικών | 2026-05-15 | MORNING | NURSE | ASS_NURSE | 1 | 
+| 6 | Επειγόντων Περιστατικών | 2026-05-15 | MORNING | NURSE | NURSE | 2 | 
+| 6 | Επειγόντων Περιστατικών | 2026-05-15 | MORNING | DOCTOR | CARDIOLOGIST | 1 | 
+| 6 | Επειγόντων Περιστατικών | 2026-05-15 | MORNING | DOCTOR | PATHOLOGIST | 1 | 
+| 6 | Επειγόντων Περιστατικών | 2026-05-15 | MORNING | DOCTOR | PEDIATRICIAN | 1 | 
+| 6 | Επειγόντων Περιστατικών | 2026-05-15 | MORNING | ADMIN | ACCOUNTANT | 1 | 
+| 6 | Επειγόντων Περιστατικών | 2026-05-15 | MORNING | ADMIN | SECRETARY | 1 | 
+| 6 | Επειγόντων Περιστατικών | 2026-05-16 | MORNING | NURSE | ADMIN_NURSE | 2 | 
+| 6 | Επειγόντων Περιστατικών | 2026-05-16 | MORNING | NURSE | ASS_NURSE | 3 | 
+| 6 | Επειγόντων Περιστατικών | 2026-05-16 | MORNING | NURSE | NURSE | 1 | 
+| 6 | Επειγόντων Περιστατικών | 2026-05-16 | MORNING | DOCTOR | INTERNAL_MEDICINE_PHYSICIAN | 1 | 
+| 6 | Επειγόντων Περιστατικών | 2026-05-16 | MORNING | DOCTOR | PATHOLOGIST | 2 | 
+| 6 | Επειγόντων Περιστατικών | 2026-05-16 | MORNING | ADMIN | ACCOUNTANT | 1 | 
+| 6 | Επειγόντων Περιστατικών | 2026-05-16 | MORNING | ADMIN | DIRECTOR | 1 | 
+| 6 | Επειγόντων Περιστατικών | 2026-05-17 | MORNING | NURSE | ADMIN_NURSE | 1 | 
+| 6 | Επειγόντων Περιστατικών | 2026-05-17 | MORNING | NURSE | ASS_NURSE | 3 | 
+| 6 | Επειγόντων Περιστατικών | 2026-05-17 | MORNING | NURSE | NURSE | 2 | 
+| 6 | Επειγόντων Περιστατικών | 2026-05-17 | MORNING | DOCTOR | CARDIOLOGIST | 2 | 
+| 6 | Επειγόντων Περιστατικών | 2026-05-17 | MORNING | DOCTOR | GENERAL_SURGEON | 1 | 
+| 6 | Επειγόντων Περιστατικών | 2026-05-17 | MORNING | ADMIN | ACCOUNTANT | 1 | 
+| 6 | Επειγόντων Περιστατικών | 2026-05-17 | MORNING | ADMIN | SECRETARY | 1 | 
+| 6 | Επειγόντων Περιστατικών | 2026-05-18 | MORNING | NURSE | ADMIN_NURSE | 3 | 
+| 6 | Επειγόντων Περιστατικών | 2026-05-18 | MORNING | NURSE | ASS_NURSE | 1 | 
+| 6 | Επειγόντων Περιστατικών | 2026-05-18 | MORNING | NURSE | NURSE | 2 | 
+| 6 | Επειγόντων Περιστατικών | 2026-05-18 | MORNING | DOCTOR | CARDIOLOGIST | 1 | 
+| 6 | Επειγόντων Περιστατικών | 2026-05-18 | MORNING | DOCTOR | EMERGENCY_MEDICINE_PHYSICIAN | 1 | 
+| 6 | Επειγόντων Περιστατικών | 2026-05-18 | MORNING | DOCTOR | PATHOLOGIST | 1 | 
+| 6 | Επειγόντων Περιστατικών | 2026-05-18 | MORNING | ADMIN | ACCOUNTANT | 2 | 
+| 1 | Καρδιολογικό | 2026-05-12 | MORNING | ADMIN | ACCOUNTANT | 1 | 
+| 1 | Καρδιολογικό | 2026-05-12 | MORNING | ADMIN | SECRETARY | 1 | 
+| 1 | Καρδιολογικό | 2026-05-12 | MORNING | NURSE | ADMIN_NURSE | 1 | 
+| 1 | Καρδιολογικό | 2026-05-12 | MORNING | NURSE | ASS_NURSE | 2 | 
+| 1 | Καρδιολογικό | 2026-05-12 | MORNING | NURSE | NURSE | 3 | 
+| 1 | Καρδιολογικό | 2026-05-12 | MORNING | DOCTOR | CARDIOLOGIST | 1 | 
+| 1 | Καρδιολογικό | 2026-05-12 | MORNING | DOCTOR | EMERGENCY_MEDICINE_PHYSICIAN | 1 | 
+| 1 | Καρδιολογικό | 2026-05-12 | MORNING | DOCTOR | GENERAL_SURGEON | 1 | 
+| 1 | Καρδιολογικό | 2026-05-13 | MORNING | ADMIN | ACCOUNTANT | 2 | 
+| 1 | Καρδιολογικό | 2026-05-13 | MORNING | NURSE | ASS_NURSE | 5 | 
+| 1 | Καρδιολογικό | 2026-05-13 | MORNING | NURSE | NURSE | 1 | 
+| 1 | Καρδιολογικό | 2026-05-13 | MORNING | DOCTOR | PATHOLOGIST | 3 | 
+| 1 | Καρδιολογικό | 2026-05-14 | MORNING | ADMIN | ACCOUNTANT | 1 | 
+| 1 | Καρδιολογικό | 2026-05-14 | MORNING | ADMIN | DIRECTOR | 1 | 
+| 1 | Καρδιολογικό | 2026-05-14 | MORNING | NURSE | ADMIN_NURSE | 2 | 
+| 1 | Καρδιολογικό | 2026-05-14 | MORNING | NURSE | ASS_NURSE | 2 | 
+| 1 | Καρδιολογικό | 2026-05-14 | MORNING | NURSE | NURSE | 2 | 
+| 1 | Καρδιολογικό | 2026-05-14 | MORNING | DOCTOR | CARDIOLOGIST | 1 | 
+| 1 | Καρδιολογικό | 2026-05-14 | MORNING | DOCTOR | EMERGENCY_MEDICINE_PHYSICIAN | 1 | 
+| 1 | Καρδιολογικό | 2026-05-14 | MORNING | DOCTOR | PATHOLOGIST | 1 | 
+| 1 | Καρδιολογικό | 2026-05-15 | MORNING | ADMIN | ACCOUNTANT | 1 | 
+| 1 | Καρδιολογικό | 2026-05-15 | MORNING | ADMIN | SECRETARY | 1 | 
+| 1 | Καρδιολογικό | 2026-05-15 | MORNING | NURSE | ASS_NURSE | 4 | 
+| 1 | Καρδιολογικό | 2026-05-15 | MORNING | NURSE | NURSE | 2 | 
+| 1 | Καρδιολογικό | 2026-05-15 | MORNING | DOCTOR | EMERGENCY_MEDICINE_PHYSICIAN | 1 | 
+| 1 | Καρδιολογικό | 2026-05-15 | MORNING | DOCTOR | INTERNAL_MEDICINE_PHYSICIAN | 1 | 
+| 1 | Καρδιολογικό | 2026-05-15 | MORNING | DOCTOR | PATHOLOGIST | 1 | 
+| 1 | Καρδιολογικό | 2026-05-16 | MORNING | ADMIN | ACCOUNTANT | 1 | 
+| 1 | Καρδιολογικό | 2026-05-16 | MORNING | ADMIN | SECRETARY | 1 | 
+| 1 | Καρδιολογικό | 2026-05-16 | MORNING | NURSE | ADMIN_NURSE | 3 | 
+| 1 | Καρδιολογικό | 2026-05-16 | MORNING | NURSE | ASS_NURSE | 2 | 
+| 1 | Καρδιολογικό | 2026-05-16 | MORNING | NURSE | NURSE | 1 | 
+| 1 | Καρδιολογικό | 2026-05-16 | MORNING | DOCTOR | EMERGENCY_MEDICINE_PHYSICIAN | 1 | 
+| 1 | Καρδιολογικό | 2026-05-16 | MORNING | DOCTOR | INTERNAL_MEDICINE_PHYSICIAN | 2 | 
+| 1 | Καρδιολογικό | 2026-05-17 | MORNING | ADMIN | DIRECTOR | 1 | 
+| 1 | Καρδιολογικό | 2026-05-17 | MORNING | ADMIN | SECRETARY | 1 | 
+| 1 | Καρδιολογικό | 2026-05-17 | MORNING | NURSE | ADMIN_NURSE | 1 | 
+| 1 | Καρδιολογικό | 2026-05-17 | MORNING | NURSE | ASS_NURSE | 2 | 
+| 1 | Καρδιολογικό | 2026-05-17 | MORNING | NURSE | NURSE | 3 | 
+| 1 | Καρδιολογικό | 2026-05-17 | MORNING | DOCTOR | PATHOLOGIST | 1 | 
+| 1 | Καρδιολογικό | 2026-05-17 | MORNING | DOCTOR | PEDIATRICIAN | 2 | 
+| 1 | Καρδιολογικό | 2026-05-18 | MORNING | ADMIN | ACCOUNTANT | 1 | 
+| 1 | Καρδιολογικό | 2026-05-18 | MORNING | ADMIN | SECRETARY | 1 | 
+| 1 | Καρδιολογικό | 2026-05-18 | MORNING | NURSE | ASS_NURSE | 5 | 
+| 1 | Καρδιολογικό | 2026-05-18 | MORNING | NURSE | NURSE | 1 | 
+| 1 | Καρδιολογικό | 2026-05-18 | MORNING | DOCTOR | EMERGENCY_MEDICINE_PHYSICIAN | 2 | 
+| 1 | Καρδιολογικό | 2026-05-18 | MORNING | DOCTOR | GENERAL_SURGEON | 1 | 
+| 5 | ΜΕΘ | 2026-05-12 | MORNING | NURSE | ASS_NURSE | 2 | 
+| 5 | ΜΕΘ | 2026-05-12 | MORNING | NURSE | NURSE | 4 | 
+| 5 | ΜΕΘ | 2026-05-12 | MORNING | DOCTOR | GENERAL_SURGEON | 1 | 
+| 5 | ΜΕΘ | 2026-05-12 | MORNING | DOCTOR | INTERNAL_MEDICINE_PHYSICIAN | 1 | 
+| 5 | ΜΕΘ | 2026-05-12 | MORNING | DOCTOR | PATHOLOGIST | 1 | 
+| 5 | ΜΕΘ | 2026-05-12 | MORNING | ADMIN | SECRETARY | 2 | 
+| 5 | ΜΕΘ | 2026-05-13 | MORNING | NURSE | ASS_NURSE | 3 | 
+| 5 | ΜΕΘ | 2026-05-13 | MORNING | NURSE | NURSE | 3 | 
+| 5 | ΜΕΘ | 2026-05-13 | MORNING | DOCTOR | EMERGENCY_MEDICINE_PHYSICIAN | 1 | 
+| 5 | ΜΕΘ | 2026-05-13 | MORNING | DOCTOR | PATHOLOGIST | 2 | 
+| 5 | ΜΕΘ | 2026-05-13 | MORNING | ADMIN | ACCOUNTANT | 1 | 
+| 5 | ΜΕΘ | 2026-05-13 | MORNING | ADMIN | DIRECTOR | 1 | 
+| 5 | ΜΕΘ | 2026-05-14 | MORNING | NURSE | ADMIN_NURSE | 3 | 
+| 5 | ΜΕΘ | 2026-05-14 | MORNING | NURSE | ASS_NURSE | 2 | 
+| 5 | ΜΕΘ | 2026-05-14 | MORNING | NURSE | NURSE | 1 | 
+| 5 | ΜΕΘ | 2026-05-14 | MORNING | DOCTOR | GENERAL_SURGEON | 1 | 
+| 5 | ΜΕΘ | 2026-05-14 | MORNING | DOCTOR | INTERNAL_MEDICINE_PHYSICIAN | 1 | 
+| 5 | ΜΕΘ | 2026-05-14 | MORNING | DOCTOR | PATHOLOGIST | 1 | 
+| 5 | ΜΕΘ | 2026-05-14 | MORNING | ADMIN | ACCOUNTANT | 1 | 
+| 5 | ΜΕΘ | 2026-05-14 | MORNING | ADMIN | SECRETARY | 1 | 
+| 5 | ΜΕΘ | 2026-05-15 | MORNING | NURSE | ADMIN_NURSE | 3 | 
+| 5 | ΜΕΘ | 2026-05-15 | MORNING | NURSE | ASS_NURSE | 3 | 
+| 5 | ΜΕΘ | 2026-05-15 | MORNING | DOCTOR | EMERGENCY_MEDICINE_PHYSICIAN | 1 | 
+| 5 | ΜΕΘ | 2026-05-15 | MORNING | DOCTOR | GENERAL_SURGEON | 1 | 
+| 5 | ΜΕΘ | 2026-05-15 | MORNING | DOCTOR | PATHOLOGIST | 1 | 
+| 5 | ΜΕΘ | 2026-05-15 | MORNING | ADMIN | ACCOUNTANT | 1 | 
+| 5 | ΜΕΘ | 2026-05-15 | MORNING | ADMIN | DIRECTOR | 1 | 
+| 5 | ΜΕΘ | 2026-05-16 | MORNING | NURSE | ADMIN_NURSE | 2 | 
+| 5 | ΜΕΘ | 2026-05-16 | MORNING | NURSE | ASS_NURSE | 1 | 
+| 5 | ΜΕΘ | 2026-05-16 | MORNING | NURSE | NURSE | 3 | 
+| 5 | ΜΕΘ | 2026-05-16 | MORNING | DOCTOR | EMERGENCY_MEDICINE_PHYSICIAN | 1 | 
+| 5 | ΜΕΘ | 2026-05-16 | MORNING | DOCTOR | GENERAL_SURGEON | 1 | 
+| 5 | ΜΕΘ | 2026-05-16 | MORNING | DOCTOR | INTERNAL_MEDICINE_PHYSICIAN | 1 | 
+| 5 | ΜΕΘ | 2026-05-16 | MORNING | ADMIN | ACCOUNTANT | 1 | 
+| 5 | ΜΕΘ | 2026-05-16 | MORNING | ADMIN | DIRECTOR | 1 | 
+| 5 | ΜΕΘ | 2026-05-17 | MORNING | NURSE | ASS_NURSE | 2 | 
+| 5 | ΜΕΘ | 2026-05-17 | MORNING | NURSE | NURSE | 4 | 
+| 5 | ΜΕΘ | 2026-05-17 | MORNING | DOCTOR | CARDIOLOGIST | 1 | 
+| 5 | ΜΕΘ | 2026-05-17 | MORNING | DOCTOR | GENERAL_SURGEON | 1 | 
+| 5 | ΜΕΘ | 2026-05-17 | MORNING | DOCTOR | PEDIATRICIAN | 1 | 
+| 5 | ΜΕΘ | 2026-05-17 | MORNING | ADMIN | ACCOUNTANT | 1 | 
+| 5 | ΜΕΘ | 2026-05-17 | MORNING | ADMIN | SECRETARY | 1 | 
+| 5 | ΜΕΘ | 2026-05-18 | MORNING | NURSE | ASS_NURSE | 3 | 
+| 5 | ΜΕΘ | 2026-05-18 | MORNING | NURSE | NURSE | 3 | 
+| 5 | ΜΕΘ | 2026-05-18 | MORNING | DOCTOR | CARDIOLOGIST | 1 | 
+| 5 | ΜΕΘ | 2026-05-18 | MORNING | DOCTOR | PEDIATRICIAN | 2 | 
+| 5 | ΜΕΘ | 2026-05-18 | MORNING | ADMIN | ACCOUNTANT | 1 | 
+| 5 | ΜΕΘ | 2026-05-18 | MORNING | ADMIN | DIRECTOR | 1 | 
+| 8 | Νευρολογικό | 2026-05-12 | MORNING | DOCTOR | GENERAL_SURGEON | 1 | 
+| 8 | Νευρολογικό | 2026-05-12 | MORNING | DOCTOR | INTERNAL_MEDICINE_PHYSICIAN | 2 | 
+| 8 | Νευρολογικό | 2026-05-12 | MORNING | NURSE | ADMIN_NURSE | 2 | 
+| 8 | Νευρολογικό | 2026-05-12 | MORNING | NURSE | ASS_NURSE | 3 | 
+| 8 | Νευρολογικό | 2026-05-12 | MORNING | NURSE | NURSE | 1 | 
+| 8 | Νευρολογικό | 2026-05-12 | MORNING | ADMIN | ACCOUNTANT | 1 | 
+| 8 | Νευρολογικό | 2026-05-12 | MORNING | ADMIN | DIRECTOR | 1 | 
+| 8 | Νευρολογικό | 2026-05-13 | MORNING | DOCTOR | INTERNAL_MEDICINE_PHYSICIAN | 1 | 
+| 8 | Νευρολογικό | 2026-05-13 | MORNING | DOCTOR | PATHOLOGIST | 1 | 
+| 8 | Νευρολογικό | 2026-05-13 | MORNING | DOCTOR | PEDIATRICIAN | 1 | 
+| 8 | Νευρολογικό | 2026-05-13 | MORNING | NURSE | ADMIN_NURSE | 4 | 
+| 8 | Νευρολογικό | 2026-05-13 | MORNING | NURSE | ASS_NURSE | 2 | 
+| 8 | Νευρολογικό | 2026-05-13 | MORNING | ADMIN | ACCOUNTANT | 1 | 
+| 8 | Νευρολογικό | 2026-05-13 | MORNING | ADMIN | SECRETARY | 1 | 
+| 8 | Νευρολογικό | 2026-05-14 | MORNING | DOCTOR | GENERAL_SURGEON | 1 | 
+| 8 | Νευρολογικό | 2026-05-14 | MORNING | DOCTOR | PATHOLOGIST | 2 | 
+| 8 | Νευρολογικό | 2026-05-14 | MORNING | NURSE | ADMIN_NURSE | 3 | 
+| 8 | Νευρολογικό | 2026-05-14 | MORNING | NURSE | ASS_NURSE | 1 | 
+| 8 | Νευρολογικό | 2026-05-14 | MORNING | NURSE | NURSE | 2 | 
+| 8 | Νευρολογικό | 2026-05-14 | MORNING | ADMIN | ACCOUNTANT | 2 | 
+| 8 | Νευρολογικό | 2026-05-15 | MORNING | DOCTOR | CARDIOLOGIST | 1 | 
+| 8 | Νευρολογικό | 2026-05-15 | MORNING | DOCTOR | GENERAL_SURGEON | 1 | 
+| 8 | Νευρολογικό | 2026-05-15 | MORNING | DOCTOR | PATHOLOGIST | 1 | 
+| 8 | Νευρολογικό | 2026-05-15 | MORNING | NURSE | ASS_NURSE | 2 | 
+| 8 | Νευρολογικό | 2026-05-15 | MORNING | NURSE | NURSE | 4 | 
+| 8 | Νευρολογικό | 2026-05-15 | MORNING | ADMIN | ACCOUNTANT | 1 | 
+| 8 | Νευρολογικό | 2026-05-15 | MORNING | ADMIN | DIRECTOR | 1 | 
+| 8 | Νευρολογικό | 2026-05-16 | MORNING | DOCTOR | EMERGENCY_MEDICINE_PHYSICIAN | 1 | 
+| 8 | Νευρολογικό | 2026-05-16 | MORNING | DOCTOR | PATHOLOGIST | 1 | 
+| 8 | Νευρολογικό | 2026-05-16 | MORNING | DOCTOR | PEDIATRICIAN | 1 | 
+| 8 | Νευρολογικό | 2026-05-16 | MORNING | NURSE | ADMIN_NURSE | 2 | 
+| 8 | Νευρολογικό | 2026-05-16 | MORNING | NURSE | ASS_NURSE | 2 | 
+| 8 | Νευρολογικό | 2026-05-16 | MORNING | NURSE | NURSE | 2 | 
+| 8 | Νευρολογικό | 2026-05-16 | MORNING | ADMIN | ACCOUNTANT | 1 | 
+| 8 | Νευρολογικό | 2026-05-16 | MORNING | ADMIN | SECRETARY | 1 | 
+| 8 | Νευρολογικό | 2026-05-17 | MORNING | NURSE | ADMIN_NURSE | 2 | 
+| 8 | Νευρολογικό | 2026-05-17 | MORNING | NURSE | ASS_NURSE | 3 | 
+| 8 | Νευρολογικό | 2026-05-17 | MORNING | NURSE | NURSE | 1 | 
+| 8 | Νευρολογικό | 2026-05-17 | MORNING | DOCTOR | CARDIOLOGIST | 1 | 
+| 8 | Νευρολογικό | 2026-05-17 | MORNING | DOCTOR | INTERNAL_MEDICINE_PHYSICIAN | 1 | 
+| 8 | Νευρολογικό | 2026-05-17 | MORNING | DOCTOR | PATHOLOGIST | 1 | 
+| 8 | Νευρολογικό | 2026-05-17 | MORNING | ADMIN | ACCOUNTANT | 1 | 
+| 8 | Νευρολογικό | 2026-05-17 | MORNING | ADMIN | SECRETARY | 1 | 
+| 8 | Νευρολογικό | 2026-05-18 | MORNING | NURSE | ADMIN_NURSE | 4 | 
+| 8 | Νευρολογικό | 2026-05-18 | MORNING | NURSE | ASS_NURSE | 2 | 
+| 8 | Νευρολογικό | 2026-05-18 | MORNING | DOCTOR | EMERGENCY_MEDICINE_PHYSICIAN | 1 | 
+| 8 | Νευρολογικό | 2026-05-18 | MORNING | DOCTOR | PATHOLOGIST | 2 | 
+| 8 | Νευρολογικό | 2026-05-18 | MORNING | ADMIN | DIRECTOR | 1 | 
+| 8 | Νευρολογικό | 2026-05-18 | MORNING | ADMIN | SECRETARY | 1 | 
+| 7 | Ορθοπεδικό | 2026-05-12 | MORNING | NURSE | ADMIN_NURSE | 4 | 
+| 7 | Ορθοπεδικό | 2026-05-12 | MORNING | NURSE | ASS_NURSE | 1 | 
+| 7 | Ορθοπεδικό | 2026-05-12 | MORNING | NURSE | NURSE | 1 | 
+| 7 | Ορθοπεδικό | 2026-05-12 | MORNING | DOCTOR | GENERAL_SURGEON | 2 | 
+| 7 | Ορθοπεδικό | 2026-05-12 | MORNING | DOCTOR | INTERNAL_MEDICINE_PHYSICIAN | 1 | 
+| 7 | Ορθοπεδικό | 2026-05-12 | MORNING | ADMIN | ACCOUNTANT | 1 | 
+| 7 | Ορθοπεδικό | 2026-05-12 | MORNING | ADMIN | DIRECTOR | 1 | 
+| 7 | Ορθοπεδικό | 2026-05-13 | MORNING | NURSE | ADMIN_NURSE | 1 | 
+| 7 | Ορθοπεδικό | 2026-05-13 | MORNING | NURSE | ASS_NURSE | 4 | 
+| 7 | Ορθοπεδικό | 2026-05-13 | MORNING | NURSE | NURSE | 1 | 
+| 7 | Ορθοπεδικό | 2026-05-13 | MORNING | DOCTOR | CARDIOLOGIST | 1 | 
+| 7 | Ορθοπεδικό | 2026-05-13 | MORNING | DOCTOR | EMERGENCY_MEDICINE_PHYSICIAN | 1 | 
+| 7 | Ορθοπεδικό | 2026-05-13 | MORNING | DOCTOR | PEDIATRICIAN | 1 | 
+| 7 | Ορθοπεδικό | 2026-05-13 | MORNING | ADMIN | ACCOUNTANT | 1 | 
+| 7 | Ορθοπεδικό | 2026-05-13 | MORNING | ADMIN | SECRETARY | 1 | 
+| 7 | Ορθοπεδικό | 2026-05-14 | MORNING | NURSE | ADMIN_NURSE | 1 | 
+| 7 | Ορθοπεδικό | 2026-05-14 | MORNING | NURSE | ASS_NURSE | 4 | 
+| 7 | Ορθοπεδικό | 2026-05-14 | MORNING | NURSE | NURSE | 1 | 
+| 7 | Ορθοπεδικό | 2026-05-14 | MORNING | DOCTOR | CARDIOLOGIST | 1 | 
+| 7 | Ορθοπεδικό | 2026-05-14 | MORNING | DOCTOR | GENERAL_SURGEON | 2 | 
+| 7 | Ορθοπεδικό | 2026-05-14 | MORNING | ADMIN | ACCOUNTANT | 1 | 
+| 7 | Ορθοπεδικό | 2026-05-14 | MORNING | ADMIN | DIRECTOR | 1 | 
+| 7 | Ορθοπεδικό | 2026-05-15 | MORNING | DOCTOR | GENERAL_SURGEON | 1 | 
+| 7 | Ορθοπεδικό | 2026-05-15 | MORNING | DOCTOR | INTERNAL_MEDICINE_PHYSICIAN | 1 | 
+| 7 | Ορθοπεδικό | 2026-05-15 | MORNING | NURSE | ADMIN_NURSE | 1 | 
+| 7 | Ορθοπεδικό | 2026-05-15 | MORNING | NURSE | ASS_NURSE | 3 | 
+| 7 | Ορθοπεδικό | 2026-05-15 | MORNING | NURSE | NURSE | 2 | 
+| 7 | Ορθοπεδικό | 2026-05-15 | MORNING | DOCTOR | CARDIOLOGIST | 1 | 
+| 7 | Ορθοπεδικό | 2026-05-15 | MORNING | ADMIN | ACCOUNTANT | 1 | 
+| 7 | Ορθοπεδικό | 2026-05-15 | MORNING | ADMIN | SECRETARY | 1 | 
+| 7 | Ορθοπεδικό | 2026-05-16 | MORNING | DOCTOR | CARDIOLOGIST | 1 | 
+| 7 | Ορθοπεδικό | 2026-05-16 | MORNING | DOCTOR | INTERNAL_MEDICINE_PHYSICIAN | 1 | 
+| 7 | Ορθοπεδικό | 2026-05-16 | MORNING | DOCTOR | PATHOLOGIST | 1 | 
+| 7 | Ορθοπεδικό | 2026-05-16 | MORNING | NURSE | ADMIN_NURSE | 1 | 
+| 7 | Ορθοπεδικό | 2026-05-16 | MORNING | NURSE | ASS_NURSE | 2 | 
+| 7 | Ορθοπεδικό | 2026-05-16 | MORNING | NURSE | NURSE | 3 | 
+| 7 | Ορθοπεδικό | 2026-05-16 | MORNING | ADMIN | ACCOUNTANT | 2 | 
+| 7 | Ορθοπεδικό | 2026-05-17 | MORNING | DOCTOR | EMERGENCY_MEDICINE_PHYSICIAN | 1 | 
+| 7 | Ορθοπεδικό | 2026-05-17 | MORNING | DOCTOR | GENERAL_SURGEON | 2 | 
+| 7 | Ορθοπεδικό | 2026-05-17 | MORNING | NURSE | ADMIN_NURSE | 4 | 
+| 7 | Ορθοπεδικό | 2026-05-17 | MORNING | NURSE | ASS_NURSE | 1 | 
+| 7 | Ορθοπεδικό | 2026-05-17 | MORNING | NURSE | NURSE | 1 | 
+| 7 | Ορθοπεδικό | 2026-05-17 | MORNING | ADMIN | ACCOUNTANT | 1 | 
+| 7 | Ορθοπεδικό | 2026-05-17 | MORNING | ADMIN | DIRECTOR | 1 | 
+| 7 | Ορθοπεδικό | 2026-05-18 | MORNING | DOCTOR | GENERAL_SURGEON | 2 | 
+| 7 | Ορθοπεδικό | 2026-05-18 | MORNING | DOCTOR | PEDIATRICIAN | 1 | 
+| 7 | Ορθοπεδικό | 2026-05-18 | MORNING | NURSE | ADMIN_NURSE | 1 | 
+| 7 | Ορθοπεδικό | 2026-05-18 | MORNING | NURSE | ASS_NURSE | 4 | 
+| 7 | Ορθοπεδικό | 2026-05-18 | MORNING | NURSE | NURSE | 1 | 
+| 7 | Ορθοπεδικό | 2026-05-18 | MORNING | ADMIN | ACCOUNTANT | 1 | 
+| 7 | Ορθοπεδικό | 2026-05-18 | MORNING | ADMIN | SECRETARY | 1 | 
+| 3 | Παθολογικό | 2026-05-12 | MORNING | DOCTOR | CARDIOLOGIST | 1 | 
+| 3 | Παθολογικό | 2026-05-12 | MORNING | DOCTOR | PATHOLOGIST | 2 | 
+| 3 | Παθολογικό | 2026-05-12 | MORNING | ADMIN | ACCOUNTANT | 1 | 
+| 3 | Παθολογικό | 2026-05-12 | MORNING | ADMIN | SECRETARY | 1 | 
+| 3 | Παθολογικό | 2026-05-12 | MORNING | NURSE | ADMIN_NURSE | 3 | 
+| 3 | Παθολογικό | 2026-05-12 | MORNING | NURSE | ASS_NURSE | 2 | 
+| 3 | Παθολογικό | 2026-05-12 | MORNING | NURSE | NURSE | 1 | 
+| 3 | Παθολογικό | 2026-05-13 | MORNING | DOCTOR | EMERGENCY_MEDICINE_PHYSICIAN | 1 | 
+| 3 | Παθολογικό | 2026-05-13 | MORNING | DOCTOR | PATHOLOGIST | 2 | 
+| 3 | Παθολογικό | 2026-05-13 | MORNING | ADMIN | DIRECTOR | 1 | 
+| 3 | Παθολογικό | 2026-05-13 | MORNING | ADMIN | SECRETARY | 1 | 
+| 3 | Παθολογικό | 2026-05-13 | MORNING | NURSE | ADMIN_NURSE | 3 | 
+| 3 | Παθολογικό | 2026-05-13 | MORNING | NURSE | ASS_NURSE | 2 | 
+| 3 | Παθολογικό | 2026-05-13 | MORNING | NURSE | NURSE | 1 | 
+| 3 | Παθολογικό | 2026-05-14 | MORNING | DOCTOR | CARDIOLOGIST | 2 | 
+| 3 | Παθολογικό | 2026-05-14 | MORNING | DOCTOR | GENERAL_SURGEON | 1 | 
+| 3 | Παθολογικό | 2026-05-14 | MORNING | ADMIN | ACCOUNTANT | 1 | 
+| 3 | Παθολογικό | 2026-05-14 | MORNING | ADMIN | SECRETARY | 1 | 
+| 3 | Παθολογικό | 2026-05-14 | MORNING | NURSE | ASS_NURSE | 2 | 
+| 3 | Παθολογικό | 2026-05-14 | MORNING | NURSE | NURSE | 4 | 
+| 3 | Παθολογικό | 2026-05-15 | MORNING | DOCTOR | EMERGENCY_MEDICINE_PHYSICIAN | 1 | 
+| 3 | Παθολογικό | 2026-05-15 | MORNING | DOCTOR | PATHOLOGIST | 1 | 
+| 3 | Παθολογικό | 2026-05-15 | MORNING | DOCTOR | PEDIATRICIAN | 1 | 
+| 3 | Παθολογικό | 2026-05-15 | MORNING | ADMIN | SECRETARY | 2 | 
+| 3 | Παθολογικό | 2026-05-15 | MORNING | NURSE | ADMIN_NURSE | 2 | 
+| 3 | Παθολογικό | 2026-05-15 | MORNING | NURSE | ASS_NURSE | 2 | 
+| 3 | Παθολογικό | 2026-05-15 | MORNING | NURSE | NURSE | 2 | 
+| 3 | Παθολογικό | 2026-05-16 | MORNING | DOCTOR | INTERNAL_MEDICINE_PHYSICIAN | 2 | 
+| 3 | Παθολογικό | 2026-05-16 | MORNING | DOCTOR | PATHOLOGIST | 1 | 
+| 3 | Παθολογικό | 2026-05-16 | MORNING | ADMIN | SECRETARY | 2 | 
+| 3 | Παθολογικό | 2026-05-16 | MORNING | NURSE | ADMIN_NURSE | 1 | 
+| 3 | Παθολογικό | 2026-05-16 | MORNING | NURSE | ASS_NURSE | 3 | 
+| 3 | Παθολογικό | 2026-05-16 | MORNING | NURSE | NURSE | 2 | 
+| 3 | Παθολογικό | 2026-05-17 | MORNING | DOCTOR | INTERNAL_MEDICINE_PHYSICIAN | 1 | 
+| 3 | Παθολογικό | 2026-05-17 | MORNING | DOCTOR | PATHOLOGIST | 2 | 
+| 3 | Παθολογικό | 2026-05-17 | MORNING | ADMIN | ACCOUNTANT | 1 | 
+| 3 | Παθολογικό | 2026-05-17 | MORNING | ADMIN | DIRECTOR | 1 | 
+| 3 | Παθολογικό | 2026-05-17 | MORNING | NURSE | ADMIN_NURSE | 3 | 
+| 3 | Παθολογικό | 2026-05-17 | MORNING | NURSE | ASS_NURSE | 2 | 
+| 3 | Παθολογικό | 2026-05-17 | MORNING | NURSE | NURSE | 1 | 
+| 3 | Παθολογικό | 2026-05-18 | MORNING | DOCTOR | EMERGENCY_MEDICINE_PHYSICIAN | 1 | 
+| 3 | Παθολογικό | 2026-05-18 | MORNING | DOCTOR | GENERAL_SURGEON | 1 | 
+| 3 | Παθολογικό | 2026-05-18 | MORNING | DOCTOR | PATHOLOGIST | 1 | 
+| 3 | Παθολογικό | 2026-05-18 | MORNING | ADMIN | ACCOUNTANT | 1 | 
+| 3 | Παθολογικό | 2026-05-18 | MORNING | ADMIN | SECRETARY | 1 | 
+| 3 | Παθολογικό | 2026-05-18 | MORNING | NURSE | ADMIN_NURSE | 3 | 
+| 3 | Παθολογικό | 2026-05-18 | MORNING | NURSE | ASS_NURSE | 2 | 
+| 3 | Παθολογικό | 2026-05-18 | MORNING | NURSE | NURSE | 1 | 
+| 4 | Παιδιατρικό | 2026-05-12 | MORNING | DOCTOR | CARDIOLOGIST | 1 | 
+| 4 | Παιδιατρικό | 2026-05-12 | MORNING | DOCTOR | GENERAL_SURGEON | 1 | 
+| 4 | Παιδιατρικό | 2026-05-12 | MORNING | DOCTOR | PEDIATRICIAN | 1 | 
+| 4 | Παιδιατρικό | 2026-05-12 | MORNING | ADMIN | ACCOUNTANT | 1 | 
+| 4 | Παιδιατρικό | 2026-05-12 | MORNING | ADMIN | SECRETARY | 1 | 
+| 4 | Παιδιατρικό | 2026-05-12 | MORNING | NURSE | ADMIN_NURSE | 2 | 
+| 4 | Παιδιατρικό | 2026-05-12 | MORNING | NURSE | ASS_NURSE | 2 | 
+| 4 | Παιδιατρικό | 2026-05-12 | MORNING | NURSE | NURSE | 2 | 
+| 4 | Παιδιατρικό | 2026-05-13 | MORNING | NURSE | ADMIN_NURSE | 1 | 
+| 4 | Παιδιατρικό | 2026-05-13 | MORNING | NURSE | ASS_NURSE | 2 | 
+| 4 | Παιδιατρικό | 2026-05-13 | MORNING | NURSE | NURSE | 3 | 
+| 4 | Παιδιατρικό | 2026-05-13 | MORNING | DOCTOR | CARDIOLOGIST | 1 | 
+| 4 | Παιδιατρικό | 2026-05-13 | MORNING | DOCTOR | INTERNAL_MEDICINE_PHYSICIAN | 2 | 
+| 4 | Παιδιατρικό | 2026-05-13 | MORNING | ADMIN | SECRETARY | 2 | 
+| 4 | Παιδιατρικό | 2026-05-14 | MORNING | NURSE | ADMIN_NURSE | 4 | 
+| 4 | Παιδιατρικό | 2026-05-14 | MORNING | NURSE | ASS_NURSE | 2 | 
+| 4 | Παιδιατρικό | 2026-05-14 | MORNING | DOCTOR | EMERGENCY_MEDICINE_PHYSICIAN | 1 | 
+| 4 | Παιδιατρικό | 2026-05-14 | MORNING | DOCTOR | GENERAL_SURGEON | 2 | 
+| 4 | Παιδιατρικό | 2026-05-14 | MORNING | ADMIN | SECRETARY | 2 | 
+| 4 | Παιδιατρικό | 2026-05-15 | MORNING | NURSE | ADMIN_NURSE | 1 | 
+| 4 | Παιδιατρικό | 2026-05-15 | MORNING | NURSE | ASS_NURSE | 3 | 
+| 4 | Παιδιατρικό | 2026-05-15 | MORNING | NURSE | NURSE | 2 | 
+| 4 | Παιδιατρικό | 2026-05-15 | MORNING | DOCTOR | CARDIOLOGIST | 1 | 
+| 4 | Παιδιατρικό | 2026-05-15 | MORNING | DOCTOR | GENERAL_SURGEON | 1 | 
+| 4 | Παιδιατρικό | 2026-05-15 | MORNING | DOCTOR | PEDIATRICIAN | 1 | 
+| 4 | Παιδιατρικό | 2026-05-15 | MORNING | ADMIN | ACCOUNTANT | 1 | 
+| 4 | Παιδιατρικό | 2026-05-15 | MORNING | ADMIN | DIRECTOR | 1 | 
+| 4 | Παιδιατρικό | 2026-05-16 | MORNING | NURSE | ASS_NURSE | 6 | 
+| 4 | Παιδιατρικό | 2026-05-16 | MORNING | DOCTOR | PATHOLOGIST | 3 | 
+| 4 | Παιδιατρικό | 2026-05-16 | MORNING | ADMIN | ACCOUNTANT | 1 | 
+| 4 | Παιδιατρικό | 2026-05-16 | MORNING | ADMIN | SECRETARY | 1 | 
+| 4 | Παιδιατρικό | 2026-05-17 | MORNING | NURSE | ADMIN_NURSE | 2 | 
+| 4 | Παιδιατρικό | 2026-05-17 | MORNING | NURSE | ASS_NURSE | 2 | 
+| 4 | Παιδιατρικό | 2026-05-17 | MORNING | NURSE | NURSE | 2 | 
+| 4 | Παιδιατρικό | 2026-05-17 | MORNING | DOCTOR | CARDIOLOGIST | 1 | 
+| 4 | Παιδιατρικό | 2026-05-17 | MORNING | DOCTOR | EMERGENCY_MEDICINE_PHYSICIAN | 1 | 
+| 4 | Παιδιατρικό | 2026-05-17 | MORNING | DOCTOR | PATHOLOGIST | 1 | 
+| 4 | Παιδιατρικό | 2026-05-17 | MORNING | ADMIN | ACCOUNTANT | 1 | 
+| 4 | Παιδιατρικό | 2026-05-17 | MORNING | ADMIN | DIRECTOR | 1 | 
+| 4 | Παιδιατρικό | 2026-05-18 | MORNING | NURSE | ADMIN_NURSE | 1 | 
+| 4 | Παιδιατρικό | 2026-05-18 | MORNING | NURSE | ASS_NURSE | 2 | 
+| 4 | Παιδιατρικό | 2026-05-18 | MORNING | NURSE | NURSE | 3 | 
+| 4 | Παιδιατρικό | 2026-05-18 | MORNING | DOCTOR | EMERGENCY_MEDICINE_PHYSICIAN | 1 | 
+| 4 | Παιδιατρικό | 2026-05-18 | MORNING | DOCTOR | INTERNAL_MEDICINE_PHYSICIAN | 1 | 
+| 4 | Παιδιατρικό | 2026-05-18 | MORNING | DOCTOR | PATHOLOGIST | 1 | 
+| 4 | Παιδιατρικό | 2026-05-18 | MORNING | ADMIN | ACCOUNTANT | 1 | 
+| 4 | Παιδιατρικό | 2026-05-18 | MORNING | ADMIN | DIRECTOR | 1 | 
+| 2 | Χειρουργικό | 2026-05-12 | MORNING | ADMIN | ACCOUNTANT | 1 | 
+| 2 | Χειρουργικό | 2026-05-12 | MORNING | ADMIN | DIRECTOR | 1 | 
+| 2 | Χειρουργικό | 2026-05-12 | MORNING | NURSE | ADMIN_NURSE | 2 | 
+| 2 | Χειρουργικό | 2026-05-12 | MORNING | NURSE | ASS_NURSE | 4 | 
+| 2 | Χειρουργικό | 2026-05-12 | MORNING | DOCTOR | EMERGENCY_MEDICINE_PHYSICIAN | 1 | 
+| 2 | Χειρουργικό | 2026-05-12 | MORNING | DOCTOR | GENERAL_SURGEON | 1 | 
+| 2 | Χειρουργικό | 2026-05-12 | MORNING | DOCTOR | PEDIATRICIAN | 1 | 
+| 2 | Χειρουργικό | 2026-05-13 | MORNING | ADMIN | ACCOUNTANT | 1 | 
+| 2 | Χειρουργικό | 2026-05-13 | MORNING | ADMIN | SECRETARY | 1 | 
+| 2 | Χειρουργικό | 2026-05-13 | MORNING | NURSE | ADMIN_NURSE | 1 | 
+| 2 | Χειρουργικό | 2026-05-13 | MORNING | NURSE | ASS_NURSE | 3 | 
+| 2 | Χειρουργικό | 2026-05-13 | MORNING | NURSE | NURSE | 2 | 
+| 2 | Χειρουργικό | 2026-05-13 | MORNING | DOCTOR | GENERAL_SURGEON | 1 | 
+| 2 | Χειρουργικό | 2026-05-13 | MORNING | DOCTOR | INTERNAL_MEDICINE_PHYSICIAN | 1 | 
+| 2 | Χειρουργικό | 2026-05-13 | MORNING | DOCTOR | PATHOLOGIST | 1 | 
+| 2 | Χειρουργικό | 2026-05-14 | MORNING | ADMIN | ACCOUNTANT | 1 | 
+| 2 | Χειρουργικό | 2026-05-14 | MORNING | ADMIN | SECRETARY | 1 | 
+| 2 | Χειρουργικό | 2026-05-14 | MORNING | NURSE | ASS_NURSE | 3 | 
+| 2 | Χειρουργικό | 2026-05-14 | MORNING | NURSE | NURSE | 3 | 
+| 2 | Χειρουργικό | 2026-05-14 | MORNING | DOCTOR | CARDIOLOGIST | 1 | 
+| 2 | Χειρουργικό | 2026-05-14 | MORNING | DOCTOR | PATHOLOGIST | 1 | 
+| 2 | Χειρουργικό | 2026-05-14 | MORNING | DOCTOR | PEDIATRICIAN | 1 | 
+| 2 | Χειρουργικό | 2026-05-15 | MORNING | DOCTOR | PEDIATRICIAN | 1 | 
+| 2 | Χειρουργικό | 2026-05-15 | MORNING | ADMIN | DIRECTOR | 1 | 
+| 2 | Χειρουργικό | 2026-05-15 | MORNING | ADMIN | SECRETARY | 1 | 
+| 2 | Χειρουργικό | 2026-05-15 | MORNING | NURSE | ADMIN_NURSE | 1 | 
+| 2 | Χειρουργικό | 2026-05-15 | MORNING | NURSE | ASS_NURSE | 2 | 
+| 2 | Χειρουργικό | 2026-05-15 | MORNING | NURSE | NURSE | 3 | 
+| 2 | Χειρουργικό | 2026-05-15 | MORNING | DOCTOR | CARDIOLOGIST | 1 | 
+| 2 | Χειρουργικό | 2026-05-15 | MORNING | DOCTOR | EMERGENCY_MEDICINE_PHYSICIAN | 1 | 
+| 2 | Χειρουργικό | 2026-05-16 | MORNING | DOCTOR | GENERAL_SURGEON | 3 | 
+| 2 | Χειρουργικό | 2026-05-16 | MORNING | ADMIN | ACCOUNTANT | 1 | 
+| 2 | Χειρουργικό | 2026-05-16 | MORNING | ADMIN | SECRETARY | 1 | 
+| 2 | Χειρουργικό | 2026-05-16 | MORNING | NURSE | ADMIN_NURSE | 3 | 
+| 2 | Χειρουργικό | 2026-05-16 | MORNING | NURSE | ASS_NURSE | 2 | 
+| 2 | Χειρουργικό | 2026-05-16 | MORNING | NURSE | NURSE | 1 | 
+| 2 | Χειρουργικό | 2026-05-17 | MORNING | DOCTOR | CARDIOLOGIST | 1 | 
+| 2 | Χειρουργικό | 2026-05-17 | MORNING | DOCTOR | EMERGENCY_MEDICINE_PHYSICIAN | 1 | 
+| 2 | Χειρουργικό | 2026-05-17 | MORNING | DOCTOR | PEDIATRICIAN | 1 | 
+| 2 | Χειρουργικό | 2026-05-17 | MORNING | ADMIN | SECRETARY | 2 | 
+| 2 | Χειρουργικό | 2026-05-17 | MORNING | NURSE | ADMIN_NURSE | 2 | 
+| 2 | Χειρουργικό | 2026-05-17 | MORNING | NURSE | ASS_NURSE | 4 | 
+| 2 | Χειρουργικό | 2026-05-18 | MORNING | DOCTOR | CARDIOLOGIST | 1 | 
+| 2 | Χειρουργικό | 2026-05-18 | MORNING | DOCTOR | GENERAL_SURGEON | 1 | 
+| 2 | Χειρουργικό | 2026-05-18 | MORNING | DOCTOR | PATHOLOGIST | 1 | 
+| 2 | Χειρουργικό | 2026-05-18 | MORNING | ADMIN | SECRETARY | 2 | 
+| 2 | Χειρουργικό | 2026-05-18 | MORNING | NURSE | ADMIN_NURSE | 1 | 
+| 2 | Χειρουργικό | 2026-05-18 | MORNING | NURSE | ASS_NURSE | 3 | 
+| 2 | Χειρουργικό | 2026-05-18 | MORNING | NURSE | NURSE | 2 | 
