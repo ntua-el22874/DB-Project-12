@@ -1,7 +1,7 @@
 -- (β) Εναλλακτικό Πλάνο Εκτέλεσης με χρήση HINT
 -- Απαγορεύουμε στη βάση να χρησιμοποιήσει τα δικά μας ευρετήρια.
 -- Χωρίς αυτά, η μηχανή αναγκάζεται να ψάξει όλο τον πίνακα Hospitalization (Full Scan).
-EXPLAIN ANALYZE
+ANALYZE
 SELECT
     Hospitalization.patient_id,
     Hospitalization.hosp_id,
