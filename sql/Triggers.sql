@@ -325,4 +325,68 @@ BEGIN
     END IF;
 END //
 
+CREATE TRIGGER calculate_hosp_cost_insert
+BEFORE INSERT ON Hospitalization
+FOR EACH ROW
+BEGIN
+    DECLARE v_base_cost DECIMAL(10,2);
+    DECLARE v_avg_days INT;
+    DECLARE v_actual_days INT;
+
+    IF NEW.ken_code IS NOT NULL THEN
+
+        SELECT 
+            base_cost,
+            avg_days
+        INTO 
+            v_base_cost,
+            v_avg_days
+        FROM KEN
+        WHERE ken_code = NEW.ken_code;
+
+        SET v_actual_days = GREATEST(
+            1,
+            DATEDIFF(NEW.discharge_date, NEW.admission_date)
+        );
+
+        SET NEW.total_cost =
+            ROUND((v_base_cost / v_avg_days) * v_actual_days, 2);
+
+    ELSE
+        SET NEW.total_cost = NULL;
+    END IF;
+END //
+
+CREATE TRIGGER calculate_hosp_cost_update
+BEFORE UPDATE ON Hospitalization
+FOR EACH ROW
+BEGIN
+    DECLARE v_base_cost DECIMAL(10,2);
+    DECLARE v_avg_days INT;
+    DECLARE v_actual_days INT;
+
+    IF NEW.ken_code IS NOT NULL THEN
+
+        SELECT 
+            base_cost,
+            avg_days
+        INTO 
+            v_base_cost,
+            v_avg_days
+        FROM KEN
+        WHERE ken_code = NEW.ken_code;
+
+        SET v_actual_days = GREATEST(
+            1,
+            DATEDIFF(NEW.discharge_date, NEW.admission_date)
+        );
+
+        SET NEW.total_cost =
+            ROUND((v_base_cost / v_avg_days) * v_actual_days, 2);
+
+    ELSE
+        SET NEW.total_cost = NULL;
+    END IF;
+END //
+
 DELIMITER ;

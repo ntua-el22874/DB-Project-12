@@ -1,4 +1,4 @@
-USE test1;
+USE test_1;
 
 -- ONLY FOR PROTOTYPING
 SET FOREIGN_KEY_CHECKS = 0;
@@ -525,4 +525,3 @@ CREATE TABLE ShiftAssignment (
         ON DELETE CASCADE
         ON UPDATE CASCADE
 );
-
