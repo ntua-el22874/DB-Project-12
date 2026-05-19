@@ -2,4 +2,4 @@ hospitalization
 ---
 | patient_id | total_amount | times_visited | dept_name | 
 | ---: | ---: | ---: | --- | 
-| 54686989143 | 18840.00 | 4 | Καρδιολογικό | 
+| 81960982018 | 0.00 | 4 | Οφθαλμολογικό | 

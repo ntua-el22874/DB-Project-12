@@ -1,5 +1,0 @@
-hospitalization
----
-| icd_code | year_1 | year_2 | total_cases | 
-| --- | ---: | ---: | ---: | 
-| A00.0 | 2025 | 2026 | 6 | 
