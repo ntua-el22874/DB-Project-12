@@ -1,3 +1,4 @@
+ANALYZE
 SELECT
     Hospitalization.patient_id,
     Hospitalization.hosp_id,
