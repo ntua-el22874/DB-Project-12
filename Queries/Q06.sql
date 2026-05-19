@@ -1,6 +1,6 @@
 -- (α) Κανονικό Πλάνο Εκτέλεσης (EXPLAIN ANALYZE)
 -- Η βάση θα χρησιμοποιήσει το index που φτιάξαμε για τον patient_id.
-EXPLAIN ANALYZE
+ANALYZE
 SELECT
     Hospitalization.patient_id,
     Hospitalization.hosp_id,
